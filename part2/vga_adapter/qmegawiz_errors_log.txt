@@ -1,0 +1,10 @@
+
+
+C:/Users/meteo/OneDrive/Documents/ECE241/Lab7/part2/vga_adapter/vga_pll.v
+
+Nov 07 12AM:47:07>: Error in CNX file format.
+
+Error messages are listed in file
+C:/Users/meteo/OneDrive/Documents/ECE241/Lab7/part2/vga_adapter/vga_pll.cnxerr.
+
+Can't create the custom megafunction variation file(s)
