@@ -8,3 +8,12 @@ Error messages are listed in file
 C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/AudioTest/Audio_Controller/Audio_Clock.cnxerr.
 
 Can't create the custom megafunction variation file(s)
+
+C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/AudioTest/Audio_Controller/Audio_Clock.v
+
+Nov 11 03PM:53:02>: Error in CNX file format.
+
+Error messages are listed in file
+C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/AudioTest/Audio_Controller/Audio_Clock.cnxerr.
+
+Can't create the custom megafunction variation file(s)
