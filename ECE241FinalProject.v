@@ -65,10 +65,11 @@ module top(
 		
 	);
 	
-		defparam v1.RESOLUTION = "160x120";
+		defparam v1.RESOLUTION = "320x240";
 		defparam v1.MONOCHROME = "FALSE";
 		defparam v1.BITS_PER_COLOUR_CHANNEL = 1;
 		defparam v1.BACKGROUND_IMAGE = "black.mif";
+	
 	
 	part2 p2(
 		.clk(CLOCK_50),
@@ -97,6 +98,21 @@ module part2(
 );
 	wire[1:0] alu_select;
 	wire  ld_plot, ld_x, ld_y;
+	wire[9:0] counter;
+	wire[9:0] address;
+	wire[3:0] data;
+	wire clock;
+	wire q; 
+	
+	wire [9:0] randX;
+	wire [8:0] randY;
+
+	wire[25:0] freq;
+	RateDivider r1(clk, reset, 26'b01011111010111100000111111, freq);
+	wire clock;
+	
+	assign clock = (freq  == 26'b00000000000000000000000000)? 1'b1 : 1'b0;
+	
 	
 	control c1 (
 		.clk(clk),
@@ -109,24 +125,29 @@ module part2(
 		.ld_x(ld_x),
 		.ld_y(ld_y)
 		);
+		
+	
+	ram32x4 ra(.address(address), .clock(clock),.wren(1'b0), .q(q));
+	
+
 	
 	datapath d1(
 		.clk(clk),
 		.go(go),
 		.colour(loadcolour), 
 		.reset(reset),
-		.data_in(data_in),
+		.locx(randX),
+		.locY(randY),
 		.ld_black(black),
 		.ld_x(ld_x),
 		.ld_y(ld_y),
 		.ld_plot(ld_plot),
 		.X(X),
 		.Y(Y),
-		.Colour(colour)
+		.Colour(colour),
+		.counter(counter)
 		);
-
 	
-
 
 endmodule
 
@@ -139,23 +160,55 @@ module control(
     reg [2:0] current_state;
 	 reg [2:0] next_state;
 	 
-	 localparam 		S_LOAD_X = 5'd0,
-							S_LOAD_X_WAIT = 5'd1,
-							S_LOAD_Y = 5'd2,
-							S_LOAD_Y_WAIT = 5'd3,
-							S_PLOT = 5'd4;
+//	 localparam 		S_LOAD_X = 5'd0,
+//							S_LOAD_X_WAIT = 5'd1,
+//							S_LOAD_Y = 5'd2,
+//							S_LOAD_Y_WAIT = 5'd3,
+//							S_PLOT = 5'd4,
+//							S_PLOT_WAIT = 5'd5;
+	 localparam 		S_RESET  = 5'd0,
+							S_ClearScreen = 5'd1,
+							S_GenerateLocation = 5'd2,
+							S_StartAnimation = 5'd3,
+							S_Done = 5'd4;
 	 
+//	 always @(*)
+//	 begin: state_table
+//		case(current_state)
+//			S_LOAD_X: next_state = go ? S_LOAD_X_WAIT : S_LOAD_X;
+//			S_LOAD_X_WAIT: next_state = go ? S_LOAD_X_WAIT: S_LOAD_Y;
+//			S_LOAD_Y: next_state = go ? S_LOAD_Y_WAIT : S_LOAD_Y;
+//			S_LOAD_Y_WAIT: next_state = plot ? S_LOAD_Y_WAIT: S_PLOT;
+//			S_PLOT: next_state = plot? S_PLOT_WAIT: S_PLOT;
+//			S_PLOT_WAIT: next_state = plot? S_PLOT_WAIT : S_LOAD_X;
+//		endcase
+//	 end
+
+	S_Reset: next_state = S_DeleteOld;
+	//S_Reset: next_state = S_StartAnimation;	
+	S_DeleteOld: next_state =  move ? S_StartAnimation : S_DeleteOld;
+	S_StartAnimation: next_state = upFlag? S_ShiftUp : S_ShiftDown;
+	S_ShiftUp: next_state = rightFlag? S_ShiftRight : S_ShiftLeft; 
+	S_ShiftDown: next_state = rightFlag? S_ShiftRight : S_ShiftLeft; 
+	S_ShiftLeft: next_state = S_PrintNew;
+	S_ShiftRight: next_state = S_PrintNew;
+	S_PrintNew: next_state =  madesquare ? S_Done : S_PrintNew ;
+	S_Done: next_state = enable1? S_DeleteOld: S_Done;
+	default:
+		next_state=S_StartAnimation;
+		
+	endcase
+			
 	 always @(*)
 	 begin: state_table
 		case(current_state)
-			S_LOAD_X: next_state = go ? S_LOAD_X_WAIT : S_LOAD_X;
-			S_LOAD_X_WAIT: next_state = go ? S_LOAD_X_WAIT: S_LOAD_Y;
-			S_LOAD_Y: next_state = go ? S_LOAD_Y_WAIT : S_LOAD_Y;
-			S_LOAD_Y_WAIT: next_state = plot ? S_LOAD_Y_WAIT: S_PLOT;
-			S_PLOT: next_state = S_LOAD_X;
-		endcase
-	 end
-	 
+			S_RES
+
+
+	S_PrintNew: next_state =  madesquare ? S_Done : S_PrintNew ;
+			
+			S_Done: next_state = enable1? S_DeleteOld: S_Done;
+			
 	 always @(*)
 	 begin: enable
 		ld_plot = 1'b0;
@@ -163,9 +216,18 @@ module control(
 		ld_y = 1'b0;
 		case(current_state)
 		
-			S_LOAD_X: ld_x = 1'b1;
-			S_LOAD_Y: ld_y = 1'b1;
-			S_PLOT: ld_plot = 1'b1;
+			S_LOAD_X: 
+				begin 
+					ld_x = 1'b1;
+				end
+			S_LOAD_Y: 
+				begin
+					ld_y = 1'b1;
+				end
+			S_PLOT: 
+				begin 
+					ld_plot = 1'b1;
+				end
 			
 		endcase
 	end
@@ -185,18 +247,20 @@ module datapath(
 	input go,
 	input [2:0] colour, 
 	input reset,
-	input [6:0] data_in,
+	input [8:0] xloc,
+	input [7:0] yloc,
 	input ld_black, ld_x, ld_y, ld_plot,
-	output reg [7:0] X, 
-	output reg [6:0] Y,
-	output reg [2:0] Colour
+	output reg [8:0] X, 
+	output reg [7:0] Y,
+	output reg [2:0] Colour,
+	output reg [9:0] counter
 );
 		
-	 reg [15:0] blackcounter;
-	 reg [4:0] counter;
-	 reg [7:0] xx;
-	 reg [6:0] yy;
-
+		 reg [17:0] blackcounter;
+		 reg [8:0] xx;
+		 reg [7:0] yy;
+	 
+	 
 	 
 	 always@(posedge clk)
     begin: states
@@ -204,8 +268,8 @@ module datapath(
 					Colour <= 3'b0;
         else if(!reset)
 				begin
-					xx <= 8'b0;
-					yy <= 7'b0;
+					xx <= 9'b0;
+					yy <= 8'b0;
 					Colour <= 3'b0;
 					
 				end
@@ -219,29 +283,25 @@ module datapath(
 	 end 
 	always@(posedge clk)
 		begin: square
-			
-			if(ld_black)
-						begin
-							if(!reset)
-								blackcounter <= 15'b0;
-							else if(blackcounter < 15'b111111111111111)
-								begin
-									X <= blackcounter[7:0];
-									Y <= blackcounter[15:8];
-									blackcounter <= blackcounter + 1'b1;
-								end
-							
-						end
-			else if(ld_plot)
+			if(!reset)
 				begin
-					if(!reset)
-						begin
-							counter <= 5'b0000;
+					counter <= 5'b0;
 							X <= 8'b0;
 							Y <= 7'b0;
 							blackcounter <= 15'b0;
+				end
+			else if(ld_black)
+				begin
+					if(blackcounter < 17'b1)
+						begin
+							X <= blackcounter[8:0];
+							Y <= blackcounter[17:9];
+							blackcounter <= blackcounter + 1'b1;
 						end
-					else if(counter <= 5'b01111)
+				end
+		else if(ld_plot)
+		begin
+				 if(counter < 10'd256)
 						begin
 							X<= xx + counter[1:0];
 							blackcounter <= 15'b0;
@@ -250,7 +310,7 @@ module datapath(
 						end
 					else
 						begin
-							counter <= 5'b00000;
+							counter <= 10'b0;
 							X <= xx;
 							Y <= yy;
 
@@ -259,15 +319,33 @@ module datapath(
 
 			else
 				begin
-					if(xx>=8'd156)
-						X <= 8'd156;
+					if(xx>=8'd316)
+						X <= 8'd316;
 					else	
 						X <= xx;
 						
-					if(yy >= 7'd116)
-						Y <= 7'd116;
-					else 	
+					if(yy >= 7'd236)
+						Y <= 7'd236;
+					else 
 						Y <= yy;
 				end
 		end
 endmodule 
+
+module RateDivider(clock, reset, d, q);
+	input clock;
+	input reset;
+	
+	input [25:0] d;
+	output reg [25:0] q;
+	
+	always @(posedge clock)
+	begin
+		if(!reset)
+			q <= 0;
+		else if(q == 0)
+			q <= d;
+		else 
+			q <= q - 1'b1;
+	end
+endmodule
