@@ -20,7 +20,7 @@ module toplevel(CLOCK_50, KEY, AUD_ADCDAT,
 	wire [7:0] memory_address_song;
 	wire [31:0] song_data_out;
 	output [31:0] song_data;
-	ram32x4 r1(.address(memory_address_song), .clock(CLOCK_50), .data(32'b0), .wren(1'b0), .q(song_data_out)); //enables read - only.
+
 	
 	//song_data = song_data_out;
 	
@@ -53,12 +53,40 @@ module toplevel(CLOCK_50, KEY, AUD_ADCDAT,
 
 	
 	//other assignments:
-	assign read_audio_in			= audio_in_available & audio_out_allowed;
-
-	assign left_channel_audio_out	= left_channel_audio_in + song_data_out;
-	assign right_channel_audio_out	= right_channel_audio_in + song_data_out;
-	assign write_audio_out			= audio_in_available & audio_out_allowed;
-
+	ram32x4 r1(.address(memory_address_song), .clock(CLOCK_50), .data(32'b0), .wren(1'b0), .q(song_data_out)); //enables read - only.
+	assign audio_in_available = 1'b1;
+	
+	assign left_channel_audio_out = 32'd10000000;
+	assign right_channel_audio_out = 32'd10000000;
+	
+	assign write_audio_out = 0;
+	assign audio_out_allowed = 1;
+	
+	//assign left_channel_audio_in; //nani
+	//assign right_channel_audio_in;
+	//assign read_audio_in = 1'b1; //pulse this
+//	reg [10:0] counter = 11'b0; 
+//	reg enable_read; 
+//	//counter 
+//	
+//	always @(posedge CLOCK_50)
+//	begin
+//		if (~KEY[0]) begin
+//			counter <= 0;  
+//			enable_read <= 1'b0; //pulse this
+//		end
+//		if (counter <= 11'b01000100010) begin 
+//			counter <= counter + 1;
+//			enable_read <= 1'b0; //pulse this
+//		end 
+//		
+//		if (counter == 11'b01000100010) begin
+//			counter <= 0;
+//			enable_read <= 1'b1; //pulse this
+//		end
+//	end 
+		
+	assign read_audio_in = 1'b1;
 	
 	Audio_Controller Audio_Controller (
 	// Inputs
@@ -94,6 +122,7 @@ module toplevel(CLOCK_50, KEY, AUD_ADCDAT,
 );
 
 endmodule
+
 
 //module ram32x4 (
 //	address,
