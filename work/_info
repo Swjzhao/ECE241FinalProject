@@ -9,21 +9,21 @@ z2
 cModel Technology
 Z0 dC:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject
 vcontrol
-Z1 !s110 1542002569
+Z1 !s110 1542175325
 !i10b 1
-!s100 2FXd<BhN48nK;LZiXAL>j3
-IJF0]n;GIOeAo_[Wk_cVF]0
+!s100 ZmETF>e`A3bdIgfAYSEe62
+IU18n0ZP1eI?TH[;d?;oN_0
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-Z3 w1542002401
+Z3 w1542175002
 Z4 8ECE241FinalProject.v
 Z5 FECE241FinalProject.v
-L0 135
+L0 148
 Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1542002569.000000
+Z7 !s108 1542175325.000000
 Z8 !s107 ECE241FinalProject.v|
 Z9 !s90 -reportprogress|300|ECE241FinalProject.v|
 !i113 1
@@ -31,14 +31,14 @@ Z10 tCvgOpt 0
 vdatapath
 R1
 !i10b 1
-!s100 j2LDeKnz5o;g2lb?NeFCH1
-IBDYfBlb8fDd;MNgGL;?W00
+!s100 PlTOGL?<jlJMU6OSacXm51
+II4e=>UCAXPO7J==JRa`?B1
 R2
 R0
 R3
 R4
 R5
-L0 196
+L0 217
 R6
 r1
 !s85 0
@@ -48,17 +48,38 @@ R8
 R9
 !i113 1
 R10
+vloadImage
+R1
+!i10b 1
+!s100 CimEn]AY<YWYafzGa]hYn3
+Ifg=efCTnbMFJjOf>UL4@z0
+R2
+R0
+R3
+R4
+R5
+L0 408
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+nload@image
 vpart2
 R1
 !i10b 1
-!s100 iAdghdJl0cGnf2`JW2NIn2
-IfHgdllm@Ml@[cfiUL6dE12
+!s100 BE<;8QzS;TaT;3aNK]DXj3
+Icd<L4>ZkizYlLBSgS`o]:1
 R2
 R0
 R3
 R4
 R5
-L0 89
+L0 88
 R6
 r1
 !s85 0
@@ -68,11 +89,74 @@ R8
 R9
 !i113 1
 R10
+vramGraphics
+!s110 1542082526
+!i10b 1
+!s100 LAcMJY?0Dh=h5Pe69D`=K3
+IY@;L6mb8^ZRCzQG4gDLTJ2
+R2
+R0
+w1542082501
+R4
+R5
+L0 390
+R6
+r1
+!s85 0
+31
+!s108 1542082526.000000
+R8
+R9
+!i113 1
+R10
+nram@graphics
+vrandNum
+R1
+!i10b 1
+!s100 e0mEP;[nm2T4SDfW2kYT=2
+I2M1l?n[IQ7I3bUO@b2AhF3
+R2
+R0
+R3
+R4
+R5
+L0 364
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+nrand@num
+vRateDivider
+R1
+!i10b 1
+!s100 bV8]ZF?TRc[ja4kXWbS:j2
+IF3cJS^61khC?9R_[03U`03
+R2
+R0
+R3
+R4
+R5
+L0 426
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+n@rate@divider
 vtop
 R1
 !i10b 1
-!s100 HPJ;jF4MdDcFo=?:^55]?2
-Ig[PLgJ;PP=E?0Dj;VQ5W=3
+!s100 <d1Ln0hYSP5eiZ9h?RzTe1
+IZ9iX:JK1Ng?0HC=7iYk3a1
 R2
 R0
 R3
