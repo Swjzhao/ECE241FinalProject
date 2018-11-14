@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Mon Nov 12 01:56:12 2018
+Analysis & Synthesis Status : Successful - Wed Nov 14 00:41:22 2018
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 Revision Name : ramtest
 Top-level Entity Name : toplevel
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 87
-Total pins : 42
+Total registers : 145
+Total pins : 46
 Total virtual pins : 0
-Total block memory bits : 8,192
+Total block memory bits : 2,105,344
 Total DSP Blocks : 0
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0

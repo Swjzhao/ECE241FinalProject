@@ -10,9 +10,9 @@ AUD_BCLK <> Audio_Controller:Audio_Controller.AUD_BCLK
 AUD_ADCLRCK <> Audio_Controller:Audio_Controller.AUD_ADCLRCK
 AUD_DACLRCK <> Audio_Controller:Audio_Controller.AUD_DACLRCK
 FPGA_I2C_SDAT <> avconf:avc.FPGA_I2C_SDAT
-AUD_XCK << Audio_Controller:Audio_Controller.AUD_XCK
-AUD_DACDAT << Audio_Controller:Audio_Controller.AUD_DACDAT
-FPGA_I2C_SCLK << avconf:avc.FPGA_I2C_SCLK
+AUD_XCK <= Audio_Controller:Audio_Controller.AUD_XCK
+AUD_DACDAT <= Audio_Controller:Audio_Controller.AUD_DACDAT
+FPGA_I2C_SCLK <= avconf:avc.FPGA_I2C_SCLK
 SW[0] => Equal0.IN37
 SW[0] => Equal1.IN31
 SW[1] => Equal0.IN36

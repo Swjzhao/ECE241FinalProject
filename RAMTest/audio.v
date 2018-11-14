@@ -1,5 +1,5 @@
 
-module toplevel(CLOCK_50, KEY, AUD_ADCDAT,
+module toplevel(CLOCK_50, SW, KEY, AUD_ADCDAT,
 
 	// Bidirectionals
 	AUD_BCLK,
@@ -15,6 +15,7 @@ module toplevel(CLOCK_50, KEY, AUD_ADCDAT,
 	FPGA_I2C_SCLK, song_data);
 
 	input CLOCK_50;
+	input [3:0] SW;
 	input [0:0] KEY;
 
 	wire [7:0] memory_address_song;
@@ -50,43 +51,60 @@ module toplevel(CLOCK_50, KEY, AUD_ADCDAT,
 	wire		[31:0]	left_channel_audio_out;
 	wire		[31:0]	right_channel_audio_out;
 	wire				write_audio_out;
+	
+	//Internal Registers: 
+	//reg [10:0] delay_cnt;
+	//wire [10:0] delay;
+
+	//reg snd;
+	
+	//counter
+//	always @(posedge CLOCK_50)
+//	if(delay_cnt == delay) begin
+//		delay_cnt <= 0;
+//		snd <= !snd; //pulse
+//	end else delay_cnt <= delay_cnt + 1;
+//assign delay = 11'd1042; //constant audio output/ 
+/*****************************************************************************
+ *                            Combinational Logic                            *
+ *****************************************************************************/
+ 
+	reg [15:0] address;
+	reg [15:0] counter;
+	//audio_out_allowed is technically the enable signal
+	
+	//values to set to one: 
+	assign write_audio_out = 1'b1;
+	
+	always @(posedge CLOCK_50) begin
+		if(~KEY[0]) begin
+		address <= 16'd0;
+		counter <= 16'd0;
+		end
+		if (audio_out_allowed) begin
+			address <= counter; 
+			counter <= counter + 16'd1;
+		end
+	  if (counter == 16'b1011101101111111) counter <= 16'd0;	
+	  if (audio_out_allowed == 0) begin
+	  counter <= counter + 16'd0; //extra safety
+	  address <= address + 16'd0; //does nothing.
+	  end
+	end
+	
+	//reads address bit by bit
+	ram32x4 r1(.address(address), .clock(CLOCK_50), .data(32'b0), .wren(1'b0), .q(song_data_out)); //enables read - only.
+	
+	assign left_channel_audio_out	= song_data_out;
+	assign right_channel_audio_out = song_data_out;
 
 	
-	//other assignments:
-	ram32x4 r1(.address(memory_address_song), .clock(CLOCK_50), .data(32'b0), .wren(1'b0), .q(song_data_out)); //enables read - only.
-	assign audio_in_available = 1'b1;
-	
-	assign left_channel_audio_out = 32'd10000000;
-	assign right_channel_audio_out = 32'd10000000;
-	
-	assign write_audio_out = 0;
-	assign audio_out_allowed = 1;
-	
-	//assign left_channel_audio_in; //nani
-	//assign right_channel_audio_in;
-	//assign read_audio_in = 1'b1; //pulse this
-//	reg [10:0] counter = 11'b0; 
-//	reg enable_read; 
-//	//counter 
-//	
-//	always @(posedge CLOCK_50)
-//	begin
-//		if (~KEY[0]) begin
-//			counter <= 0;  
-//			enable_read <= 1'b0; //pulse this
-//		end
-//		if (counter <= 11'b01000100010) begin 
-//			counter <= counter + 1;
-//			enable_read <= 1'b0; //pulse this
-//		end 
-//		
-//		if (counter == 11'b01000100010) begin
-//			counter <= 0;
-//			enable_read <= 1'b1; //pulse this
-//		end
-//	end 
-		
-	assign read_audio_in = 1'b1;
+	//fuck my ass setting these to 0.
+	assign read_audio_in = 1'b0;
+	assign audio_in_available = 1'b0;
+	assign left_channel_audio_in = 1'b0;
+	assign right_channel_audio_in = 1'b0;
+
 	
 	Audio_Controller Audio_Controller (
 	// Inputs
@@ -123,7 +141,20 @@ module toplevel(CLOCK_50, KEY, AUD_ADCDAT,
 
 endmodule
 
+//old code 
+//assign read_audio_in	= snd? audio_in_available & audio_out_allowed : 0;
+//assign write_audio_out			= audio_in_available & audio_out_allowed;
 
+	//assign write_audio_out = 0;
+	//assign audio_out_allowed = 1'b1;
+	
+	//assign audio_read_in = 1'b1;
+	
+	//assign left_channel_audio_in; //nani
+	//assign right_channel_audio_in;
+	//assign read_audio_in = 1'b1; //pulse this
+
+	
 //module ram32x4 (
 //	address,
 //	clock,
