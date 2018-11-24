@@ -1,4 +1,4 @@
-Analysis & Synthesis Status : Successful - Thu Nov 22 18:32:30 2018
+Analysis & Synthesis Status : Successful - Fri Nov 23 21:51:24 2018
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 Revision Name : AudioV5
 Top-level Entity Name : DE1_SoC_Audio_Example
@@ -7,7 +7,7 @@ Logic utilization (in ALMs) : N/A
 Total registers : 352
 Total pins : 59
 Total virtual pins : 0
-Total block memory bits : 19,063
+Total block memory bits : 20,051
 Total DSP Blocks : 0
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0

@@ -76,24 +76,19 @@ reg [18:0] delay_cnt2;
 wire [18:0] delay2;
 
 reg snd;
-reg snd2;
-
-reg [15:0] freq;
-reg [18:0] octaveFreq;
 
 reg [15:0] freq2;
-
-wire [19:0] audioFreq; // output of the ram
-reg [26:0] beatCount;
+wire [19:0] audio_out; // output of the ram
+reg [26:0] frequency_counter;
 reg [9:0] address;
 wire reset = ~KEY[0];
 
-testram test(.address(address), .clock(CLOCK_50), .data(18'b0), .wren(1'b0), .q(audioFreq)); 
+testram test(.address(address), .clock(CLOCK_50), .data(18'b0), .wren(1'b0), .q(audio_out)); 
 hex_decoder h1(.hex_digit(address [3:0]), .segments(HEX0));
 hex_decoder h2(.hex_digit(address [7:4]), .segments(HEX1));
-hex_decoder h3(.hex_digit({2'b0, audioFreq [9:8]}), .segments(HEX2));
-//hex_decoder h4(.hex_digit(audioFreq [15:12]), .segments(HEX3));
-//hex_decoder h5(.hex_digit({2'b0, audioFreq [17:16]}), .segments(HEX4));
+hex_decoder h3(.hex_digit({2'b0, audio_out [9:8]}), .segments(HEX2));
+//hex_decoder h4(.hex_digit(audio_out [15:12]), .segments(HEX3));
+//hex_decoder h5(.hex_digit({2'b0, audio_out [17:16]}), .segments(HEX4));
 //hex_decoder h6(.hex_digit(3'd4), .segments(HEX5));
 
 // State Machine Registers
@@ -106,33 +101,35 @@ hex_decoder h3(.hex_digit({2'b0, audioFreq [9:8]}), .segments(HEX2));
 /*****************************************************************************
  *                             Sequential Logic                              *
  *****************************************************************************/
-
+//change this value 
+reg [20:0] mif_lines = 10'd193;
 
 always @(posedge CLOCK_50)
-	if(delay_cnt == delay) begin
-		delay_cnt <= 0;
-		snd <= !snd;
-	end else delay_cnt <= delay_cnt + 1;
+		if(delay_cnt == delay) begin
+			delay_cnt <= 0;
+			snd <= !snd;
+		end else delay_cnt <= delay_cnt + 1;
 
 // rate divider
 always @(posedge CLOCK_50) begin
-	if (beatCount == 27'd9500000) begin 
-		beatCount <= 27'b0;
-		if (reset)
-			address <= 0;
-		if (address < 10'd140);
-			address <= address + 1;
-		end
-	else 
-		beatCount <= beatCount + 1;
-end
+		if (reset) address <= 0;
+		if (frequency_counter == 27'd9200000) begin 
+			frequency_counter <= 27'b0;
+			if (address == mif_lines)
+				address <= 0;
+			if (address < mif_lines);
+				address <= address + 1;
+			end
 		
+		else 
+			frequency_counter <= frequency_counter + 1;
+	end
 
 /*****************************************************************************
  *                            Combinational Logic                            *
  *****************************************************************************/
 
-assign delay = audioFreq;
+assign delay = audio_out;
 
 wire [31:0] sound = (SW == 0) ? 0 : snd ? 32'd10000000 : -32'd10000000;
 
