@@ -1,5 +1,5 @@
 Analysis & Synthesis report for AudioV5
-Sat Nov 24 01:31:20 2018
+Sat Nov 24 01:46:33 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -21,7 +21,7 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
  13. General Register Statistics
  14. Inverted Register Statistics
  15. Multiplexer Restructuring Statistics (Restructuring Performed)
- 16. Source assignments for testram:test|altsyncram:altsyncram_component|altsyncram_i0p1:auto_generated
+ 16. Source assignments for testram:test|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated
  17. Source assignments for Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated|a_dpfifo_q2a1:dpfifo|altsyncram_n3i1:FIFOram
  18. Source assignments for Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated|a_dpfifo_q2a1:dpfifo|altsyncram_n3i1:FIFOram
  19. Source assignments for Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated|a_dpfifo_q2a1:dpfifo|altsyncram_n3i1:FIFOram
@@ -78,16 +78,16 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat Nov 24 01:31:20 2018       ;
+; Analysis & Synthesis Status     ; Successful - Sat Nov 24 01:46:33 2018       ;
 ; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                   ; AudioV5                                     ;
 ; Top-level Entity Name           ; DE1_SoC_Audio_Example                       ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 355                                         ;
+; Total registers                 ; 356                                         ;
 ; Total pins                      ; 59                                          ;
 ; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 21,058                                      ;
+; Total block memory bits         ; 21,172                                      ;
 ; Total DSP Blocks                ; 0                                           ;
 ; Total HSSI RX PCSs              ; 0                                           ;
 ; Total HSSI PMA RX Deserializers ; 0                                           ;
@@ -229,7 +229,7 @@ refer to the applicable agreement for further details.
 ; altrom.inc                        ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altrom.inc                              ;         ;
 ; altram.inc                        ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altram.inc                              ;         ;
 ; altdpram.inc                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altdpram.inc                            ;         ;
-; db/altsyncram_i0p1.tdf            ; yes             ; Auto-Generated Megafunction            ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/AudioV5/db/altsyncram_i0p1.tdf            ;         ;
+; db/altsyncram_g0p1.tdf            ; yes             ; Auto-Generated Megafunction            ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/AudioV5/db/altsyncram_g0p1.tdf            ;         ;
 ; Tokyo_Ghoul.mif                   ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/AudioV5/Tokyo_Ghoul.mif                   ;         ;
 ; scfifo.tdf                        ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/scfifo.tdf                              ;         ;
 ; a_regfifo.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/a_regfifo.inc                           ;         ;
@@ -257,20 +257,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 306            ;
+; Estimate of Logic utilization (ALMs needed) ; 310            ;
 ;                                             ;                ;
-; Combinational ALUT usage for logic          ; 507            ;
-;     -- 7 input functions                    ; 3              ;
-;     -- 6 input functions                    ; 95             ;
-;     -- 5 input functions                    ; 108            ;
-;     -- 4 input functions                    ; 40             ;
-;     -- <=3 input functions                  ; 261            ;
+; Combinational ALUT usage for logic          ; 512            ;
+;     -- 7 input functions                    ; 2              ;
+;     -- 6 input functions                    ; 99             ;
+;     -- 5 input functions                    ; 105            ;
+;     -- 4 input functions                    ; 43             ;
+;     -- <=3 input functions                  ; 263            ;
 ;                                             ;                ;
-; Dedicated logic registers                   ; 355            ;
+; Dedicated logic registers                   ; 356            ;
 ;                                             ;                ;
 ; I/O pins                                    ; 59             ;
 ; Total MLAB memory bits                      ; 0              ;
-; Total block memory bits                     ; 21058          ;
+; Total block memory bits                     ; 21172          ;
 ;                                             ;                ;
 ; Total DSP Blocks                            ; 0              ;
 ;                                             ;                ;
@@ -278,9 +278,9 @@ refer to the applicable agreement for further details.
 ;     -- PLLs                                 ; 1              ;
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 445            ;
-; Total fan-out                               ; 5567           ;
-; Average fan-out                             ; 4.92           ;
+; Maximum fan-out                             ; 446            ;
+; Total fan-out                               ; 5588           ;
+; Average fan-out                             ; 4.91           ;
 +---------------------------------------------+----------------+
 
 
@@ -289,14 +289,14 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+--------------+
 ; Compilation Hierarchy Node                                    ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                     ; Entity Name                     ; Library Name ;
 +---------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+--------------+
-; |DE1_SoC_Audio_Example                                        ; 507 (127)           ; 355 (58)                  ; 21058             ; 0          ; 59   ; 0            ; |DE1_SoC_Audio_Example                                                                                                                                                                                                                                  ; DE1_SoC_Audio_Example           ; work         ;
-;    |Audio_Controller:Audio_Controller|                        ; 265 (4)             ; 222 (4)                   ; 16384             ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller                                                                                                                                                                                                ; Audio_Controller                ; work         ;
-;       |Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer| ; 107 (5)             ; 108 (36)                  ; 8192              ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer                                                                                                                                          ; Altera_UP_Audio_In_Deserializer ; work         ;
+; |DE1_SoC_Audio_Example                                        ; 512 (128)           ; 356 (59)                  ; 21172             ; 0          ; 59   ; 0            ; |DE1_SoC_Audio_Example                                                                                                                                                                                                                                  ; DE1_SoC_Audio_Example           ; work         ;
+;    |Audio_Controller:Audio_Controller|                        ; 269 (4)             ; 222 (4)                   ; 16384             ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller                                                                                                                                                                                                ; Audio_Controller                ; work         ;
+;       |Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer| ; 109 (5)             ; 108 (36)                  ; 8192              ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer                                                                                                                                          ; Altera_UP_Audio_In_Deserializer ; work         ;
 ;          |Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter|  ; 9 (9)               ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter                                                                                        ; Altera_UP_Audio_Bit_Counter     ; work         ;
-;          |Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|     ; 46 (0)              ; 33 (0)                    ; 4096              ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO                                                                                           ; Altera_UP_SYNC_FIFO             ; work         ;
-;             |scfifo:Sync_FIFO|                                ; 46 (0)              ; 33 (0)                    ; 4096              ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO                                                                          ; scfifo                          ; work         ;
-;                |scfifo_7ba1:auto_generated|                   ; 46 (0)              ; 33 (0)                    ; 4096              ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated                                               ; scfifo_7ba1                     ; work         ;
-;                   |a_dpfifo_q2a1:dpfifo|                      ; 46 (24)             ; 33 (13)                   ; 4096              ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated|a_dpfifo_q2a1:dpfifo                          ; a_dpfifo_q2a1                   ; work         ;
+;          |Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|     ; 48 (0)              ; 33 (0)                    ; 4096              ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO                                                                                           ; Altera_UP_SYNC_FIFO             ; work         ;
+;             |scfifo:Sync_FIFO|                                ; 48 (0)              ; 33 (0)                    ; 4096              ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO                                                                          ; scfifo                          ; work         ;
+;                |scfifo_7ba1:auto_generated|                   ; 48 (0)              ; 33 (0)                    ; 4096              ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated                                               ; scfifo_7ba1                     ; work         ;
+;                   |a_dpfifo_q2a1:dpfifo|                      ; 48 (26)             ; 33 (13)                   ; 4096              ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated|a_dpfifo_q2a1:dpfifo                          ; a_dpfifo_q2a1                   ; work         ;
 ;                      |altsyncram_n3i1:FIFOram|                ; 0 (0)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated|a_dpfifo_q2a1:dpfifo|altsyncram_n3i1:FIFOram  ; altsyncram_n3i1                 ; work         ;
 ;                      |cntr_h2b:rd_ptr_msb|                    ; 7 (7)               ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated|a_dpfifo_q2a1:dpfifo|cntr_h2b:rd_ptr_msb      ; cntr_h2b                        ; work         ;
 ;                      |cntr_i2b:wr_ptr|                        ; 8 (8)               ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated|a_dpfifo_q2a1:dpfifo|cntr_i2b:wr_ptr          ; cntr_i2b                        ; work         ;
@@ -309,19 +309,19 @@ refer to the applicable agreement for further details.
 ;                      |cntr_h2b:rd_ptr_msb|                    ; 7 (7)               ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated|a_dpfifo_q2a1:dpfifo|cntr_h2b:rd_ptr_msb     ; cntr_h2b                        ; work         ;
 ;                      |cntr_i2b:wr_ptr|                        ; 8 (8)               ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated|a_dpfifo_q2a1:dpfifo|cntr_i2b:wr_ptr         ; cntr_i2b                        ; work         ;
 ;                      |cntr_u27:usedw_counter|                 ; 7 (7)               ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated|a_dpfifo_q2a1:dpfifo|cntr_u27:usedw_counter  ; cntr_u27                        ; work         ;
-;       |Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|   ; 151 (57)            ; 104 (38)                  ; 8192              ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer                                                                                                                                            ; Altera_UP_Audio_Out_Serializer  ; work         ;
-;          |Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|    ; 47 (0)              ; 33 (0)                    ; 4096              ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO                                                                                            ; Altera_UP_SYNC_FIFO             ; work         ;
-;             |scfifo:Sync_FIFO|                                ; 47 (0)              ; 33 (0)                    ; 4096              ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO                                                                           ; scfifo                          ; work         ;
-;                |scfifo_7ba1:auto_generated|                   ; 47 (0)              ; 33 (0)                    ; 4096              ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated                                                ; scfifo_7ba1                     ; work         ;
-;                   |a_dpfifo_q2a1:dpfifo|                      ; 47 (25)             ; 33 (13)                   ; 4096              ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated|a_dpfifo_q2a1:dpfifo                           ; a_dpfifo_q2a1                   ; work         ;
+;       |Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|   ; 153 (57)            ; 104 (38)                  ; 8192              ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer                                                                                                                                            ; Altera_UP_Audio_Out_Serializer  ; work         ;
+;          |Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|    ; 48 (0)              ; 33 (0)                    ; 4096              ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO                                                                                            ; Altera_UP_SYNC_FIFO             ; work         ;
+;             |scfifo:Sync_FIFO|                                ; 48 (0)              ; 33 (0)                    ; 4096              ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO                                                                           ; scfifo                          ; work         ;
+;                |scfifo_7ba1:auto_generated|                   ; 48 (0)              ; 33 (0)                    ; 4096              ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated                                                ; scfifo_7ba1                     ; work         ;
+;                   |a_dpfifo_q2a1:dpfifo|                      ; 48 (26)             ; 33 (13)                   ; 4096              ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated|a_dpfifo_q2a1:dpfifo                           ; a_dpfifo_q2a1                   ; work         ;
 ;                      |altsyncram_n3i1:FIFOram|                ; 0 (0)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated|a_dpfifo_q2a1:dpfifo|altsyncram_n3i1:FIFOram   ; altsyncram_n3i1                 ; work         ;
 ;                      |cntr_h2b:rd_ptr_msb|                    ; 7 (7)               ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated|a_dpfifo_q2a1:dpfifo|cntr_h2b:rd_ptr_msb       ; cntr_h2b                        ; work         ;
 ;                      |cntr_i2b:wr_ptr|                        ; 8 (8)               ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated|a_dpfifo_q2a1:dpfifo|cntr_i2b:wr_ptr           ; cntr_i2b                        ; work         ;
 ;                      |cntr_u27:usedw_counter|                 ; 7 (7)               ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated|a_dpfifo_q2a1:dpfifo|cntr_u27:usedw_counter    ; cntr_u27                        ; work         ;
-;          |Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|   ; 47 (0)              ; 33 (0)                    ; 4096              ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO                                                                                           ; Altera_UP_SYNC_FIFO             ; work         ;
-;             |scfifo:Sync_FIFO|                                ; 47 (0)              ; 33 (0)                    ; 4096              ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO                                                                          ; scfifo                          ; work         ;
-;                |scfifo_7ba1:auto_generated|                   ; 47 (0)              ; 33 (0)                    ; 4096              ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated                                               ; scfifo_7ba1                     ; work         ;
-;                   |a_dpfifo_q2a1:dpfifo|                      ; 47 (25)             ; 33 (13)                   ; 4096              ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated|a_dpfifo_q2a1:dpfifo                          ; a_dpfifo_q2a1                   ; work         ;
+;          |Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|   ; 48 (0)              ; 33 (0)                    ; 4096              ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO                                                                                           ; Altera_UP_SYNC_FIFO             ; work         ;
+;             |scfifo:Sync_FIFO|                                ; 48 (0)              ; 33 (0)                    ; 4096              ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO                                                                          ; scfifo                          ; work         ;
+;                |scfifo_7ba1:auto_generated|                   ; 48 (0)              ; 33 (0)                    ; 4096              ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated                                               ; scfifo_7ba1                     ; work         ;
+;                   |a_dpfifo_q2a1:dpfifo|                      ; 48 (26)             ; 33 (13)                   ; 4096              ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated|a_dpfifo_q2a1:dpfifo                          ; a_dpfifo_q2a1                   ; work         ;
 ;                      |altsyncram_n3i1:FIFOram|                ; 0 (0)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated|a_dpfifo_q2a1:dpfifo|altsyncram_n3i1:FIFOram  ; altsyncram_n3i1                 ; work         ;
 ;                      |cntr_h2b:rd_ptr_msb|                    ; 7 (7)               ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated|a_dpfifo_q2a1:dpfifo|cntr_h2b:rd_ptr_msb      ; cntr_h2b                        ; work         ;
 ;                      |cntr_i2b:wr_ptr|                        ; 8 (8)               ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated|a_dpfifo_q2a1:dpfifo|cntr_i2b:wr_ptr          ; cntr_i2b                        ; work         ;
@@ -337,9 +337,9 @@ refer to the applicable agreement for further details.
 ;    |hex_decoder:h1|                                           ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|hex_decoder:h1                                                                                                                                                                                                                   ; hex_decoder                     ; work         ;
 ;    |hex_decoder:h2|                                           ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|hex_decoder:h2                                                                                                                                                                                                                   ; hex_decoder                     ; work         ;
 ;    |hex_decoder:h3|                                           ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|hex_decoder:h3                                                                                                                                                                                                                   ; hex_decoder                     ; work         ;
-;    |testram:test|                                             ; 0 (0)               ; 0 (0)                     ; 4674              ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|testram:test                                                                                                                                                                                                                     ; testram                         ; work         ;
-;       |altsyncram:altsyncram_component|                       ; 0 (0)               ; 0 (0)                     ; 4674              ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|testram:test|altsyncram:altsyncram_component                                                                                                                                                                                     ; altsyncram                      ; work         ;
-;          |altsyncram_i0p1:auto_generated|                     ; 0 (0)               ; 0 (0)                     ; 4674              ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|testram:test|altsyncram:altsyncram_component|altsyncram_i0p1:auto_generated                                                                                                                                                      ; altsyncram_i0p1                 ; work         ;
+;    |testram:test|                                             ; 0 (0)               ; 0 (0)                     ; 4788              ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|testram:test                                                                                                                                                                                                                     ; testram                         ; work         ;
+;       |altsyncram:altsyncram_component|                       ; 0 (0)               ; 0 (0)                     ; 4788              ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|testram:test|altsyncram:altsyncram_component                                                                                                                                                                                     ; altsyncram                      ; work         ;
+;          |altsyncram_g0p1:auto_generated|                     ; 0 (0)               ; 0 (0)                     ; 4788              ; 0          ; 0    ; 0            ; |DE1_SoC_Audio_Example|testram:test|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated                                                                                                                                                      ; altsyncram_g0p1                 ; work         ;
 +---------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -353,7 +353,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated|a_dpfifo_q2a1:dpfifo|altsyncram_n3i1:FIFOram|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 128          ; 32           ; 128          ; 32           ; 4096 ; None            ;
 ; Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated|a_dpfifo_q2a1:dpfifo|altsyncram_n3i1:FIFOram|ALTSYNCRAM   ; AUTO ; Simple Dual Port ; 128          ; 32           ; 128          ; 32           ; 4096 ; None            ;
 ; Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated|a_dpfifo_q2a1:dpfifo|altsyncram_n3i1:FIFOram|ALTSYNCRAM  ; AUTO ; Simple Dual Port ; 128          ; 32           ; 128          ; 32           ; 4096 ; None            ;
-; testram:test|altsyncram:altsyncram_component|altsyncram_i0p1:auto_generated|ALTSYNCRAM                                                                                                                                                      ; AUTO ; Single Port      ; 246          ; 20           ; --           ; --           ; 4920 ; Tokyo_Ghoul.mif ;
+; testram:test|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ALTSYNCRAM                                                                                                                                                      ; AUTO ; Single Port      ; 252          ; 20           ; --           ; --           ; 5040 ; Tokyo_Ghoul.mif ;
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+-----------------+
 
 
@@ -383,21 +383,19 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------------------------------------------------+
 ; Register name                                ; Reason for Removal                              ;
 +----------------------------------------------+-------------------------------------------------+
-; limit[9]                                     ; Stuck at GND due to stuck port data_in          ;
-; limit[7]                                     ; Stuck at VCC due to stuck port data_in          ;
-; limit[0..5,11,12,15]                         ; Stuck at GND due to stuck port data_in          ;
-; limit[18]                                    ; Stuck at VCC due to stuck port data_in          ;
-; limit[24..26]                                ; Stuck at GND due to stuck port data_in          ;
 ; avconf:avc|mI2C_DATA[16,17,19,23]            ; Stuck at GND due to stuck port data_in          ;
 ; avconf:avc|I2C_Controller:u0|SD[16,17,19,23] ; Stuck at GND due to stuck port data_in          ;
-; limit[8,14,19,23]                            ; Merged with limit[13]                           ;
-; limit[6,16,17,20..22]                        ; Merged with limit[10]                           ;
+; limit[18]                                    ; Merged with limit[7]                            ;
+; limit[10,16,17,20..22]                       ; Merged with limit[6]                            ;
+; limit[0..4,9,11,12,15,24..26]                ; Merged with limit[5]                            ;
+; limit[13,14,19,23]                           ; Merged with limit[8]                            ;
 ; avconf:avc|I2C_Controller:u0|SD[20,21]       ; Merged with avconf:avc|I2C_Controller:u0|SD[18] ;
 ; avconf:avc|mI2C_DATA[20,21]                  ; Merged with avconf:avc|mI2C_DATA[18]            ;
-; limit[10]                                    ; Merged with limit[13]                           ;
+; limit[5]                                     ; Stuck at GND due to stuck port data_in          ;
+; limit[7]                                     ; Stuck at VCC due to stuck port data_in          ;
 ; avconf:avc|mSetup_ST~9                       ; Lost fanout                                     ;
 ; avconf:avc|mSetup_ST~10                      ; Lost fanout                                     ;
-; Total Number of Removed Registers = 40       ;                                                 ;
+; Total Number of Removed Registers = 39       ;                                                 ;
 +----------------------------------------------+-------------------------------------------------+
 
 
@@ -422,7 +420,7 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 355   ;
+; Total registers                              ; 356   ;
 ; Number of registers using Synchronous Clear  ; 238   ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 39    ;
@@ -444,7 +442,7 @@ Encoding Type:  One-Hot
 ; avconf:avc|I2C_Controller:u0|SD_COUNTER[2] ; 21      ;
 ; avconf:avc|I2C_Controller:u0|SD_COUNTER[1] ; 19      ;
 ; avconf:avc|I2C_Controller:u0|SD_COUNTER[0] ; 28      ;
-; limit[13]                                  ; 4       ;
+; limit[8]                                   ; 2       ;
 ; avconf:avc|I2C_Controller:u0|END           ; 5       ;
 ; avconf:avc|I2C_Controller:u0|SDO           ; 2       ;
 ; Total number of inverted registers = 10    ;         ;
@@ -456,16 +454,17 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                                                      ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|data_in_shift_reg[22]                                            ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter|bit_counter[2] ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |DE1_SoC_Audio_Example|address[9]                                                                                                                                               ;
-; 6:1                ; 31 bits   ; 124 LEs       ; 62 LEs               ; 62 LEs                 ; Yes        ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|data_out_shift_reg[6]                                              ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |DE1_SoC_Audio_Example|avconf:avc|I2C_Controller:u0|SD_COUNTER[2]                                                                                                               ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|data_in_shift_reg[19]                                            ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter|bit_counter[4] ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |DE1_SoC_Audio_Example|address[1]                                                                                                                                               ;
+; 6:1                ; 31 bits   ; 124 LEs       ; 62 LEs               ; 62 LEs                 ; Yes        ; |DE1_SoC_Audio_Example|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|data_out_shift_reg[28]                                             ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |DE1_SoC_Audio_Example|limit[7]                                                                                                                                                 ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |DE1_SoC_Audio_Example|avconf:avc|I2C_Controller:u0|SD_COUNTER[0]                                                                                                               ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------+
-; Source assignments for testram:test|altsyncram:altsyncram_component|altsyncram_i0p1:auto_generated ;
+; Source assignments for testram:test|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated ;
 +---------------------------------+--------------------+------+--------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                   ;
 +---------------------------------+--------------------+------+--------------------------------------+
@@ -523,7 +522,7 @@ Encoding Type:  One-Hot
 ; OPERATION_MODE                     ; SINGLE_PORT          ; Untyped                       ;
 ; WIDTH_A                            ; 20                   ; Signed Integer                ;
 ; WIDTHAD_A                          ; 8                    ; Signed Integer                ;
-; NUMWORDS_A                         ; 246                  ; Signed Integer                ;
+; NUMWORDS_A                         ; 252                  ; Signed Integer                ;
 ; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                       ;
 ; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                       ;
 ; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                       ;
@@ -565,7 +564,7 @@ Encoding Type:  One-Hot
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                       ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                       ;
 ; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                       ;
-; CBXI_PARAMETER                     ; altsyncram_i0p1      ; Untyped                       ;
+; CBXI_PARAMETER                     ; altsyncram_g0p1      ; Untyped                       ;
 +------------------------------------+----------------------+-------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1182,7 +1181,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Entity Instance                           ; testram:test|altsyncram:altsyncram_component ;
 ;     -- OPERATION_MODE                     ; SINGLE_PORT                                  ;
 ;     -- WIDTH_A                            ; 20                                           ;
-;     -- NUMWORDS_A                         ; 246                                          ;
+;     -- NUMWORDS_A                         ; 252                                          ;
 ;     -- OUTDATA_REG_A                      ; UNREGISTERED                                 ;
 ;     -- WIDTH_B                            ; 1                                            ;
 ;     -- NUMWORDS_B                         ; 1                                            ;
@@ -1321,36 +1320,36 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 355                         ;
+; arriav_ff             ; 356                         ;
 ;     CLR               ; 19                          ;
 ;     CLR SCLR          ; 16                          ;
 ;     ENA               ; 40                          ;
 ;     ENA CLR           ; 4                           ;
 ;     ENA SCLR          ; 153                         ;
 ;     SCLR              ; 69                          ;
-;     plain             ; 54                          ;
+;     plain             ; 55                          ;
 ; arriav_io_obuf        ; 4                           ;
-; arriav_lcell_comb     ; 510                         ;
+; arriav_lcell_comb     ; 515                         ;
 ;     arith             ; 212                         ;
 ;         1 data inputs ; 140                         ;
 ;         2 data inputs ; 28                          ;
 ;         3 data inputs ; 44                          ;
-;     extend            ; 3                           ;
-;         7 data inputs ; 3                           ;
-;     normal            ; 295                         ;
+;     extend            ; 2                           ;
+;         7 data inputs ; 2                           ;
+;     normal            ; 301                         ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 4                           ;
-;         2 data inputs ; 25                          ;
-;         3 data inputs ; 22                          ;
-;         4 data inputs ; 40                          ;
-;         5 data inputs ; 108                         ;
-;         6 data inputs ; 95                          ;
+;         2 data inputs ; 26                          ;
+;         3 data inputs ; 23                          ;
+;         4 data inputs ; 43                          ;
+;         5 data inputs ; 105                         ;
+;         6 data inputs ; 99                          ;
 ; boundary_port         ; 59                          ;
 ; generic_pll           ; 1                           ;
 ; stratixv_ram_block    ; 147                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.20                        ;
-; Average LUT depth     ; 1.89                        ;
+; Average LUT depth     ; 1.91                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1369,7 +1368,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Sat Nov 24 01:31:04 2018
+    Info: Processing started: Sat Nov 24 01:46:12 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off AudioV5 -c AudioV5
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1391,16 +1390,16 @@ Info (12021): Found 1 design units, including 1 entities, in source file avconf.
     Info (12023): Found entity 1: avconf File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/AudioV5/avconf.v Line: 1
 Info (12021): Found 2 design units, including 2 entities, in source file de1_soc_audio_example.v
     Info (12023): Found entity 1: DE1_SoC_Audio_Example File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/AudioV5/DE1_SoC_Audio_Example.v Line: 2
-    Info (12023): Found entity 2: hex_decoder File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/AudioV5/DE1_SoC_Audio_Example.v Line: 192
+    Info (12023): Found entity 2: hex_decoder File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/AudioV5/DE1_SoC_Audio_Example.v Line: 194
 Info (12021): Found 1 design units, including 1 entities, in source file i2c_controller.v
     Info (12023): Found entity 1: I2C_Controller File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/AudioV5/I2C_Controller.v Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file testram.v
     Info (12023): Found entity 1: testram File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/AudioV5/testram.v Line: 39
 Info (12127): Elaborating entity "DE1_SoC_Audio_Example" for the top level hierarchy
 Warning (10230): Verilog HDL assignment warning at DE1_SoC_Audio_Example.v(113): truncated value with size 32 to match size of target (19) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/AudioV5/DE1_SoC_Audio_Example.v Line: 113
-Warning (10230): Verilog HDL assignment warning at DE1_SoC_Audio_Example.v(123): truncated value with size 32 to match size of target (10) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/AudioV5/DE1_SoC_Audio_Example.v Line: 123
-Warning (10230): Verilog HDL assignment warning at DE1_SoC_Audio_Example.v(128): truncated value with size 32 to match size of target (27) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/AudioV5/DE1_SoC_Audio_Example.v Line: 128
-Warning (10230): Verilog HDL assignment warning at DE1_SoC_Audio_Example.v(135): truncated value with size 20 to match size of target (19) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/AudioV5/DE1_SoC_Audio_Example.v Line: 135
+Warning (10230): Verilog HDL assignment warning at DE1_SoC_Audio_Example.v(125): truncated value with size 32 to match size of target (10) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/AudioV5/DE1_SoC_Audio_Example.v Line: 125
+Warning (10230): Verilog HDL assignment warning at DE1_SoC_Audio_Example.v(130): truncated value with size 32 to match size of target (27) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/AudioV5/DE1_SoC_Audio_Example.v Line: 130
+Warning (10230): Verilog HDL assignment warning at DE1_SoC_Audio_Example.v(137): truncated value with size 20 to match size of target (19) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/AudioV5/DE1_SoC_Audio_Example.v Line: 137
 Warning (10034): Output port "HEX3" at DE1_SoC_Audio_Example.v(51) has no driver File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/AudioV5/DE1_SoC_Audio_Example.v Line: 51
 Warning (10034): Output port "HEX4" at DE1_SoC_Audio_Example.v(51) has no driver File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/AudioV5/DE1_SoC_Audio_Example.v Line: 51
 Warning (10034): Output port "HEX5" at DE1_SoC_Audio_Example.v(51) has no driver File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/AudioV5/DE1_SoC_Audio_Example.v Line: 51
@@ -1414,7 +1413,7 @@ Info (12133): Instantiated megafunction "testram:test|altsyncram:altsyncram_comp
     Info (12134): Parameter "intended_device_family" = "Cyclone V"
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info (12134): Parameter "lpm_type" = "altsyncram"
-    Info (12134): Parameter "numwords_a" = "246"
+    Info (12134): Parameter "numwords_a" = "252"
     Info (12134): Parameter "operation_mode" = "SINGLE_PORT"
     Info (12134): Parameter "outdata_aclr_a" = "NONE"
     Info (12134): Parameter "outdata_reg_a" = "UNREGISTERED"
@@ -1423,13 +1422,13 @@ Info (12133): Instantiated megafunction "testram:test|altsyncram:altsyncram_comp
     Info (12134): Parameter "widthad_a" = "8"
     Info (12134): Parameter "width_a" = "20"
     Info (12134): Parameter "width_byteena_a" = "1"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_i0p1.tdf
-    Info (12023): Found entity 1: altsyncram_i0p1 File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/AudioV5/db/altsyncram_i0p1.tdf Line: 27
-Info (12128): Elaborating entity "altsyncram_i0p1" for hierarchy "testram:test|altsyncram:altsyncram_component|altsyncram_i0p1:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Warning (113028): 1 out of 246 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported. File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/AudioV5/Tokyo_Ghoul.mif Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_g0p1.tdf
+    Info (12023): Found entity 1: altsyncram_g0p1 File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/AudioV5/db/altsyncram_g0p1.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_g0p1" for hierarchy "testram:test|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Warning (113028): 1 out of 252 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported. File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/AudioV5/Tokyo_Ghoul.mif Line: 1
     Warning (113026): Memory Initialization File Address 188 is not initialized File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/AudioV5/Tokyo_Ghoul.mif Line: 1
 Info (12128): Elaborating entity "hex_decoder" for hierarchy "hex_decoder:h1" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/AudioV5/DE1_SoC_Audio_Example.v Line: 87
-Info (12128): Elaborating entity "Audio_Controller" for hierarchy "Audio_Controller:Audio_Controller" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/AudioV5/DE1_SoC_Audio_Example.v Line: 181
+Info (12128): Elaborating entity "Audio_Controller" for hierarchy "Audio_Controller:Audio_Controller" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/AudioV5/DE1_SoC_Audio_Example.v Line: 183
 Info (12128): Elaborating entity "Altera_UP_Clock_Edge" for hierarchy "Audio_Controller:Audio_Controller|Altera_UP_Clock_Edge:Bit_Clock_Edges" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/AudioV5/Audio_Controller.v Line: 182
 Info (12128): Elaborating entity "Altera_UP_Audio_In_Deserializer" for hierarchy "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/AudioV5/Audio_Controller.v Line: 237
 Info (12128): Elaborating entity "Altera_UP_Audio_Bit_Counter" for hierarchy "Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/AudioV5/Altera_UP_Audio_In_Deserializer.v Line: 159
@@ -1531,7 +1530,7 @@ Info (12133): Instantiated megafunction "Audio_Controller:Audio_Controller|Audio
 Info (12021): Found 1 design units, including 1 entities, in source file db/audio_clock_altpll.v
     Info (12023): Found entity 1: Audio_Clock_altpll File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/AudioV5/db/audio_clock_altpll.v Line: 29
 Info (12128): Elaborating entity "Audio_Clock_altpll" for hierarchy "Audio_Controller:Audio_Controller|Audio_Clock:Audio_Clock|altpll:altpll_component|Audio_Clock_altpll:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altpll.tdf Line: 897
-Info (12128): Elaborating entity "avconf" for hierarchy "avconf:avc" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/AudioV5/DE1_SoC_Audio_Example.v Line: 188
+Info (12128): Elaborating entity "avconf" for hierarchy "avconf:avc" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/AudioV5/DE1_SoC_Audio_Example.v Line: 190
 Warning (10230): Verilog HDL assignment warning at avconf.v(68): truncated value with size 32 to match size of target (16) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/AudioV5/avconf.v Line: 68
 Warning (10230): Verilog HDL assignment warning at avconf.v(119): truncated value with size 32 to match size of target (6) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/AudioV5/avconf.v Line: 119
 Warning (10230): Verilog HDL assignment warning at avconf.v(137): truncated value with size 32 to match size of target (16) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/AudioV5/avconf.v Line: 137
@@ -1542,7 +1541,7 @@ Warning (10230): Verilog HDL assignment warning at I2C_Controller.v(78): truncat
 Warning (10230): Verilog HDL assignment warning at I2C_Controller.v(91): truncated value with size 32 to match size of target (6) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/AudioV5/I2C_Controller.v Line: 91
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following RAM node(s):
-        Warning (14320): Synthesized away node "testram:test|altsyncram:altsyncram_component|altsyncram_i0p1:auto_generated|q_a[19]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/AudioV5/db/altsyncram_i0p1.tdf Line: 492
+        Warning (14320): Synthesized away node "testram:test|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|q_a[19]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/AudioV5/db/altsyncram_g0p1.tdf Line: 492
 Info (276014): Found 1 instances of uninferred RAM logic
     Info (276004): RAM logic "avconf:avc|Ram0" is uninferred due to inappropriate RAM size File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/AudioV5/avconf.v Line: 131
 Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
@@ -1965,17 +1964,17 @@ Warning (21074): Design contains 3 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/AudioV5/DE1_SoC_Audio_Example.v Line: 34
     Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/AudioV5/DE1_SoC_Audio_Example.v Line: 34
     Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/AudioV5/DE1_SoC_Audio_Example.v Line: 34
-Info (21057): Implemented 776 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 781 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 10 input pins
     Info (21059): Implemented 45 output pins
     Info (21060): Implemented 4 bidirectional pins
-    Info (21061): Implemented 569 logic cells
+    Info (21061): Implemented 574 logic cells
     Info (21064): Implemented 147 RAM segments
     Info (21065): Implemented 1 PLLs
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 435 warnings
-    Info: Peak virtual memory: 4879 megabytes
-    Info: Processing ended: Sat Nov 24 01:31:20 2018
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:28
+    Info: Peak virtual memory: 4877 megabytes
+    Info: Processing ended: Sat Nov 24 01:46:33 2018
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:40
 
 
