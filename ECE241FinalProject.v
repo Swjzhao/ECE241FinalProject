@@ -1,7 +1,7 @@
 `timescale 1ns / 1ns
 module top(
 			SW, 
-			KEY, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5,
+			KEY,
 			CLOCK_50,
 			PS2_CLK,
 			PS2_DAT,
@@ -20,8 +20,6 @@ module top(
 	input [9:0] SW;
 	input [3:0] KEY;
 	input CLOCK_50;
-	//new
-	input [6:0] HEX0 , HEX1, HEX2, HEX3, HEX4, HEX5;
 	
 	output [9:0] VGA_R;
 	output [9:0] VGA_G;
@@ -60,30 +58,6 @@ module top(
 		.PS2_DAT(PS2_DAT),
 		.received_data(PS2_byte),
 		.received_data_en(data_received));
-	
-   DE1_SoC_Audio_Example d1 (
-	// Inputs
-	.CLOCK_50(clk),
-	.KEY(~KEY[0]),
-
-	.AUD_ADCDAT(AUD_ADCDAT),
-
-	// Bidirectionals
-	.AUD_BCLK(AUD_BCLK),
-	.AUD_ADCLRCK(AUD_ADCLRCK),
-	.AUD_DACLRCK(AUD_DACLRCK),
-
-	.FPGA_I2C_SDAT(FPGA_I2C_SDAT),
-
-	// Outputs
-	.AUD_XCK(AUD_XCK),
-	.AUD_DACDAT(AUD_DACDAT),
-
-	.FPGA_I2C_SCLK(FPGA_I2C_SCLK),
-	.SW(SW[3:0]),
-	.HEX0(HEX0), .HEX1(HEX1), .HEX2(HEX2), .HEX3(HEX3), .HEX4(HEX4), .HEX5(HEX5)
-
-   );
 
 	vga_adapter v1(
 		.resetn(reset),

@@ -1,6 +1,6 @@
 Flow report for ECE241FinalProject
-Sat Nov 24 03:28:44 2018
-Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Fri Nov 23 20:09:11 2018
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
 ---------------------
@@ -40,16 +40,16 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Sat Nov 24 03:28:30 2018       ;
-; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
+; Flow Status                     ; Successful - Fri Nov 23 20:08:47 2018       ;
+; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; ECE241FinalProject                          ;
 ; Top-level Entity Name           ; top                                         ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSEMA5F31C6                                ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 291 / 32,070 ( < 1 % )                      ;
-; Total registers                 ; 266                                         ;
-; Total pins                      ; 94 / 457 ( 21 % )                           ;
+; Logic utilization (in ALMs)     ; 292 / 32,070 ( < 1 % )                      ;
+; Total registers                 ; 265                                         ;
+; Total pins                      ; 52 / 457 ( 11 % )                           ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 1,170,688 / 4,065,280 ( 29 % )              ;
 ; Total DSP Blocks                ; 0 / 87 ( 0 % )                              ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/24/2018 03:26:55 ;
+; Start date & time ; 11/23/2018 20:06:00 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ECE241FinalProject  ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+--------------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value      ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+--------------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 141623900014469.154304801457976        ; --                 ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 175962106024.154302156026412           ; --                 ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --                 ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --                 ; --          ; --         ;
 ; MISC_FILE                           ; ramGraphics_bb.v                       ; --                 ; --          ; --         ;
@@ -101,11 +101,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:19     ; 1.0                     ; 4896 MB             ; 00:00:32                           ;
-; Fitter               ; 00:01:00     ; 1.2                     ; 6783 MB             ; 00:02:08                           ;
-; Assembler            ; 00:00:11     ; 1.0                     ; 4891 MB             ; 00:00:08                           ;
-; Timing Analyzer      ; 00:00:13     ; 1.7                     ; 5244 MB             ; 00:00:19                           ;
-; Total                ; 00:01:43     ; --                      ; --                  ; 00:03:07                           ;
+; Analysis & Synthesis ; 00:00:26     ; 1.0                     ; 4847 MB             ; 00:00:45                           ;
+; Fitter               ; 00:02:01     ; 1.1                     ; 6307 MB             ; 00:02:57                           ;
+; Assembler            ; 00:00:14     ; 1.0                     ; 4887 MB             ; 00:00:14                           ;
+; Timing Analyzer      ; 00:00:22     ; 1.4                     ; 5207 MB             ; 00:00:26                           ;
+; Total                ; 00:03:03     ; --                      ; --                  ; 00:04:22                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -114,10 +114,10 @@ refer to the applicable agreement for further details.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; LAPTOP-9VTMGL8A  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; LAPTOP-9VTMGL8A  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; LAPTOP-9VTMGL8A  ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; LAPTOP-9VTMGL8A  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; DESKTOP-VVP6RVB  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-VVP6RVB  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-VVP6RVB  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-VVP6RVB  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 

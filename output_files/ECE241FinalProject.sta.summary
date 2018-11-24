@@ -3,35 +3,35 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1100mV 85C Model Setup 'CLOCK_50'
-Slack : -5.973
-TNS   : -247.368
+Slack : -7.042
+TNS   : -282.142
 
 Type  : Slow 1100mV 85C Model Setup 'part2:p2|control:c1|current_state.S_ClearScreen'
-Slack : -4.874
-TNS   : -27.214
+Slack : -4.462
+TNS   : -25.593
 
 Type  : Slow 1100mV 85C Model Setup 'part2:p2|RateDivider:r1|q[0]'
-Slack : -3.230
-TNS   : -41.046
+Slack : -2.254
+TNS   : -37.187
 
 Type  : Slow 1100mV 85C Model Setup 'part2:p2|datapath:d1|RateDivider:r1|q[0]'
-Slack : -1.129
-TNS   : -2.715
+Slack : -1.534
+TNS   : -3.199
 
 Type  : Slow 1100mV 85C Model Setup 'v1|mypll|altpll_component|auto_generated|generic_pll1~PLL_OUTPUT_COUNTER|divclk'
-Slack : 31.213
+Slack : 30.862
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'CLOCK_50'
-Slack : 0.257
+Slack : 0.362
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'v1|mypll|altpll_component|auto_generated|generic_pll1~PLL_OUTPUT_COUNTER|divclk'
-Slack : 0.427
+Slack : 0.420
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'part2:p2|datapath:d1|RateDivider:r1|q[0]'
-Slack : 0.579
+Slack : 0.581
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'part2:p2|RateDivider:r1|q[0]'
@@ -39,19 +39,19 @@ Slack : 0.721
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'part2:p2|control:c1|current_state.S_ClearScreen'
-Slack : 2.105
+Slack : 1.692
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'part2:p2|RateDivider:r1|q[0]'
 Slack : -2.174
-TNS   : -121.001
+TNS   : -124.905
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'part2:p2|datapath:d1|RateDivider:r1|q[0]'
 Slack : -0.394
-TNS   : -2.114
+TNS   : -1.759
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'part2:p2|control:c1|current_state.S_ClearScreen'
-Slack : 0.341
+Slack : 0.459
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'v1|mypll|altpll_component|auto_generated|generic_pll1~FRACTIONAL_PLL|vcoph[0]'
@@ -59,63 +59,63 @@ Slack : 1.666
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
-Slack : 8.848
+Slack : 8.849
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'v1|mypll|altpll_component|auto_generated|generic_pll1~PLL_OUTPUT_COUNTER|divclk'
-Slack : 18.750
+Slack : 18.758
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
-Slack : -5.569
-TNS   : -227.544
+Slack : -6.640
+TNS   : -261.511
 
 Type  : Slow 1100mV 0C Model Setup 'part2:p2|control:c1|current_state.S_ClearScreen'
-Slack : -4.937
-TNS   : -27.696
+Slack : -4.508
+TNS   : -26.079
 
 Type  : Slow 1100mV 0C Model Setup 'part2:p2|RateDivider:r1|q[0]'
-Slack : -3.349
-TNS   : -41.680
+Slack : -2.425
+TNS   : -38.038
 
 Type  : Slow 1100mV 0C Model Setup 'part2:p2|datapath:d1|RateDivider:r1|q[0]'
-Slack : -1.095
-TNS   : -2.610
+Slack : -1.510
+TNS   : -3.089
 
 Type  : Slow 1100mV 0C Model Setup 'v1|mypll|altpll_component|auto_generated|generic_pll1~PLL_OUTPUT_COUNTER|divclk'
-Slack : 31.516
+Slack : 31.199
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
-Slack : -0.082
-TNS   : -0.135
+Slack : 0.366
+TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'v1|mypll|altpll_component|auto_generated|generic_pll1~PLL_OUTPUT_COUNTER|divclk'
-Slack : 0.428
+Slack : 0.394
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'part2:p2|datapath:d1|RateDivider:r1|q[0]'
-Slack : 0.563
+Slack : 0.542
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'part2:p2|RateDivider:r1|q[0]'
-Slack : 0.735
+Slack : 0.690
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'part2:p2|control:c1|current_state.S_ClearScreen'
-Slack : 1.968
+Slack : 1.545
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'part2:p2|RateDivider:r1|q[0]'
 Slack : -2.174
-TNS   : -120.615
+TNS   : -125.558
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'part2:p2|datapath:d1|RateDivider:r1|q[0]'
 Slack : -0.394
-TNS   : -2.148
+TNS   : -1.767
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'part2:p2|control:c1|current_state.S_ClearScreen'
-Slack : 0.354
+Slack : 0.455
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'v1|mypll|altpll_component|auto_generated|generic_pll1~FRACTIONAL_PLL|vcoph[0]'
@@ -127,59 +127,59 @@ Slack : 8.804
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'v1|mypll|altpll_component|auto_generated|generic_pll1~PLL_OUTPUT_COUNTER|divclk'
-Slack : 18.729
+Slack : 18.736
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
-Slack : -4.214
-TNS   : -177.185
+Slack : -4.948
+TNS   : -205.002
 
 Type  : Fast 1100mV 85C Model Setup 'part2:p2|control:c1|current_state.S_ClearScreen'
-Slack : -2.362
-TNS   : -12.494
+Slack : -2.014
+TNS   : -11.350
 
 Type  : Fast 1100mV 85C Model Setup 'part2:p2|RateDivider:r1|q[0]'
-Slack : -1.748
-TNS   : -16.708
+Slack : -1.150
+TNS   : -14.257
 
 Type  : Fast 1100mV 85C Model Setup 'part2:p2|datapath:d1|RateDivider:r1|q[0]'
-Slack : -0.402
-TNS   : -0.772
+Slack : -0.609
+TNS   : -1.047
 
 Type  : Fast 1100mV 85C Model Setup 'v1|mypll|altpll_component|auto_generated|generic_pll1~PLL_OUTPUT_COUNTER|divclk'
-Slack : 33.996
+Slack : 33.731
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
-Slack : 0.178
+Slack : 0.177
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Hold 'v1|mypll|altpll_component|auto_generated|generic_pll1~PLL_OUTPUT_COUNTER|divclk'
-Slack : 0.239
+Slack : 0.241
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Hold 'part2:p2|datapath:d1|RateDivider:r1|q[0]'
-Slack : 0.302
+Slack : 0.263
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Hold 'part2:p2|RateDivider:r1|q[0]'
-Slack : 0.396
+Slack : 0.390
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Hold 'part2:p2|control:c1|current_state.S_ClearScreen'
-Slack : 1.320
+Slack : 1.096
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'part2:p2|RateDivider:r1|q[0]'
 Slack : -2.174
-TNS   : -118.204
+TNS   : -121.445
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'part2:p2|datapath:d1|RateDivider:r1|q[0]'
-Slack : -0.055
-TNS   : -0.110
+Slack : 0.023
+TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'part2:p2|control:c1|current_state.S_ClearScreen'
-Slack : 0.357
+Slack : 0.432
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'v1|mypll|altpll_component|auto_generated|generic_pll1~FRACTIONAL_PLL|vcoph[0]'
@@ -191,59 +191,59 @@ Slack : 8.794
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'v1|mypll|altpll_component|auto_generated|generic_pll1~PLL_OUTPUT_COUNTER|divclk'
-Slack : 18.873
+Slack : 18.879
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
-Slack : -3.512
-TNS   : -141.955
+Slack : -4.164
+TNS   : -166.982
 
 Type  : Fast 1100mV 0C Model Setup 'part2:p2|control:c1|current_state.S_ClearScreen'
-Slack : -2.209
-TNS   : -11.822
+Slack : -1.900
+TNS   : -10.807
 
 Type  : Fast 1100mV 0C Model Setup 'part2:p2|RateDivider:r1|q[0]'
-Slack : -1.736
-TNS   : -15.675
+Slack : -1.202
+TNS   : -13.531
 
 Type  : Fast 1100mV 0C Model Setup 'part2:p2|datapath:d1|RateDivider:r1|q[0]'
-Slack : -0.312
-TNS   : -0.587
+Slack : -0.507
+TNS   : -0.808
 
 Type  : Fast 1100mV 0C Model Setup 'v1|mypll|altpll_component|auto_generated|generic_pll1~PLL_OUTPUT_COUNTER|divclk'
-Slack : 34.741
+Slack : 34.511
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
-Slack : 0.112
+Slack : 0.167
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Hold 'v1|mypll|altpll_component|auto_generated|generic_pll1~PLL_OUTPUT_COUNTER|divclk'
-Slack : 0.222
+Slack : 0.212
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Hold 'part2:p2|datapath:d1|RateDivider:r1|q[0]'
-Slack : 0.271
+Slack : 0.231
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Hold 'part2:p2|RateDivider:r1|q[0]'
-Slack : 0.354
+Slack : 0.347
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Hold 'part2:p2|control:c1|current_state.S_ClearScreen'
-Slack : 1.203
+Slack : 0.997
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'part2:p2|RateDivider:r1|q[0]'
 Slack : -2.174
-TNS   : -117.919
+TNS   : -120.812
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'part2:p2|datapath:d1|RateDivider:r1|q[0]'
-Slack : -0.023
-TNS   : -0.046
+Slack : 0.052
+TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'part2:p2|control:c1|current_state.S_ClearScreen'
-Slack : 0.383
+Slack : 0.443
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'v1|mypll|altpll_component|auto_generated|generic_pll1~FRACTIONAL_PLL|vcoph[0]'
@@ -255,7 +255,7 @@ Slack : 8.787
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'v1|mypll|altpll_component|auto_generated|generic_pll1~PLL_OUTPUT_COUNTER|divclk'
-Slack : 18.879
+Slack : 18.881
 TNS   : 0.000
 
 ------------------------------------------------------------
