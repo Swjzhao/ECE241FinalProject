@@ -1,5 +1,5 @@
 Flow report for ECE241FinalProject
-Fri Nov 23 20:09:11 2018
+Sat Nov 24 01:33:02 2018
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,15 +40,15 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Fri Nov 23 20:08:47 2018       ;
+; Flow Status                     ; Successful - Sat Nov 24 01:32:37 2018       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; ECE241FinalProject                          ;
 ; Top-level Entity Name           ; top                                         ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSEMA5F31C6                                ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 292 / 32,070 ( < 1 % )                      ;
-; Total registers                 ; 265                                         ;
+; Logic utilization (in ALMs)     ; 299 / 32,070 ( < 1 % )                      ;
+; Total registers                 ; 270                                         ;
 ; Total pins                      ; 52 / 457 ( 11 % )                           ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 1,170,688 / 4,065,280 ( 29 % )              ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/23/2018 20:06:00 ;
+; Start date & time ; 11/24/2018 01:29:53 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ECE241FinalProject  ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+--------------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value      ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+--------------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 175962106024.154302156026412           ; --                 ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 175962106024.154304099230300           ; --                 ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --                 ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --                 ; --          ; --         ;
 ; MISC_FILE                           ; ramGraphics_bb.v                       ; --                 ; --          ; --         ;
@@ -86,6 +86,11 @@ refer to the applicable agreement for further details.
 ; MISC_FILE                           ; ramMapX_bb.v                           ; --                 ; --          ; --         ;
 ; MISC_FILE                           ; ramMapY_bb.v                           ; --                 ; --          ; --         ;
 ; MISC_FILE                           ; BGRam_bb.v                             ; --                 ; --          ; --         ;
+; MISC_FILE                           ; loadA_bb.v                             ; --                 ; --          ; --         ;
+; MISC_FILE                           ; loadS_bb.v                             ; --                 ; --          ; --         ;
+; MISC_FILE                           ; loadD_bb.v                             ; --                 ; --          ; --         ;
+; MISC_FILE                           ; loadF_bb.v                             ; --                 ; --          ; --         ;
+; MISC_FILE                           ; keyRam_bb.v                            ; --                 ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --                 ; top         ; Top        ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --                 ; top         ; Top        ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --                 ; top         ; Top        ;
@@ -101,11 +106,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:26     ; 1.0                     ; 4847 MB             ; 00:00:45                           ;
-; Fitter               ; 00:02:01     ; 1.1                     ; 6307 MB             ; 00:02:57                           ;
-; Assembler            ; 00:00:14     ; 1.0                     ; 4887 MB             ; 00:00:14                           ;
-; Timing Analyzer      ; 00:00:22     ; 1.4                     ; 5207 MB             ; 00:00:26                           ;
-; Total                ; 00:03:03     ; --                      ; --                  ; 00:04:22                           ;
+; Analysis & Synthesis ; 00:00:28     ; 1.0                     ; 4867 MB             ; 00:00:48                           ;
+; Fitter               ; 00:01:56     ; 1.1                     ; 6355 MB             ; 00:03:01                           ;
+; Assembler            ; 00:00:15     ; 1.0                     ; 4887 MB             ; 00:00:14                           ;
+; Timing Analyzer      ; 00:00:24     ; 1.3                     ; 5207 MB             ; 00:00:26                           ;
+; Total                ; 00:03:03     ; --                      ; --                  ; 00:04:29                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

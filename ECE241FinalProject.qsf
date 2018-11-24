@@ -708,4 +708,9 @@ set_global_assignment -name QIP_FILE ramMap.qip
 set_global_assignment -name QIP_FILE ramMapX.qip
 set_global_assignment -name QIP_FILE ramMapY.qip
 set_global_assignment -name QIP_FILE BGRam.qip
+set_global_assignment -name QIP_FILE loadA.qip
+set_global_assignment -name QIP_FILE loadS.qip
+set_global_assignment -name QIP_FILE loadD.qip
+set_global_assignment -name QIP_FILE loadF.qip
+set_global_assignment -name QIP_FILE keyRam.qip
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

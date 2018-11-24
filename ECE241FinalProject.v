@@ -34,6 +34,7 @@ module top(
 	wire [8:0] x;
 	wire [7:0] y;
 	
+	
 	wire go, black, reset;
 	
 	wire [7:0] PS2_byte;
@@ -115,6 +116,7 @@ module part2(
 	
 	wire [8:0] randX;
 	wire [7:0] randY;
+	wire [1:0] id2;
 
 	wire[25:0] freq;
 
@@ -135,10 +137,10 @@ module part2(
 		);
 	wire genclock;
 	wire [25:0] genfreq;
-	RateDivider r1(clk, reset, 26'b1000111110101111000001111, genfreq);
+	RateDivider r1(clk, reset, 26'b00000000000000000000000001, genfreq);
 	assign genclock = (genfreq  == 26'b00000000000000000000000000)? 1'b1 : 1'b0;
 	
-	genloc gl(genclock, reset, ld_coord,randX,randY);
+	genloc gl(genclock, reset, ld_coord,randX,randY,id2);
 	
 	datapath d1(
 		.clk(clk),
@@ -146,6 +148,7 @@ module part2(
 		.reset(reset),
 		.locX(randX),
 		.locY(randY),
+		.id2(id2),
 		.black(black),
 		.ld_plot(ld_plot),
 		.ld_BG(ld_BG),
@@ -185,7 +188,7 @@ module control(
 	always @(*)
 	begin: state_table
 		case(current_state)
-			S_Reset: next_state = reset? S_Reset: S_GenerateLocation;
+			S_Reset: next_state = reset? S_Reset: S_DrawBG	;
 			//S_Reset: next_state = S_GenerateLocation;
 			S_DrawBG: next_state = draw? S_GenerateLocation: S_DrawBG;
 			S_GenerateLocation: next_state = S_StartAnimation;
@@ -244,7 +247,9 @@ module datapath(
 	input reset,
 	input [8:0] locX,
 	input [7:0] locY,
-	input black, ld_coord, ld_plot, ld_BG,  
+	input [1:0] id2,
+	input black, ld_coord, ld_plot, ld_BG, 
+	
 	output reg [8:0] X, 
 	output reg [7:0] Y,
 	output reg cleared,
@@ -265,7 +270,6 @@ module datapath(
 	 reg [4:0] bgjid;
 	 reg [3:0] bgiid;
 	 reg [2:0] id;
-	 reg [2:0] id2;
 	 
 	// reg [8:0] Data_Out;
 	// reg [13:0] Score_Img_Counter;
@@ -275,19 +279,17 @@ module datapath(
 	 wire clock;
 	 RateDivider r1(clk, reset, 26'b0100111110101111000001111, freq);
 	 assign clock = (freq  == 26'b00000000000000000000000000)? 1'b1 : 1'b0;
-	
 	 always@(posedge clock)
 	 begin 
 			if(!reset)
 				begin
 					id <= 3'd0;
-					id2 <=3'd0;
 					done <= 1'b0;
 				end
 			else if (ld_coord)
 				begin 
 					id <= 3'd0;
-					
+					done <= 1'b0;
 				end
 			else if(id == 3'd3 )
 				begin
@@ -298,10 +300,11 @@ module datapath(
 			else
 				begin
 					id <= id + 1'b1;
+					done <= 1'b0;
 				end
 	 end
 	 // RateDivider r4(clock, reset, 26'b10111110101111000001111111, w5);	
-	 loadImage la (clk, reset, id, i , j ,colour);
+	 loadImage la (clk, reset, id,2'd1, i , j ,colour);
 	 loadBG bg (clk, reset, bgi, bgj, bgcolour);
 	 
 //	 always @(posedge clk) begin
@@ -359,6 +362,7 @@ module datapath(
 					Colour <= 15'b0;
 					if(blackcounter <= 17'b11111111111111111)
 						begin
+							cleared <= 1'b1;
 							X <= blackcounter[8:0];
 							Y <= blackcounter[17:9];
 							blackcounter <= blackcounter + 1'b1;
@@ -381,10 +385,12 @@ module datapath(
 					
 						if(bgi < (6'd32))
 							begin
+							draw <= 1'b0;
 								bgi <= bgi + 1'b1;
 							end
 						else
 							begin
+								draw <= 1'b0;
 								bgi <= 6'd0;
 								bgj <= bgj + 1'b1;
 								
@@ -394,6 +400,7 @@ module datapath(
 						begin
 
 							bgiid <= bgiid + 1'b1;
+							bgjid <= bgjid + 1'b0;
 							bgj <= 6'd0;
 							bgi <= 6'd0;
 							
@@ -403,6 +410,7 @@ module datapath(
 						begin
 						bgiid <= 6'd0;
 						bgjid <= bgjid + 1'b1;
+						draw <= 1'b0;
 						end
 						
 					if(bgjid > 6'd7)
@@ -414,6 +422,7 @@ module datapath(
 				end
 			else if(ld_plot)
 			begin
+				draw <= 1'b0;
 				if(colour == 3'b111)
 					Colour<=15'b111111111111111;
 				else
@@ -428,6 +437,8 @@ module datapath(
 						if(i < (5'd15))
 							begin
 								i <= i + 1'b1;
+								j <= j + 1'b0;
+								
 							end
 						else
 							begin
@@ -464,15 +475,36 @@ module loadImage(
 
 	input clock, reset, 
 	input [2:0] id,
+	input [1:0] id2,
 	input [3:0] i,
 	input [5:0] j,
 	output [2:0] colour
 );	
-	wire [2:0] q;
+	wire [2:0] qa;
+	wire [2:0] qs;
+	wire [2:0] qd;
+	wire [2:0] qf;
+	reg [2:0] q; 
+	
 	wire [5:0] tempj;
 	assign tempj[5:0] = j[5:0] + (id * 5'd16);
 
-	ramGraphics ra(.address({tempj,i}), .clock(clock),.wren(1'b0), .q(q));
+	loadA a(.address({tempj,i}), .clock(clock),.wren(1'b0), .q(qa));
+	loadS s(.address({tempj,i}), .clock(clock),.wren(1'b0), .q(qs));
+	loadD d(.address({tempj,i}), .clock(clock),.wren(1'b0), .q(qd));
+	loadF f(.address({tempj,i}), .clock(clock),.wren(1'b0), .q(qf));
+	always @(*)
+	begin
+		if(id2 == 2'd1)
+			q = qs;
+		else if(id2 == 2'd2)
+			q = qd;
+		else if(id2 == 2'd3)
+			q = qf;
+		else
+			q = qa;
+		
+	end
 	assign colour = q;
 	
 
@@ -488,7 +520,7 @@ module loadBG(
 	assign bgcolour = q;
 endmodule
 
-module RateDivider(clock, reset, d, q);
+module RateDivider(clock, reset, d, q); 
 	input clock;
 	input reset;
 	
@@ -510,19 +542,23 @@ module genloc(
 	input reset,
 	input ld_coord,
 	output reg [7:0] locx,
-	output reg [7:0] locy
+	output reg [7:0] locy,
+	output reg [1:0] id2
 
 );
 	reg [4:0] i;
 	wire[7:0] outx;
 	wire[7:0] outy;
+	wire[1:0] outid;
 	reg bool;
 	
 	loadLocation la (clock,reset,i[4:0], outx, outy);
+	keyRam kr (.address({1'b0,i[4:0]}), .clock(clock),.wren(1'b0), .q(outid)); 
 	always @(posedge clock)
 	begin: iter
 	   locx <= outx;
 		locy <= outy;
+		id2 <= outid;
 		if(!reset)
 			begin
 			i <= 5'b0;
@@ -531,7 +567,7 @@ module genloc(
 		else if(i >= 5'b01111)
 			begin
 				i <= 5'b0;
-				bool <= 1'b1;
+				bool <= 1'b0;
 			end
 		else if(ld_coord)
 			begin
@@ -541,12 +577,15 @@ module genloc(
 					i <= i + 1'b1;
 				end
 			else
-				i <= i;
+				begin
+				bool <= 1'b0;
+				i <= i + 1'b0;
+				end
 			end
 		else
 			begin
 			bool <= 1'b1; 
-			i <= i;
+			i <= i + 1'b0;
 			end
 
 		
@@ -562,8 +601,8 @@ module loadLocation(
 );
 	wire [7:0] xx;
 	wire [7:0] yy;
-	ramMapX rax(.address({3'b00,i}), .clock(clock),.wren(1'b0), .q(xx));
-	ramMapY ray(.address({3'b00,i}), .clock(clock),.wren(1'b0), .q(yy));
+	ramMapX rax(.address({1'b0,i}), .clock(clock),.wren(1'b0), .q(xx));
+	ramMapY ray(.address({1'b0,i}), .clock(clock),.wren(1'b0), .q(yy));
 	assign locx = xx;
 	assign locy = yy;
 	
@@ -597,8 +636,6 @@ module randNum(
 				ycounter <= 8'b0;
 				X <= 9'b0;
 				Y <= 8'b0;
-				xhold <= 9'b0;
-				yhold <= 8'b0;
 				gotCoord = 1'b0;
 			end
 		else if(coord == 1'b1)
