@@ -1,7 +1,7 @@
 
 module DE1_SoC_Audio_Example (
 	// Inputs
-	clock,
+	CLOCK_50,
 	KEY, HEX0,HEX1, HEX2, HEX3, HEX4, HEX5,
 
 	AUD_ADCDAT,
@@ -30,7 +30,7 @@ module DE1_SoC_Audio_Example (
  *                             Port Declarations                             *
  *****************************************************************************/
 // Inputs
-input				clock;
+input				CLOCK_50;
 input		[3:0]	KEY;
 input		[3:0]	SW;
 
