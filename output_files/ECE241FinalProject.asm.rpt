@@ -1,6 +1,6 @@
 Assembler report for ECE241FinalProject
-Fri Nov 23 20:08:48 2018
-Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Sat Nov 24 03:28:30 2018
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
 ---------------------
@@ -10,7 +10,7 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/output_files/ECE241FinalProject.sof
+  5. Assembler Device Options: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/output_files/ECE241FinalProject.sof
   6. Assembler Messages
 
 
@@ -37,7 +37,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Fri Nov 23 20:08:47 2018 ;
+; Assembler Status      ; Successful - Sat Nov 24 03:28:30 2018 ;
 ; Revision Name         ; ECE241FinalProject                    ;
 ; Top-level Entity Name ; top                                   ;
 ; Family                ; Cyclone V                             ;
@@ -52,23 +52,23 @@ refer to the applicable agreement for further details.
 +--------+---------+---------------+
 
 
-+-------------------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                                       ;
-+-------------------------------------------------------------------------------------------------+
-; File Name                                                                                       ;
-+-------------------------------------------------------------------------------------------------+
-; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/output_files/ECE241FinalProject.sof ;
-+-------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                ;
++------------------------------------------------------------------------------------------+
+; File Name                                                                                ;
++------------------------------------------------------------------------------------------+
+; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/output_files/ECE241FinalProject.sof ;
++------------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/output_files/ECE241FinalProject.sof ;
-+----------------+----------------------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                                  ;
-+----------------+----------------------------------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x031CF222                                                                                               ;
-; Checksum       ; 0x031CF222                                                                                               ;
-+----------------+----------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/output_files/ECE241FinalProject.sof ;
++----------------+---------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                           ;
++----------------+---------------------------------------------------------------------------------------------------+
+; JTAG usercode  ; 0x031C7721                                                                                        ;
+; Checksum       ; 0x031C7721                                                                                        ;
++----------------+---------------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -76,15 +76,15 @@ refer to the applicable agreement for further details.
 +--------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
-    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Fri Nov 23 20:08:33 2018
+    Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+    Info: Processing started: Sat Nov 24 03:28:19 2018
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off ECE241FinalProject -c ECE241FinalProject
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4887 megabytes
-    Info: Processing ended: Fri Nov 23 20:08:48 2018
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:14
+    Info: Peak virtual memory: 4891 megabytes
+    Info: Processing ended: Sat Nov 24 03:28:30 2018
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:08
 
 

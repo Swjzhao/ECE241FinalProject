@@ -41,7 +41,7 @@ set_global_assignment -name DEVICE 5CSEMA5F31C6
 set_global_assignment -name TOP_LEVEL_ENTITY top
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "12:52:54  NOVEMBER 10, 2018"
-set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.0.0 Lite Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
 set_location_assignment PIN_AJ4 -to ADC_CS_N
@@ -708,4 +708,15 @@ set_global_assignment -name QIP_FILE ramMap.qip
 set_global_assignment -name QIP_FILE ramMapX.qip
 set_global_assignment -name QIP_FILE ramMapY.qip
 set_global_assignment -name QIP_FILE BGRam.qip
+set_global_assignment -name SOURCE_FILE Audio_Demo/DE1_SoC.qsf
+set_global_assignment -name VERILOG_FILE Audio_Demo/DE1_SoC_Audio_Example.v
+set_global_assignment -name VERILOG_FILE Audio_Demo/Audio_Controller/Altera_UP_Audio_Bit_Counter.v
+set_global_assignment -name VERILOG_FILE Audio_Demo/Audio_Controller/Altera_UP_Audio_In_Deserializer.v
+set_global_assignment -name VERILOG_FILE Audio_Demo/Audio_Controller/Altera_UP_Audio_Out_Serializer.v
+set_global_assignment -name VERILOG_FILE Audio_Demo/Audio_Controller/Altera_UP_Clock_Edge.v
+set_global_assignment -name VERILOG_FILE Audio_Demo/Audio_Controller/Altera_UP_SYNC_FIFO.v
+set_global_assignment -name VERILOG_FILE Audio_Demo/Audio_Controller/Audio_Clock.v
+set_global_assignment -name VERILOG_FILE Audio_Demo/Audio_Controller/Audio_Controller.v
+set_global_assignment -name VERILOG_FILE Audio_Demo/avconf/avconf.v
+set_global_assignment -name VERILOG_FILE Audio_Demo/avconf/I2C_Controller.v
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
