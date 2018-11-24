@@ -1,0 +1,32 @@
+Wed Nov 14 02:19:37 EST 2018
+Trace back: window name "bb" already exists in parent
+    while executing
+"frame $w "
+    (procedure "MtiFormUtil::makeButtonBox" line 5)
+    invoked from within
+"MtiFormUtil::makeButtonBox $f.bb 2 [list  [list "OK"     "if {\[Wave::ApplyWaveSig $tree\]} {Wave::CancelWaveSig $tree}"]  [list "Cancel" "Wave::Cance..."
+    (procedure "Wave::SigDialog" line 68)
+    invoked from within
+"Wave::SigDialog .main_pane.wave.interior.cs.body.pw.wf"
+    ("eval" body line 1)
+    invoked from within
+"eval $cmd"
+    (procedure "Wave::ItemProp" line 19)
+    invoked from within
+"Wave::ItemProp .main_pane.wave.interior.cs.body.pw.wf.tree"
+    (command bound to event)
+  <2:D:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {window name "bb" already exists in parent}
+  <1:eval:1: ::tk::dialog::error::bgerror {window name "bb" already exists in parent}
+Wed Nov 14 02:20:07 EST 2018
+Trace back: can't read "itk_component(label)": no such element in array
+    while executing
+"$itk_component(label) configure -wraplength $_LAYOUT_TABLE($pos-wrap)"
+    (method "::iwidgets::Labeledframe::_positionLabel" body line 21)
+    invoked from within
+"::.main_pane.wave.interior.cs.body.pw.wf.sig_dlg.nb.canvas.notebook.cs.page2.cs.format_frame _positionLabel now"
+    (in namespace inscope "::iwidgets::Labeledframe" script line 1)
+    invoked from within
+"namespace inscope ::iwidgets::Labeledframe {::.main_pane.wave.interior.cs.body.pw.wf.sig_dlg.nb.canvas.notebook.cs.page2.cs.format_frame _positionLabe..."
+    ("after" script)
+  <2:D:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {can't read "itk_component(label)": no such element in array}
+  <1:proc:38: ::tk::dialog::error::bgerror {can't read "itk_component(label)": no such element in array}
