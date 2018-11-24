@@ -689,16 +689,23 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HPS_USB_NXT -entity 
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HPS_USB_STP -entity DE1_SoC
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VERILOG_FILE PS2_Controller/PS2_Controller.v
+set_global_assignment -name VERILOG_FILE PS2_Controller/Altera_UP_PS2_Data_In.v
+set_global_assignment -name VERILOG_FILE PS2_Controller/Altera_UP_PS2_Command_Out.v
 set_global_assignment -name VERILOG_FILE part2/vga_adapter/vga_pll.v
 set_global_assignment -name VERILOG_FILE part2/vga_adapter/vga_controller.v
 set_global_assignment -name VERILOG_FILE part2/vga_adapter/vga_address_translator.v
 set_global_assignment -name VERILOG_FILE part2/vga_adapter/vga_adapter.v
 set_global_assignment -name VERILOG_FILE part2/fill.v
 set_global_assignment -name VERILOG_FILE ECE241FinalProject.v
-set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
-set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name QIP_FILE ramGraphics.qip
+set_global_assignment -name QIP_FILE ramMap.qip
+set_global_assignment -name QIP_FILE ramMapX.qip
+set_global_assignment -name QIP_FILE ramMapY.qip
+set_global_assignment -name QIP_FILE BGRam.qip
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

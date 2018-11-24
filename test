@@ -8,19 +8,21 @@ add wave {/*}
 
 force {clk} 0 0ns, 1 1ns -r 2ns
 
+force {reset} 1
+run 10 ns
 force {reset} 0
 run 10 ns
 force {reset} 1
 run 10 ns
 
-force {ld_black} 1
-run 1000ns
-
-force {ld_black} 0
+force {black} 0
+run 10ns
+force {ld_coord} 1
 run 10ns
 
+force {ld_coord} 0
 force {ld_plot} 1
-run 200 ns
+run 2000 ns
 force {ld_plot} 0
 run 10 ns
 
