@@ -102,7 +102,9 @@ hex_decoder h3(.hex_digit({2'b0, audio_out [9:8]}), .segments(HEX2));
  *                             Sequential Logic                              *
  *****************************************************************************/
 //change this value 
-reg [20:0] mif_lines = 10'd193;
+reg [20:0] mif_lines = 10'd246;
+reg [26:0] limit = 27'd9200000;
+reg [20:0] tempo_change_one = 10'd197;
 
 always @(posedge CLOCK_50)
 		if(delay_cnt == delay) begin
@@ -113,14 +115,15 @@ always @(posedge CLOCK_50)
 // rate divider
 always @(posedge CLOCK_50) begin
 		if (reset) address <= 0;
-		if (frequency_counter == 27'd9200000) begin 
+		if (frequency_counter == limit) begin 
 			frequency_counter <= 27'b0;
 			if (address == mif_lines)
 				address <= 0;
-			if (address < mif_lines);
+			if (address < mif_lines)
 				address <= address + 1;
+			if (address == tempo_change_one) //speeding the tempo up.
+			   limit <= 27'd7800000;
 			end
-		
 		else 
 			frequency_counter <= frequency_counter + 1;
 	end
@@ -131,7 +134,7 @@ always @(posedge CLOCK_50) begin
 
 assign delay = audio_out;
 
-wire [31:0] sound = (SW == 0) ? 0 : snd ? 32'd10000000 : -32'd10000000;
+wire [31:0] sound = (SW == 0) ? 0 : snd ? 32'd1000000000 : -32'd1000000000;
 
 
 assign read_audio_in			= audio_in_available & audio_out_allowed;
