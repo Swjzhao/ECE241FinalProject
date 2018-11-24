@@ -1,0 +1,105 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "command_was_sent",
+					"strict" : false
+				},
+				{
+					"name" : "error_communication_timed_out",
+					"strict" : false
+				},
+				{
+					"name" : "received_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "received_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "received_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "received_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "received_data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "received_data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "received_data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "received_data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "received_data_en",
+					"strict" : false
+				},
+				{
+					"name" : "PS2_CLK",
+					"strict" : false
+				},
+				{
+					"name" : "PS2_DAT",
+					"strict" : false
+				},
+				{
+					"name" : "CLOCK_50",
+					"strict" : false
+				},
+				{
+					"name" : "send_command",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "the_command[4]",
+					"strict" : false
+				},
+				{
+					"name" : "the_command[5]",
+					"strict" : false
+				},
+				{
+					"name" : "the_command[6]",
+					"strict" : false
+				},
+				{
+					"name" : "the_command[7]",
+					"strict" : false
+				},
+				{
+					"name" : "the_command[0]",
+					"strict" : false
+				},
+				{
+					"name" : "the_command[1]",
+					"strict" : false
+				},
+				{
+					"name" : "the_command[2]",
+					"strict" : false
+				},
+				{
+					"name" : "the_command[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

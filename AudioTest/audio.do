@@ -3,7 +3,7 @@ vlib work
 vlog DE1_SoC_Audio_Example.v
 
 #vsim -L altera_mf_ver Audio_Controller
-vsim DE1_SoC_Audio_Example
+#vsim DE1_SoC_Audio_Example
 
 
 log {/*}

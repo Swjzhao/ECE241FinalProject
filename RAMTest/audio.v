@@ -74,7 +74,7 @@ module toplevel(CLOCK_50, SW, KEY, AUD_ADCDAT,
 	//audio_out_allowed is technically the enable signal
 	
 	//values to set to one: 
-	assign write_audio_out = 1'b1;
+	//assign write_audio_out = 1'b1;
 	
 	always @(posedge CLOCK_50) begin
 		if(~KEY[0]) begin
@@ -85,7 +85,7 @@ module toplevel(CLOCK_50, SW, KEY, AUD_ADCDAT,
 			address <= counter; 
 			counter <= counter + 16'd1;
 		end
-	  if (counter == 16'b1011101101111111) counter <= 16'd0;	
+	  if (counter == 16'd45852) counter <= 16'd0;	
 	  if (audio_out_allowed == 0) begin
 	  counter <= counter + 16'd0; //extra safety
 	  address <= address + 16'd0; //does nothing.
@@ -97,13 +97,16 @@ module toplevel(CLOCK_50, SW, KEY, AUD_ADCDAT,
 	
 	assign left_channel_audio_out	= song_data_out;
 	assign right_channel_audio_out = song_data_out;
+		
+	assign read_audio_in			= audio_in_available & audio_out_allowed;
+	assign write_audio_out			= audio_in_available & audio_out_allowed;
 
 	
 	//fuck my ass setting these to 0.
-	assign read_audio_in = 1'b0;
-	assign audio_in_available = 1'b0;
-	assign left_channel_audio_in = 1'b0;
-	assign right_channel_audio_in = 1'b0;
+//	assign read_audio_in = 1'b0;
+//	assign audio_in_available = 1'b0;
+//	assign left_channel_audio_in = 1'b0;
+//	assign right_channel_audio_in = 1'b0;
 
 	
 	Audio_Controller Audio_Controller (

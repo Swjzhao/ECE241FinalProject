@@ -1,0 +1,10 @@
+
+
+C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/AudioV3/Audio_Clock.v
+
+Nov 20 08PM:14:43>: Error in CNX file format.
+
+Error messages are listed in file
+C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/AudioV3/Audio_Clock.cnxerr.
+
+Can't create the custom megafunction variation file(s)

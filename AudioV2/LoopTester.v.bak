@@ -1,0 +1,18 @@
+always @(posedge CLOCK_50)begin
+	if (~KEY[1])  pulse_count <= 12'b0;
+	
+	if(clk_count == 12'd1200)  begin
+		//address_count_reg <= address_count_reg + 1'b0; //send in the same address
+		if(address_count_reg == 16'd10000) begin
+			address_count_reg <= 16'b0;
+		end
+	end
+	
+	if (clk_count == 12'd1248) begin
+		address_count_reg <= address_count_reg + 1'b1;
+		clk_count <= 12'b0;
+	end
+	
+	else
+		clk_count <= clk_count + 12'b1;
+end
