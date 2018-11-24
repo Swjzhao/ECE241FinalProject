@@ -1,2 +1,1 @@
-Info (10281): Verilog HDL Declaration information at ECE241FinalProject.v(279): object "Colour" differs only in case from object "colour" in the same scope File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 279
-Warning (10268): Verilog HDL information at ECE241FinalProject.v(618): always construct contains both blocking and non-blocking assignments File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 618
+Info (10281): Verilog HDL Declaration information at datapath.v(17): object "Colour" differs only in case from object "colour" in the same scope File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/datapath.v Line: 17
