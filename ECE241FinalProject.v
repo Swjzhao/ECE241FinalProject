@@ -83,13 +83,27 @@ output				FPGA_I2C_SCLK;
 			default: plot = ~KEY[1];
 		endcase
 	end
-	PS2_Controller pc0 (
+//	PS2_Demo pc0 (
+//		.CLOCK_50(CLOCK_50),
+//		.reset(reset),
+//		.PS2_CLK(PS2_CLK),
+//		.PS2_DAT(PS2_DAT),
+//		.received_data(PS2_byte),
+//		.received_data_en(data_received));
+	PS2_Demo pc0 (
 		.CLOCK_50(CLOCK_50),
-		.reset(reset),
+		.KEY(KEY[3:0]),
 		.PS2_CLK(PS2_CLK),
 		.PS2_DAT(PS2_DAT),
-		.received_data(PS2_byte),
-		.received_data_en(data_received));
+		.last_data_received(PS2_byte),
+		.HEX0(HEX0),
+		.HEX1(HEX1),
+		.HEX2(HEX2),
+		.HEX3(HEX3),
+		.HEX4(HEX4),
+		.HEX5(HEX5)
+		
+	);
 
 	vga_adapter v1(
 		.resetn(reset),
@@ -117,7 +131,7 @@ output				FPGA_I2C_SCLK;
 	DE1_SoC_Audio_Example  d1 (
 	// Inputs
 	.CLOCK_50(CLOCK_50),
-	.KEY(~KEY[0]), .HEX0(HEX0), .HEX1(HEX1), .HEX2(HEX2), .HEX3(HEX3), .HEX4(HEX4), .HEX5(HEX5),
+	.KEY(KEY[0]),
 
 	.AUD_ADCDAT(AUD_ADCDAT),
 

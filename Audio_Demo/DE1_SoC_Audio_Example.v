@@ -2,8 +2,7 @@
 module DE1_SoC_Audio_Example (
 	// Inputs
 	CLOCK_50,
-	KEY, HEX0,HEX1, HEX2, HEX3, HEX4, HEX5,
-
+	KEY,
 	AUD_ADCDAT,
 
 	// Bidirectionals
@@ -48,7 +47,6 @@ output				AUD_XCK;
 output				AUD_DACDAT;
 
 output				FPGA_I2C_SCLK;
-output [6:0] HEX0 , HEX1, HEX2, HEX3, HEX4, HEX5;
 
 /*****************************************************************************
  *                 Internal Wires and Registers Declarations                 *
@@ -84,9 +82,7 @@ reg [9:0] address;
 wire reset = ~KEY[0];
 
 testram test(.address(address), .clock(CLOCK_50), .data(18'b0), .wren(1'b0), .q(audio_out)); 
-hex_decoder h1(.hex_digit(address [3:0]), .segments(HEX0));
-hex_decoder h2(.hex_digit(address [7:4]), .segments(HEX1));
-hex_decoder h3(.hex_digit({2'b0, audio_out [9:8]}), .segments(HEX2));
+
 //hex_decoder h4(.hex_digit(audio_out [15:12]), .segments(HEX3));
 //hex_decoder h5(.hex_digit({2'b0, audio_out [17:16]}), .segments(HEX4));
 //hex_decoder h6(.hex_digit(3'd4), .segments(HEX5));
