@@ -1,7 +1,7 @@
 `timescale 1ns / 1ns
 module top(
 			SW, 
-			KEY,
+			KEY, HEX0 , HEX1, HEX2, HEX3, HEX4, HEX5,
 			CLOCK_50,
 			PS2_CLK,
 			PS2_DAT,
@@ -13,20 +13,20 @@ module top(
 			VGA_BLANK,
 			VGA_SYNC,
 			VGA_CLK,
-//			AUD_ADCDAT,
-//
-//			// Bidirectionals
-//			AUD_BCLK,
-//			AUD_ADCLRCK,
-//			AUD_DACLRCK,
-//
-//			FPGA_I2C_SDAT,
-//
-//			// Outputs
-//			AUD_XCK,
-//			AUD_DACDAT,
+			AUD_ADCDAT,
 
-//			FPGA_I2C_SCLK
+			// Bidirectionals
+			AUD_BCLK,
+			AUD_ADCLRCK,
+			AUD_DACLRCK,
+
+			FPGA_I2C_SDAT,
+
+			// Outputs
+			AUD_XCK,
+			AUD_DACDAT,
+
+			FPGA_I2C_SCLK
 			);			
 	inout PS2_CLK, PS2_DAT;
 	//SW[6:0] X,Y
@@ -44,21 +44,21 @@ module top(
 	output VGA_BLANK;
 	output VGA_SYNC;
 	output VGA_CLK;
-//	input				AUD_ADCDAT;
+	input				AUD_ADCDAT;
 
-//// Bidirectionals
-//inout				AUD_BCLK;
-//inout				AUD_ADCLRCK;
-//inout				AUD_DACLRCK;
-//
-//inout				FPGA_I2C_SDAT;
-//
-//// Outputs
-//output				AUD_XCK;
-//output				AUD_DACDAT;
-//
-//output				FPGA_I2C_SCLK;
-//	output [6:0] HEX0 , HEX1, HEX2, HEX3, HEX4, HEX5;
+// Bidirectionals
+inout				AUD_BCLK;
+inout				AUD_ADCLRCK;
+inout				AUD_DACLRCK;
+
+inout				FPGA_I2C_SDAT;
+
+// Outputs
+output				AUD_XCK;
+output				AUD_DACDAT;
+
+output				FPGA_I2C_SCLK;
+	output [6:0] HEX0 , HEX1, HEX2, HEX3, HEX4, HEX5;
 
 	
 	wire [14:0] colour;
@@ -114,7 +114,27 @@ module top(
 		defparam v1.BITS_PER_COLOUR_CHANNEL = 5;
 		defparam v1.BACKGROUND_IMAGE = "Graphics/osuhd.mif";
 	
-	
+	DE1_SoC_Audio_Example  d1 (
+	// Inputs
+	.CLOCK_50(CLOCK_50),
+	.KEY(~KEY[0]), .HEX0(HEX0), .HEX1(HEX1), .HEX2(HEX2), .HEX3(HEX3), .HEX4(HEX4), .HEX5(HEX5),
+
+	.AUD_ADCDAT(AUD_ADCDAT),
+
+	// Bidirectionals
+	.AUD_BCLK(AUD_BCLK),
+	.AUD_ADCLRCK(AUD_ADCLRCK),
+	.AUD_DACLRCK(AUD_DACLRCK),
+
+	.FPGA_I2C_SDAT(FPGA_I2C_SDAT),
+
+	// Outputs
+	.AUD_XCK(AUD_XCK),
+	.AUD_DACDAT(AUD_DACDAT),
+
+	.FPGA_I2C_SCLK(FPGA_I2C_SCLK),
+	.SW(SW[3:0])
+	);
 
 	
 	part2 p2(
