@@ -66,9 +66,6 @@ module control(
 
 	 always@(posedge clk)
     begin: state_FFs
-        if(!reset)
-            current_state <= S_Reset;
-		  else
             current_state <= next_state;
 			
     end 

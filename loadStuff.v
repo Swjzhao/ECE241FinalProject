@@ -130,8 +130,8 @@ module loadLocation(
 );
 	wire [7:0] xx;
 	wire [7:0] yy;
-	ramMapX rax(.address({1'b0,i}), .clock(clock),.wren(1'b0), .q(xx));
-	ramMapY ray(.address({1'b0,i}), .clock(clock),.wren(1'b0), .q(yy));
+	ramMapX rax(.address({2'b0,i}), .clock(clock),.wren(1'b0), .q(xx));
+	ramMapY ray(.address({2'b0,i}), .clock(clock),.wren(1'b0), .q(yy));
 	assign locx = xx;
 	assign locy = yy;
 	
