@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Sun Nov 25 21:44:57 2018
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Revision Name : gameover
+Top-level Entity Name : gameover
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 50
+Total pins : 34
+Total virtual pins : 0
+Total block memory bits : 1,158,144
+Total DSP Blocks : 0
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 1
+Total DLLs : 0

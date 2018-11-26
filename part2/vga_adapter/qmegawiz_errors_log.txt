@@ -8,3 +8,48 @@ Error messages are listed in file
 C:/Users/meteo/OneDrive/Documents/ECE241/Lab7/part2/vga_adapter/vga_pll.cnxerr.
 
 Can't create the custom megafunction variation file(s)
+
+C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/part2/vga_adapter/vga_pll.v
+
+Nov 25 01PM:50:54>: Error in CNX file format.
+
+Error messages are listed in file
+C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/part2/vga_adapter/vga_pll.cnxerr.
+
+Can't create the custom megafunction variation file(s)
+
+C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/part2/vga_adapter/vga_pll.v
+
+Nov 25 09PM:36:00>: Error in CNX file format.
+
+Error messages are listed in file
+C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/part2/vga_adapter/vga_pll.cnxerr.
+
+Can't create the custom megafunction variation file(s)
+
+C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/part2/vga_adapter/vga_pll.v
+
+Nov 25 09PM:51:04>: Error in CNX file format.
+
+Error messages are listed in file
+C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/part2/vga_adapter/vga_pll.cnxerr.
+
+Can't create the custom megafunction variation file(s)
+
+C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/part2/vga_adapter/vga_pll.v
+
+Nov 25 10PM:32:14>: Error in CNX file format.
+
+Error messages are listed in file
+C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/part2/vga_adapter/vga_pll.cnxerr.
+
+Can't create the custom megafunction variation file(s)
+
+C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/part2/vga_adapter/vga_pll.v
+
+Nov 25 10PM:54:46>: Error in CNX file format.
+
+Error messages are listed in file
+C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/part2/vga_adapter/vga_pll.cnxerr.
+
+Can't create the custom megafunction variation file(s)
