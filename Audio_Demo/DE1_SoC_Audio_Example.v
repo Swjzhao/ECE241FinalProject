@@ -64,22 +64,17 @@ wire				write_audio_out;
 
 // Internal Registers
 
-//reg [18:0] delay_cnt;
-//wire [18:0] delay;
 reg [18:0] delay_cnt;
 wire [18:0] delay;
-
-
-reg [18:0] delay_cnt2;
-wire [18:0] delay2;
-
 reg snd;
-
-reg [15:0] freq2;
 wire [19:0] audio_out; // output of the ram
 reg [26:0] frequency_counter;
 reg [9:0] address;
 wire reset = ~KEY[0];
+assign delay = audio_out;
+
+//plan:
+//output songend //set to high if song has ended. 
 
 testram test(.address(address), .clock(CLOCK_50), .data(18'b0), .wren(1'b0), .q(audio_out)); 
 
@@ -114,7 +109,7 @@ always @(posedge CLOCK_50) begin
 		if (frequency_counter == limit) begin 
 			frequency_counter <= 27'b0;
 			if (address == mif_lines) begin
-				address <= 0;
+				address <= address + 0; //i set it to stop playing once it reaches the end of the song. 
 				limit <= 27'd9200000;
 			end
 			if (address < mif_lines)
@@ -130,13 +125,10 @@ always @(posedge CLOCK_50) begin
  *                            Combinational Logic                            *
  *****************************************************************************/
 
-assign delay = audio_out;
+
 
 wire [31:0] sound = (SW == 0) ? 0 : snd ? 32'd1000000000 : -32'd1000000000;
-
-
 assign read_audio_in			= audio_in_available & audio_out_allowed;
-
 assign left_channel_audio_out	= left_channel_audio_in+sound;
 assign right_channel_audio_out	= right_channel_audio_in+sound;
 assign write_audio_out			= audio_in_available & audio_out_allowed;

@@ -1,6 +1,6 @@
 Analysis & Synthesis report for ECE241FinalProject
-Mon Nov 26 00:24:47 2018
-Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Mon Nov 26 15:51:15 2018
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
 ---------------------
@@ -127,8 +127,8 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Nov 26 00:24:47 2018       ;
-; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Analysis & Synthesis Status     ; Successful - Mon Nov 26 15:51:15 2018       ;
+; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                   ; ECE241FinalProject                          ;
 ; Top-level Entity Name           ; top                                         ;
 ; Family                          ; Cyclone V                                   ;
@@ -239,107 +239,109 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                         ;
-+---------------------------------------------------------------+-----------------+----------------------------------------+---------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path                              ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                                                              ; Library ;
-+---------------------------------------------------------------+-----------------+----------------------------------------+---------------------------------------------------------------------------------------------------------------------------+---------+
-; PS2_Demo/PS2_Demo.v                                           ; yes             ; User Verilog HDL File                  ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/PS2_Demo/PS2_Demo.v                                           ;         ;
-; PS2_Demo/PS2_Controller.v                                     ; yes             ; User Verilog HDL File                  ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/PS2_Demo/PS2_Controller.v                                     ;         ;
-; PS2_Demo/Hexadecimal_To_Seven_Segment.v                       ; yes             ; User Verilog HDL File                  ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/PS2_Demo/Hexadecimal_To_Seven_Segment.v                       ;         ;
-; PS2_Demo/Altera_UP_PS2_Data_In.v                              ; yes             ; User Verilog HDL File                  ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/PS2_Demo/Altera_UP_PS2_Data_In.v                              ;         ;
-; PS2_Demo/Altera_UP_PS2_Command_Out.v                          ; yes             ; User Verilog HDL File                  ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/PS2_Demo/Altera_UP_PS2_Command_Out.v                          ;         ;
-; Audio_Demo/DE1_SoC_Audio_Example.v                            ; yes             ; User Verilog HDL File                  ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/DE1_SoC_Audio_Example.v                            ;         ;
-; part2/vga_adapter/vga_pll.v                                   ; yes             ; User Wizard-Generated File             ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/part2/vga_adapter/vga_pll.v                                   ;         ;
-; part2/vga_adapter/vga_controller.v                            ; yes             ; User Verilog HDL File                  ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/part2/vga_adapter/vga_controller.v                            ;         ;
-; part2/vga_adapter/vga_address_translator.v                    ; yes             ; User Verilog HDL File                  ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/part2/vga_adapter/vga_address_translator.v                    ;         ;
-; part2/vga_adapter/vga_adapter.v                               ; yes             ; User Verilog HDL File                  ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/part2/vga_adapter/vga_adapter.v                               ;         ;
-; ECE241FinalProject.v                                          ; yes             ; User Verilog HDL File                  ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v                                          ;         ;
-; ramMapX.v                                                     ; yes             ; User Wizard-Generated File             ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ramMapX.v                                                     ;         ;
-; ramMapY.v                                                     ; yes             ; User Wizard-Generated File             ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ramMapY.v                                                     ;         ;
-; BGRam.v                                                       ; yes             ; User Wizard-Generated File             ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/BGRam.v                                                       ;         ;
-; loadA.v                                                       ; yes             ; User Wizard-Generated File             ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/loadA.v                                                       ;         ;
-; loadS.v                                                       ; yes             ; User Wizard-Generated File             ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/loadS.v                                                       ;         ;
-; loadD.v                                                       ; yes             ; User Wizard-Generated File             ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/loadD.v                                                       ;         ;
-; loadF.v                                                       ; yes             ; User Wizard-Generated File             ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/loadF.v                                                       ;         ;
-; keyRam.v                                                      ; yes             ; User Wizard-Generated File             ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/keyRam.v                                                      ;         ;
-; control.v                                                     ; yes             ; User Verilog HDL File                  ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/control.v                                                     ;         ;
-; datapath.v                                                    ; yes             ; User Verilog HDL File                  ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/datapath.v                                                    ;         ;
-; loadStuff.v                                                   ; yes             ; User Verilog HDL File                  ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/loadStuff.v                                                   ;         ;
-; Audio_Demo/Audio_Controller/Altera_UP_Audio_Bit_Counter.v     ; yes             ; User Verilog HDL File                  ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Altera_UP_Audio_Bit_Counter.v     ;         ;
-; Audio_Demo/Audio_Controller/Altera_UP_Audio_In_Deserializer.v ; yes             ; User Verilog HDL File                  ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Altera_UP_Audio_In_Deserializer.v ;         ;
-; Audio_Demo/Audio_Controller/Altera_UP_Audio_Out_Serializer.v  ; yes             ; User Verilog HDL File                  ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Altera_UP_Audio_Out_Serializer.v  ;         ;
-; Audio_Demo/Audio_Controller/Altera_UP_Clock_Edge.v            ; yes             ; User Verilog HDL File                  ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Altera_UP_Clock_Edge.v            ;         ;
-; Audio_Demo/Audio_Controller/Altera_UP_SYNC_FIFO.v             ; yes             ; User Verilog HDL File                  ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Altera_UP_SYNC_FIFO.v             ;         ;
-; Audio_Demo/Audio_Controller/Audio_Clock.v                     ; yes             ; User Wizard-Generated File             ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Audio_Clock.v                     ;         ;
-; Audio_Demo/Audio_Controller/Audio_Controller.v                ; yes             ; User Verilog HDL File                  ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Audio_Controller.v                ;         ;
-; Audio_Demo/avconf/avconf.v                                    ; yes             ; User Verilog HDL File                  ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/avconf/avconf.v                                    ;         ;
-; Audio_Demo/avconf/I2C_Controller.v                            ; yes             ; User Verilog HDL File                  ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/avconf/I2C_Controller.v                            ;         ;
-; testram.v                                                     ; yes             ; User Wizard-Generated File             ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/testram.v                                                     ;         ;
-; altsyncram.tdf                                                ; yes             ; Megafunction                           ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf                                                     ;         ;
-; stratix_ram_block.inc                                         ; yes             ; Megafunction                           ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                              ;         ;
-; lpm_mux.inc                                                   ; yes             ; Megafunction                           ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.inc                                                        ;         ;
-; lpm_decode.inc                                                ; yes             ; Megafunction                           ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.inc                                                     ;         ;
-; aglobal181.inc                                                ; yes             ; Megafunction                           ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc                                                     ;         ;
-; a_rdenreg.inc                                                 ; yes             ; Megafunction                           ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_rdenreg.inc                                                      ;         ;
-; altrom.inc                                                    ; yes             ; Megafunction                           ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.inc                                                         ;         ;
-; altram.inc                                                    ; yes             ; Megafunction                           ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.inc                                                         ;         ;
-; altdpram.inc                                                  ; yes             ; Megafunction                           ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc                                                       ;         ;
-; db/altsyncram_o7n1.tdf                                        ; yes             ; Auto-Generated Megafunction            ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/altsyncram_o7n1.tdf                                        ;         ;
-; graphics/osuhd.mif                                            ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/graphics/osuhd.mif                                            ;         ;
-; db/decode_nma.tdf                                             ; yes             ; Auto-Generated Megafunction            ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/decode_nma.tdf                                             ;         ;
-; db/decode_g2a.tdf                                             ; yes             ; Auto-Generated Megafunction            ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/decode_g2a.tdf                                             ;         ;
-; db/mux_lib.tdf                                                ; yes             ; Auto-Generated Megafunction            ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/mux_lib.tdf                                                ;         ;
-; altpll.tdf                                                    ; yes             ; Megafunction                           ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altpll.tdf                                                         ;         ;
-; stratix_pll.inc                                               ; yes             ; Megafunction                           ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_pll.inc                                                    ;         ;
-; stratixii_pll.inc                                             ; yes             ; Megafunction                           ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratixii_pll.inc                                                  ;         ;
-; cycloneii_pll.inc                                             ; yes             ; Megafunction                           ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/cycloneii_pll.inc                                                  ;         ;
-; db/altpll_80u.tdf                                             ; yes             ; Auto-Generated Megafunction            ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/altpll_80u.tdf                                             ;         ;
-; db/altsyncram_f0p1.tdf                                        ; yes             ; Auto-Generated Megafunction            ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/altsyncram_f0p1.tdf                                        ;         ;
-; tokyo_ghoul.mif                                               ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/tokyo_ghoul.mif                                               ;         ;
-; scfifo.tdf                                                    ; yes             ; Megafunction                           ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/scfifo.tdf                                                         ;         ;
-; a_regfifo.inc                                                 ; yes             ; Megafunction                           ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_regfifo.inc                                                      ;         ;
-; a_dpfifo.inc                                                  ; yes             ; Megafunction                           ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_dpfifo.inc                                                       ;         ;
-; a_i2fifo.inc                                                  ; yes             ; Megafunction                           ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_i2fifo.inc                                                       ;         ;
-; a_fffifo.inc                                                  ; yes             ; Megafunction                           ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_fffifo.inc                                                       ;         ;
-; a_f2fifo.inc                                                  ; yes             ; Megafunction                           ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_f2fifo.inc                                                       ;         ;
-; db/scfifo_7ba1.tdf                                            ; yes             ; Auto-Generated Megafunction            ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/scfifo_7ba1.tdf                                            ;         ;
-; db/a_dpfifo_q2a1.tdf                                          ; yes             ; Auto-Generated Megafunction            ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/a_dpfifo_q2a1.tdf                                          ;         ;
-; db/altsyncram_n3i1.tdf                                        ; yes             ; Auto-Generated Megafunction            ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/altsyncram_n3i1.tdf                                        ;         ;
-; db/cmpr_6l8.tdf                                               ; yes             ; Auto-Generated Megafunction            ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/cmpr_6l8.tdf                                               ;         ;
-; db/cntr_h2b.tdf                                               ; yes             ; Auto-Generated Megafunction            ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/cntr_h2b.tdf                                               ;         ;
-; db/cntr_u27.tdf                                               ; yes             ; Auto-Generated Megafunction            ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/cntr_u27.tdf                                               ;         ;
-; db/cntr_i2b.tdf                                               ; yes             ; Auto-Generated Megafunction            ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/cntr_i2b.tdf                                               ;         ;
-; db/audio_clock_altpll.v                                       ; yes             ; Auto-Generated Megafunction            ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/audio_clock_altpll.v                                       ;         ;
-; db/altsyncram_tip1.tdf                                        ; yes             ; Auto-Generated Megafunction            ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/altsyncram_tip1.tdf                                        ;         ;
-; graphics/beatmapx.mif                                         ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/graphics/beatmapx.mif                                         ;         ;
-; db/altsyncram_uip1.tdf                                        ; yes             ; Auto-Generated Megafunction            ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/altsyncram_uip1.tdf                                        ;         ;
-; graphics/beatmapy.mif                                         ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/graphics/beatmapy.mif                                         ;         ;
-; db/altsyncram_r0p1.tdf                                        ; yes             ; Auto-Generated Megafunction            ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/altsyncram_r0p1.tdf                                        ;         ;
-; graphics/key.mif                                              ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/graphics/key.mif                                              ;         ;
-; db/altsyncram_qdq1.tdf                                        ; yes             ; Auto-Generated Megafunction            ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/altsyncram_qdq1.tdf                                        ;         ;
-; graphics/circles/circlesa.mif                                 ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/graphics/circles/circlesa.mif                                 ;         ;
-; db/altsyncram_ceq1.tdf                                        ; yes             ; Auto-Generated Megafunction            ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/altsyncram_ceq1.tdf                                        ;         ;
-; graphics/circles/circless.mif                                 ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/graphics/circles/circless.mif                                 ;         ;
-; db/altsyncram_tdq1.tdf                                        ; yes             ; Auto-Generated Megafunction            ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/altsyncram_tdq1.tdf                                        ;         ;
-; graphics/circles/circlesd.mif                                 ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/graphics/circles/circlesd.mif                                 ;         ;
-; db/altsyncram_vdq1.tdf                                        ; yes             ; Auto-Generated Megafunction            ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/altsyncram_vdq1.tdf                                        ;         ;
-; graphics/circles/circlesf.mif                                 ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/graphics/circles/circlesf.mif                                 ;         ;
-; db/altsyncram_odq1.tdf                                        ; yes             ; Auto-Generated Megafunction            ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/altsyncram_odq1.tdf                                        ;         ;
-; graphics/carbon_fibre_@2x.mif                                 ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/graphics/carbon_fibre_@2x.mif                                 ;         ;
-+---------------------------------------------------------------+-----------------+----------------------------------------+---------------------------------------------------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                  ;
++---------------------------------------------------------------+-----------------+----------------------------------------+--------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                              ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                                                       ; Library ;
++---------------------------------------------------------------+-----------------+----------------------------------------+--------------------------------------------------------------------------------------------------------------------+---------+
+; PS2_Demo/PS2_Demo.v                                           ; yes             ; User Verilog HDL File                  ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/PS2_Demo/PS2_Demo.v                                           ;         ;
+; PS2_Demo/PS2_Controller.v                                     ; yes             ; User Verilog HDL File                  ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/PS2_Demo/PS2_Controller.v                                     ;         ;
+; PS2_Demo/Hexadecimal_To_Seven_Segment.v                       ; yes             ; User Verilog HDL File                  ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/PS2_Demo/Hexadecimal_To_Seven_Segment.v                       ;         ;
+; PS2_Demo/Altera_UP_PS2_Data_In.v                              ; yes             ; User Verilog HDL File                  ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/PS2_Demo/Altera_UP_PS2_Data_In.v                              ;         ;
+; PS2_Demo/Altera_UP_PS2_Command_Out.v                          ; yes             ; User Verilog HDL File                  ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/PS2_Demo/Altera_UP_PS2_Command_Out.v                          ;         ;
+; Audio_Demo/DE1_SoC_Audio_Example.v                            ; yes             ; User Verilog HDL File                  ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/DE1_SoC_Audio_Example.v                            ;         ;
+; part2/vga_adapter/vga_pll.v                                   ; yes             ; User Wizard-Generated File             ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/part2/vga_adapter/vga_pll.v                                   ;         ;
+; part2/vga_adapter/vga_controller.v                            ; yes             ; User Verilog HDL File                  ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/part2/vga_adapter/vga_controller.v                            ;         ;
+; part2/vga_adapter/vga_address_translator.v                    ; yes             ; User Verilog HDL File                  ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/part2/vga_adapter/vga_address_translator.v                    ;         ;
+; part2/vga_adapter/vga_adapter.v                               ; yes             ; User Verilog HDL File                  ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/part2/vga_adapter/vga_adapter.v                               ;         ;
+; ECE241FinalProject.v                                          ; yes             ; User Verilog HDL File                  ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v                                          ;         ;
+; ramMapX.v                                                     ; yes             ; User Wizard-Generated File             ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ramMapX.v                                                     ;         ;
+; ramMapY.v                                                     ; yes             ; User Wizard-Generated File             ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ramMapY.v                                                     ;         ;
+; BGRam.v                                                       ; yes             ; User Wizard-Generated File             ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/BGRam.v                                                       ;         ;
+; loadA.v                                                       ; yes             ; User Wizard-Generated File             ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/loadA.v                                                       ;         ;
+; loadS.v                                                       ; yes             ; User Wizard-Generated File             ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/loadS.v                                                       ;         ;
+; loadD.v                                                       ; yes             ; User Wizard-Generated File             ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/loadD.v                                                       ;         ;
+; loadF.v                                                       ; yes             ; User Wizard-Generated File             ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/loadF.v                                                       ;         ;
+; keyRam.v                                                      ; yes             ; User Wizard-Generated File             ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/keyRam.v                                                      ;         ;
+; control.v                                                     ; yes             ; User Verilog HDL File                  ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/control.v                                                     ;         ;
+; datapath.v                                                    ; yes             ; User Verilog HDL File                  ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v                                                    ;         ;
+; loadStuff.v                                                   ; yes             ; User Verilog HDL File                  ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/loadStuff.v                                                   ;         ;
+; Audio_Demo/Audio_Controller/Altera_UP_Audio_Bit_Counter.v     ; yes             ; User Verilog HDL File                  ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Altera_UP_Audio_Bit_Counter.v     ;         ;
+; Audio_Demo/Audio_Controller/Altera_UP_Audio_In_Deserializer.v ; yes             ; User Verilog HDL File                  ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Altera_UP_Audio_In_Deserializer.v ;         ;
+; Audio_Demo/Audio_Controller/Altera_UP_Audio_Out_Serializer.v  ; yes             ; User Verilog HDL File                  ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Altera_UP_Audio_Out_Serializer.v  ;         ;
+; Audio_Demo/Audio_Controller/Altera_UP_Clock_Edge.v            ; yes             ; User Verilog HDL File                  ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Altera_UP_Clock_Edge.v            ;         ;
+; Audio_Demo/Audio_Controller/Altera_UP_SYNC_FIFO.v             ; yes             ; User Verilog HDL File                  ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Altera_UP_SYNC_FIFO.v             ;         ;
+; Audio_Demo/Audio_Controller/Audio_Clock.v                     ; yes             ; User Wizard-Generated File             ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Audio_Clock.v                     ;         ;
+; Audio_Demo/Audio_Controller/Audio_Controller.v                ; yes             ; User Verilog HDL File                  ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Audio_Controller.v                ;         ;
+; Audio_Demo/avconf/avconf.v                                    ; yes             ; User Verilog HDL File                  ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/avconf/avconf.v                                    ;         ;
+; Audio_Demo/avconf/I2C_Controller.v                            ; yes             ; User Verilog HDL File                  ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/avconf/I2C_Controller.v                            ;         ;
+; testram.v                                                     ; yes             ; User Wizard-Generated File             ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/testram.v                                                     ;         ;
+; altsyncram.tdf                                                ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altsyncram.tdf                                              ;         ;
+; stratix_ram_block.inc                                         ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/stratix_ram_block.inc                                       ;         ;
+; lpm_mux.inc                                                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_mux.inc                                                 ;         ;
+; lpm_decode.inc                                                ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_decode.inc                                              ;         ;
+; aglobal180.inc                                                ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/aglobal180.inc                                              ;         ;
+; a_rdenreg.inc                                                 ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/a_rdenreg.inc                                               ;         ;
+; altrom.inc                                                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altrom.inc                                                  ;         ;
+; altram.inc                                                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altram.inc                                                  ;         ;
+; altdpram.inc                                                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altdpram.inc                                                ;         ;
+; db/altsyncram_o7n1.tdf                                        ; yes             ; Auto-Generated Megafunction            ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_o7n1.tdf                                        ;         ;
+; graphics/osuhd.mif                                            ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/graphics/osuhd.mif                                            ;         ;
+; db/decode_nma.tdf                                             ; yes             ; Auto-Generated Megafunction            ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/decode_nma.tdf                                             ;         ;
+; db/decode_g2a.tdf                                             ; yes             ; Auto-Generated Megafunction            ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/decode_g2a.tdf                                             ;         ;
+; db/mux_lib.tdf                                                ; yes             ; Auto-Generated Megafunction            ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/mux_lib.tdf                                                ;         ;
+; altpll.tdf                                                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altpll.tdf                                                  ;         ;
+; stratix_pll.inc                                               ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/stratix_pll.inc                                             ;         ;
+; stratixii_pll.inc                                             ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/stratixii_pll.inc                                           ;         ;
+; cycloneii_pll.inc                                             ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/cycloneii_pll.inc                                           ;         ;
+; db/altpll_80u.tdf                                             ; yes             ; Auto-Generated Megafunction            ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altpll_80u.tdf                                             ;         ;
+; db/altsyncram_f0p1.tdf                                        ; yes             ; Auto-Generated Megafunction            ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_f0p1.tdf                                        ;         ;
+; tokyo_ghoul.mif                                               ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/tokyo_ghoul.mif                                               ;         ;
+; scfifo.tdf                                                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/scfifo.tdf                                                  ;         ;
+; a_regfifo.inc                                                 ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/a_regfifo.inc                                               ;         ;
+; a_dpfifo.inc                                                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/a_dpfifo.inc                                                ;         ;
+; a_i2fifo.inc                                                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/a_i2fifo.inc                                                ;         ;
+; a_fffifo.inc                                                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/a_fffifo.inc                                                ;         ;
+; a_f2fifo.inc                                                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/a_f2fifo.inc                                                ;         ;
+; db/scfifo_7ba1.tdf                                            ; yes             ; Auto-Generated Megafunction            ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/scfifo_7ba1.tdf                                            ;         ;
+; db/a_dpfifo_q2a1.tdf                                          ; yes             ; Auto-Generated Megafunction            ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/a_dpfifo_q2a1.tdf                                          ;         ;
+; db/altsyncram_n3i1.tdf                                        ; yes             ; Auto-Generated Megafunction            ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_n3i1.tdf                                        ;         ;
+; db/cmpr_6l8.tdf                                               ; yes             ; Auto-Generated Megafunction            ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/cmpr_6l8.tdf                                               ;         ;
+; db/cntr_h2b.tdf                                               ; yes             ; Auto-Generated Megafunction            ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/cntr_h2b.tdf                                               ;         ;
+; db/cntr_u27.tdf                                               ; yes             ; Auto-Generated Megafunction            ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/cntr_u27.tdf                                               ;         ;
+; db/cntr_i2b.tdf                                               ; yes             ; Auto-Generated Megafunction            ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/cntr_i2b.tdf                                               ;         ;
+; db/audio_clock_altpll.v                                       ; yes             ; Auto-Generated Megafunction            ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/audio_clock_altpll.v                                       ;         ;
+; db/altsyncram_tip1.tdf                                        ; yes             ; Auto-Generated Megafunction            ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_tip1.tdf                                        ;         ;
+; graphics/beatmapx.mif                                         ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/graphics/beatmapx.mif                                         ;         ;
+; db/altsyncram_uip1.tdf                                        ; yes             ; Auto-Generated Megafunction            ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_uip1.tdf                                        ;         ;
+; graphics/beatmapy.mif                                         ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/graphics/beatmapy.mif                                         ;         ;
+; db/altsyncram_r0p1.tdf                                        ; yes             ; Auto-Generated Megafunction            ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_r0p1.tdf                                        ;         ;
+; graphics/key.mif                                              ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/graphics/key.mif                                              ;         ;
+; db/altsyncram_qdq1.tdf                                        ; yes             ; Auto-Generated Megafunction            ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_qdq1.tdf                                        ;         ;
+; graphics/circles/circlesa.mif                                 ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/graphics/circles/circlesa.mif                                 ;         ;
+; db/altsyncram_ceq1.tdf                                        ; yes             ; Auto-Generated Megafunction            ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_ceq1.tdf                                        ;         ;
+; graphics/circles/circless.mif                                 ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/graphics/circles/circless.mif                                 ;         ;
+; db/altsyncram_tdq1.tdf                                        ; yes             ; Auto-Generated Megafunction            ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_tdq1.tdf                                        ;         ;
+; graphics/circles/circlesd.mif                                 ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/graphics/circles/circlesd.mif                                 ;         ;
+; db/altsyncram_vdq1.tdf                                        ; yes             ; Auto-Generated Megafunction            ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_vdq1.tdf                                        ;         ;
+; graphics/circles/circlesf.mif                                 ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/graphics/circles/circlesf.mif                                 ;         ;
+; db/altsyncram_odq1.tdf                                        ; yes             ; Auto-Generated Megafunction            ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_odq1.tdf                                        ;         ;
+; graphics/carbon_fibre_@2x.mif                                 ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/graphics/carbon_fibre_@2x.mif                                 ;         ;
++---------------------------------------------------------------+-----------------+----------------------------------------+--------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------+
@@ -3056,7 +3058,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:04     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -3065,109 +3067,109 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Nov 26 00:24:09 2018
+    Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+    Info: Processing started: Mon Nov 26 15:50:50 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ECE241FinalProject -c ECE241FinalProject
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file ps2_demo/ps2_demo.v
-    Info (12023): Found entity 1: PS2_Demo File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/PS2_Demo/PS2_Demo.v Line: 2
+    Info (12023): Found entity 1: PS2_Demo File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/PS2_Demo/PS2_Demo.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file ps2_demo/ps2_controller.v
-    Info (12023): Found entity 1: PS2_Controller File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/PS2_Demo/PS2_Controller.v Line: 9
+    Info (12023): Found entity 1: PS2_Controller File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/PS2_Demo/PS2_Controller.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file ps2_demo/hexadecimal_to_seven_segment.v
-    Info (12023): Found entity 1: Hexadecimal_To_Seven_Segment File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/PS2_Demo/Hexadecimal_To_Seven_Segment.v Line: 9
+    Info (12023): Found entity 1: Hexadecimal_To_Seven_Segment File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/PS2_Demo/Hexadecimal_To_Seven_Segment.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file ps2_demo/altera_up_ps2_data_in.v
-    Info (12023): Found entity 1: Altera_UP_PS2_Data_In File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/PS2_Demo/Altera_UP_PS2_Data_In.v Line: 10
+    Info (12023): Found entity 1: Altera_UP_PS2_Data_In File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/PS2_Demo/Altera_UP_PS2_Data_In.v Line: 10
 Info (12021): Found 1 design units, including 1 entities, in source file ps2_demo/altera_up_ps2_command_out.v
-    Info (12023): Found entity 1: Altera_UP_PS2_Command_Out File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/PS2_Demo/Altera_UP_PS2_Command_Out.v Line: 10
+    Info (12023): Found entity 1: Altera_UP_PS2_Command_Out File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/PS2_Demo/Altera_UP_PS2_Command_Out.v Line: 10
 Info (12021): Found 2 design units, including 2 entities, in source file audio_demo/de1_soc_audio_example.v
-    Info (12023): Found entity 1: DE1_SoC_Audio_Example File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/DE1_SoC_Audio_Example.v Line: 2
-    Info (12023): Found entity 2: hex_decoder File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/DE1_SoC_Audio_Example.v Line: 190
+    Info (12023): Found entity 1: DE1_SoC_Audio_Example File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/DE1_SoC_Audio_Example.v Line: 2
+    Info (12023): Found entity 2: hex_decoder File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/DE1_SoC_Audio_Example.v Line: 182
 Info (12021): Found 1 design units, including 1 entities, in source file part2/vga_adapter/vga_pll.v
-    Info (12023): Found entity 1: vga_pll File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/part2/vga_adapter/vga_pll.v Line: 36
+    Info (12023): Found entity 1: vga_pll File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/part2/vga_adapter/vga_pll.v Line: 36
 Info (12021): Found 1 design units, including 1 entities, in source file part2/vga_adapter/vga_controller.v
-    Info (12023): Found entity 1: vga_controller File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/part2/vga_adapter/vga_controller.v Line: 9
+    Info (12023): Found entity 1: vga_controller File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/part2/vga_adapter/vga_controller.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file part2/vga_adapter/vga_address_translator.v
-    Info (12023): Found entity 1: vga_address_translator File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/part2/vga_adapter/vga_address_translator.v Line: 4
+    Info (12023): Found entity 1: vga_address_translator File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/part2/vga_adapter/vga_address_translator.v Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file part2/vga_adapter/vga_adapter.v
-    Info (12023): Found entity 1: vga_adapter File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/part2/vga_adapter/vga_adapter.v Line: 78
+    Info (12023): Found entity 1: vga_adapter File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/part2/vga_adapter/vga_adapter.v Line: 78
 Info (12021): Found 1 design units, including 1 entities, in source file part2/fill.v
-    Info (12023): Found entity 1: fill File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/part2/fill.v Line: 3
+    Info (12023): Found entity 1: fill File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/part2/fill.v Line: 3
 Info (12021): Found 2 design units, including 2 entities, in source file ece241finalproject.v
-    Info (12023): Found entity 1: top File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 2
-    Info (12023): Found entity 2: part2 File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 168
+    Info (12023): Found entity 1: top File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 2
+    Info (12023): Found entity 2: part2 File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 168
 Info (12021): Found 1 design units, including 1 entities, in source file ramgraphics.v
-    Info (12023): Found entity 1: ramGraphics File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ramGraphics.v Line: 39
+    Info (12023): Found entity 1: ramGraphics File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ramGraphics.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file rammap.v
-    Info (12023): Found entity 1: ramMap File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ramMap.v Line: 39
+    Info (12023): Found entity 1: ramMap File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ramMap.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file rammapx.v
-    Info (12023): Found entity 1: ramMapX File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ramMapX.v Line: 39
+    Info (12023): Found entity 1: ramMapX File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ramMapX.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file rammapy.v
-    Info (12023): Found entity 1: ramMapY File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ramMapY.v Line: 39
+    Info (12023): Found entity 1: ramMapY File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ramMapY.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file bgram.v
-    Info (12023): Found entity 1: BGRam File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/BGRam.v Line: 39
+    Info (12023): Found entity 1: BGRam File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/BGRam.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file loada.v
-    Info (12023): Found entity 1: loadA File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/loadA.v Line: 39
+    Info (12023): Found entity 1: loadA File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/loadA.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file loads.v
-    Info (12023): Found entity 1: loadS File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/loadS.v Line: 39
+    Info (12023): Found entity 1: loadS File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/loadS.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file loadd.v
-    Info (12023): Found entity 1: loadD File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/loadD.v Line: 39
+    Info (12023): Found entity 1: loadD File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/loadD.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file loadf.v
-    Info (12023): Found entity 1: loadF File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/loadF.v Line: 39
+    Info (12023): Found entity 1: loadF File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/loadF.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file keyram.v
-    Info (12023): Found entity 1: keyRam File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/keyRam.v Line: 39
+    Info (12023): Found entity 1: keyRam File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/keyRam.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file control.v
-    Info (12023): Found entity 1: control File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/control.v Line: 1
-Warning (10229): Verilog HDL Expression warning at datapath.v(220): truncated literal to match 8 bits File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/datapath.v Line: 220
-Warning (10229): Verilog HDL Expression warning at datapath.v(221): truncated literal to match 8 bits File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/datapath.v Line: 221
-Warning (10229): Verilog HDL Expression warning at datapath.v(225): truncated literal to match 7 bits File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/datapath.v Line: 225
-Warning (10229): Verilog HDL Expression warning at datapath.v(226): truncated literal to match 7 bits File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/datapath.v Line: 226
+    Info (12023): Found entity 1: control File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/control.v Line: 1
+Warning (10229): Verilog HDL Expression warning at datapath.v(220): truncated literal to match 8 bits File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 220
+Warning (10229): Verilog HDL Expression warning at datapath.v(221): truncated literal to match 8 bits File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 221
+Warning (10229): Verilog HDL Expression warning at datapath.v(225): truncated literal to match 7 bits File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 225
+Warning (10229): Verilog HDL Expression warning at datapath.v(226): truncated literal to match 7 bits File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 226
 Info (12021): Found 1 design units, including 1 entities, in source file datapath.v
-    Info (12023): Found entity 1: datapath File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/datapath.v Line: 2
+    Info (12023): Found entity 1: datapath File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 2
 Info (12021): Found 5 design units, including 5 entities, in source file loadstuff.v
-    Info (12023): Found entity 1: loadImage File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/loadStuff.v Line: 3
-    Info (12023): Found entity 2: loadBG File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/loadStuff.v Line: 42
-    Info (12023): Found entity 3: RateDivider File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/loadStuff.v Line: 52
-    Info (12023): Found entity 4: genloc File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/loadStuff.v Line: 69
-    Info (12023): Found entity 5: loadLocation File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/loadStuff.v Line: 125
+    Info (12023): Found entity 1: loadImage File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/loadStuff.v Line: 3
+    Info (12023): Found entity 2: loadBG File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/loadStuff.v Line: 42
+    Info (12023): Found entity 3: RateDivider File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/loadStuff.v Line: 52
+    Info (12023): Found entity 4: genloc File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/loadStuff.v Line: 69
+    Info (12023): Found entity 5: loadLocation File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/loadStuff.v Line: 125
 Info (12021): Found 1 design units, including 1 entities, in source file audio_demo/audio_controller/altera_up_audio_bit_counter.v
-    Info (12023): Found entity 1: Altera_UP_Audio_Bit_Counter File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Altera_UP_Audio_Bit_Counter.v Line: 11
+    Info (12023): Found entity 1: Altera_UP_Audio_Bit_Counter File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Altera_UP_Audio_Bit_Counter.v Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file audio_demo/audio_controller/altera_up_audio_in_deserializer.v
-    Info (12023): Found entity 1: Altera_UP_Audio_In_Deserializer File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Altera_UP_Audio_In_Deserializer.v Line: 9
+    Info (12023): Found entity 1: Altera_UP_Audio_In_Deserializer File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Altera_UP_Audio_In_Deserializer.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file audio_demo/audio_controller/altera_up_audio_out_serializer.v
-    Info (12023): Found entity 1: Altera_UP_Audio_Out_Serializer File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Altera_UP_Audio_Out_Serializer.v Line: 9
+    Info (12023): Found entity 1: Altera_UP_Audio_Out_Serializer File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Altera_UP_Audio_Out_Serializer.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file audio_demo/audio_controller/altera_up_clock_edge.v
-    Info (12023): Found entity 1: Altera_UP_Clock_Edge File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Altera_UP_Clock_Edge.v Line: 10
+    Info (12023): Found entity 1: Altera_UP_Clock_Edge File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Altera_UP_Clock_Edge.v Line: 10
 Info (12021): Found 1 design units, including 1 entities, in source file audio_demo/audio_controller/altera_up_sync_fifo.v
-    Info (12023): Found entity 1: Altera_UP_SYNC_FIFO File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Altera_UP_SYNC_FIFO.v Line: 9
+    Info (12023): Found entity 1: Altera_UP_SYNC_FIFO File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Altera_UP_SYNC_FIFO.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file audio_demo/audio_controller/audio_clock.v
-    Info (12023): Found entity 1: Audio_Clock File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Audio_Clock.v Line: 39
+    Info (12023): Found entity 1: Audio_Clock File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Audio_Clock.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file audio_demo/audio_controller/audio_controller.v
-    Info (12023): Found entity 1: Audio_Controller File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Audio_Controller.v Line: 11
+    Info (12023): Found entity 1: Audio_Controller File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Audio_Controller.v Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file audio_demo/avconf/avconf.v
-    Info (12023): Found entity 1: avconf File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/avconf/avconf.v Line: 1
+    Info (12023): Found entity 1: avconf File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/avconf/avconf.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file audio_demo/avconf/i2c_controller.v
-    Info (12023): Found entity 1: I2C_Controller File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/avconf/I2C_Controller.v Line: 43
+    Info (12023): Found entity 1: I2C_Controller File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/avconf/I2C_Controller.v Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file testram.v
-    Info (12023): Found entity 1: testram File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/testram.v Line: 39
-Warning (10236): Verilog HDL Implicit Net warning at PS2_Demo.v(84): created implicit net for "HEX6" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/PS2_Demo/PS2_Demo.v Line: 84
-Warning (10236): Verilog HDL Implicit Net warning at PS2_Demo.v(85): created implicit net for "HEX7" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/PS2_Demo/PS2_Demo.v Line: 85
+    Info (12023): Found entity 1: testram File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/testram.v Line: 39
+Warning (10236): Verilog HDL Implicit Net warning at PS2_Demo.v(84): created implicit net for "HEX6" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/PS2_Demo/PS2_Demo.v Line: 84
+Warning (10236): Verilog HDL Implicit Net warning at PS2_Demo.v(85): created implicit net for "HEX7" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/PS2_Demo/PS2_Demo.v Line: 85
 Info (12127): Elaborating entity "top" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at ECE241FinalProject.v(76): object "plot" assigned a value but never read File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 76
-Info (12128): Elaborating entity "PS2_Demo" for hierarchy "PS2_Demo:pc0" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 106
-Warning (10036): Verilog HDL or VHDL warning at PS2_Demo.v(84): object "HEX6" assigned a value but never read File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/PS2_Demo/PS2_Demo.v Line: 84
-Warning (10036): Verilog HDL or VHDL warning at PS2_Demo.v(85): object "HEX7" assigned a value but never read File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/PS2_Demo/PS2_Demo.v Line: 85
-Warning (10230): Verilog HDL assignment warning at PS2_Demo.v(84): truncated value with size 7 to match size of target (1) File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/PS2_Demo/PS2_Demo.v Line: 84
-Warning (10230): Verilog HDL assignment warning at PS2_Demo.v(85): truncated value with size 7 to match size of target (1) File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/PS2_Demo/PS2_Demo.v Line: 85
-Info (12128): Elaborating entity "PS2_Controller" for hierarchy "PS2_Demo:pc0|PS2_Controller:PS2" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/PS2_Demo/PS2_Demo.v Line: 103
-Info (12128): Elaborating entity "Altera_UP_PS2_Data_In" for hierarchy "PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/PS2_Demo/PS2_Controller.v Line: 246
-Info (12128): Elaborating entity "Altera_UP_PS2_Command_Out" for hierarchy "PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/PS2_Demo/PS2_Controller.v Line: 266
-Info (12128): Elaborating entity "Hexadecimal_To_Seven_Segment" for hierarchy "PS2_Demo:pc0|Hexadecimal_To_Seven_Segment:Segment0" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/PS2_Demo/PS2_Demo.v Line: 113
-Info (12128): Elaborating entity "vga_adapter" for hierarchy "vga_adapter:v1" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 124
-Info (12128): Elaborating entity "vga_address_translator" for hierarchy "vga_adapter:v1|vga_address_translator:user_input_translator" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/part2/vga_adapter/vga_adapter.v Line: 192
-Info (12128): Elaborating entity "altsyncram" for hierarchy "vga_adapter:v1|altsyncram:VideoMemory" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/part2/vga_adapter/vga_adapter.v Line: 213
-Info (12130): Elaborated megafunction instantiation "vga_adapter:v1|altsyncram:VideoMemory" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/part2/vga_adapter/vga_adapter.v Line: 213
-Info (12133): Instantiated megafunction "vga_adapter:v1|altsyncram:VideoMemory" with the following parameter: File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/part2/vga_adapter/vga_adapter.v Line: 213
+Warning (10036): Verilog HDL or VHDL warning at ECE241FinalProject.v(76): object "plot" assigned a value but never read File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 76
+Info (12128): Elaborating entity "PS2_Demo" for hierarchy "PS2_Demo:pc0" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 106
+Warning (10036): Verilog HDL or VHDL warning at PS2_Demo.v(84): object "HEX6" assigned a value but never read File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/PS2_Demo/PS2_Demo.v Line: 84
+Warning (10036): Verilog HDL or VHDL warning at PS2_Demo.v(85): object "HEX7" assigned a value but never read File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/PS2_Demo/PS2_Demo.v Line: 85
+Warning (10230): Verilog HDL assignment warning at PS2_Demo.v(84): truncated value with size 7 to match size of target (1) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/PS2_Demo/PS2_Demo.v Line: 84
+Warning (10230): Verilog HDL assignment warning at PS2_Demo.v(85): truncated value with size 7 to match size of target (1) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/PS2_Demo/PS2_Demo.v Line: 85
+Info (12128): Elaborating entity "PS2_Controller" for hierarchy "PS2_Demo:pc0|PS2_Controller:PS2" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/PS2_Demo/PS2_Demo.v Line: 103
+Info (12128): Elaborating entity "Altera_UP_PS2_Data_In" for hierarchy "PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/PS2_Demo/PS2_Controller.v Line: 246
+Info (12128): Elaborating entity "Altera_UP_PS2_Command_Out" for hierarchy "PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/PS2_Demo/PS2_Controller.v Line: 266
+Info (12128): Elaborating entity "Hexadecimal_To_Seven_Segment" for hierarchy "PS2_Demo:pc0|Hexadecimal_To_Seven_Segment:Segment0" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/PS2_Demo/PS2_Demo.v Line: 113
+Info (12128): Elaborating entity "vga_adapter" for hierarchy "vga_adapter:v1" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 124
+Info (12128): Elaborating entity "vga_address_translator" for hierarchy "vga_adapter:v1|vga_address_translator:user_input_translator" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/part2/vga_adapter/vga_adapter.v Line: 192
+Info (12128): Elaborating entity "altsyncram" for hierarchy "vga_adapter:v1|altsyncram:VideoMemory" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/part2/vga_adapter/vga_adapter.v Line: 213
+Info (12130): Elaborated megafunction instantiation "vga_adapter:v1|altsyncram:VideoMemory" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/part2/vga_adapter/vga_adapter.v Line: 213
+Info (12133): Instantiated megafunction "vga_adapter:v1|altsyncram:VideoMemory" with the following parameter: File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/part2/vga_adapter/vga_adapter.v Line: 213
     Info (12134): Parameter "WIDTH_A" = "15"
     Info (12134): Parameter "WIDTH_B" = "15"
     Info (12134): Parameter "INTENDED_DEVICE_FAMILY" = "Cyclone II"
@@ -3184,21 +3186,21 @@ Info (12133): Instantiated megafunction "vga_adapter:v1|altsyncram:VideoMemory" 
     Info (12134): Parameter "POWER_UP_UNINITIALIZED" = "FALSE"
     Info (12134): Parameter "INIT_FILE" = "Graphics/osuhd.mif"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_o7n1.tdf
-    Info (12023): Found entity 1: altsyncram_o7n1 File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/altsyncram_o7n1.tdf Line: 33
-Info (12128): Elaborating entity "altsyncram_o7n1" for hierarchy "vga_adapter:v1|altsyncram:VideoMemory|altsyncram_o7n1:auto_generated" File: d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+    Info (12023): Found entity 1: altsyncram_o7n1 File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_o7n1.tdf Line: 33
+Info (12128): Elaborating entity "altsyncram_o7n1" for hierarchy "vga_adapter:v1|altsyncram:VideoMemory|altsyncram_o7n1:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_nma.tdf
-    Info (12023): Found entity 1: decode_nma File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/decode_nma.tdf Line: 22
-Info (12128): Elaborating entity "decode_nma" for hierarchy "vga_adapter:v1|altsyncram:VideoMemory|altsyncram_o7n1:auto_generated|decode_nma:decode2" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/altsyncram_o7n1.tdf Line: 46
+    Info (12023): Found entity 1: decode_nma File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/decode_nma.tdf Line: 22
+Info (12128): Elaborating entity "decode_nma" for hierarchy "vga_adapter:v1|altsyncram:VideoMemory|altsyncram_o7n1:auto_generated|decode_nma:decode2" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_o7n1.tdf Line: 46
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_g2a.tdf
-    Info (12023): Found entity 1: decode_g2a File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/decode_g2a.tdf Line: 22
-Info (12128): Elaborating entity "decode_g2a" for hierarchy "vga_adapter:v1|altsyncram:VideoMemory|altsyncram_o7n1:auto_generated|decode_g2a:rden_decode_b" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/altsyncram_o7n1.tdf Line: 47
+    Info (12023): Found entity 1: decode_g2a File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/decode_g2a.tdf Line: 22
+Info (12128): Elaborating entity "decode_g2a" for hierarchy "vga_adapter:v1|altsyncram:VideoMemory|altsyncram_o7n1:auto_generated|decode_g2a:rden_decode_b" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_o7n1.tdf Line: 47
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_lib.tdf
-    Info (12023): Found entity 1: mux_lib File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/mux_lib.tdf Line: 22
-Info (12128): Elaborating entity "mux_lib" for hierarchy "vga_adapter:v1|altsyncram:VideoMemory|altsyncram_o7n1:auto_generated|mux_lib:mux3" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/altsyncram_o7n1.tdf Line: 49
-Info (12128): Elaborating entity "vga_pll" for hierarchy "vga_adapter:v1|vga_pll:mypll" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/part2/vga_adapter/vga_adapter.v Line: 231
-Info (12128): Elaborating entity "altpll" for hierarchy "vga_adapter:v1|vga_pll:mypll|altpll:altpll_component" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/part2/vga_adapter/vga_pll.v Line: 53
-Info (12130): Elaborated megafunction instantiation "vga_adapter:v1|vga_pll:mypll|altpll:altpll_component" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/part2/vga_adapter/vga_pll.v Line: 53
-Info (12133): Instantiated megafunction "vga_adapter:v1|vga_pll:mypll|altpll:altpll_component" with the following parameter: File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/part2/vga_adapter/vga_pll.v Line: 53
+    Info (12023): Found entity 1: mux_lib File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/mux_lib.tdf Line: 22
+Info (12128): Elaborating entity "mux_lib" for hierarchy "vga_adapter:v1|altsyncram:VideoMemory|altsyncram_o7n1:auto_generated|mux_lib:mux3" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_o7n1.tdf Line: 49
+Info (12128): Elaborating entity "vga_pll" for hierarchy "vga_adapter:v1|vga_pll:mypll" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/part2/vga_adapter/vga_adapter.v Line: 231
+Info (12128): Elaborating entity "altpll" for hierarchy "vga_adapter:v1|vga_pll:mypll|altpll:altpll_component" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/part2/vga_adapter/vga_pll.v Line: 53
+Info (12130): Elaborated megafunction instantiation "vga_adapter:v1|vga_pll:mypll|altpll:altpll_component" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/part2/vga_adapter/vga_pll.v Line: 53
+Info (12133): Instantiated megafunction "vga_adapter:v1|vga_pll:mypll|altpll:altpll_component" with the following parameter: File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/part2/vga_adapter/vga_pll.v Line: 53
     Info (12134): Parameter "operation_mode" = "NORMAL"
     Info (12134): Parameter "intended_device_family" = "Cyclone II"
     Info (12134): Parameter "lpm_type" = "altpll"
@@ -3211,18 +3213,19 @@ Info (12133): Instantiated megafunction "vga_adapter:v1|vga_pll:mypll|altpll:alt
     Info (12134): Parameter "clk0_multiply_by" = "1"
     Info (12134): Parameter "clk0_duty_cycle" = "50"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altpll_80u.tdf
-    Info (12023): Found entity 1: altpll_80u File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/altpll_80u.tdf Line: 25
-Info (12128): Elaborating entity "altpll_80u" for hierarchy "vga_adapter:v1|vga_pll:mypll|altpll:altpll_component|altpll_80u:auto_generated" File: d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altpll.tdf Line: 897
-Info (12128): Elaborating entity "vga_controller" for hierarchy "vga_adapter:v1|vga_controller:controller" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/part2/vga_adapter/vga_adapter.v Line: 262
-Info (12128): Elaborating entity "DE1_SoC_Audio_Example" for hierarchy "DE1_SoC_Audio_Example:d1" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 151
-Warning (10230): Verilog HDL assignment warning at DE1_SoC_Audio_Example.v(109): truncated value with size 32 to match size of target (19) File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/DE1_SoC_Audio_Example.v Line: 109
-Warning (10230): Verilog HDL assignment warning at DE1_SoC_Audio_Example.v(121): truncated value with size 32 to match size of target (10) File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/DE1_SoC_Audio_Example.v Line: 121
-Warning (10230): Verilog HDL assignment warning at DE1_SoC_Audio_Example.v(126): truncated value with size 32 to match size of target (27) File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/DE1_SoC_Audio_Example.v Line: 126
-Warning (10230): Verilog HDL assignment warning at DE1_SoC_Audio_Example.v(133): truncated value with size 20 to match size of target (19) File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/DE1_SoC_Audio_Example.v Line: 133
-Info (12128): Elaborating entity "testram" for hierarchy "DE1_SoC_Audio_Example:d1|testram:test" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/DE1_SoC_Audio_Example.v Line: 84
-Info (12128): Elaborating entity "altsyncram" for hierarchy "DE1_SoC_Audio_Example:d1|testram:test|altsyncram:altsyncram_component" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/testram.v Line: 85
-Info (12130): Elaborated megafunction instantiation "DE1_SoC_Audio_Example:d1|testram:test|altsyncram:altsyncram_component" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/testram.v Line: 85
-Info (12133): Instantiated megafunction "DE1_SoC_Audio_Example:d1|testram:test|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/testram.v Line: 85
+    Info (12023): Found entity 1: altpll_80u File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altpll_80u.tdf Line: 25
+Info (12128): Elaborating entity "altpll_80u" for hierarchy "vga_adapter:v1|vga_pll:mypll|altpll:altpll_component|altpll_80u:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altpll.tdf Line: 897
+Info (12128): Elaborating entity "vga_controller" for hierarchy "vga_adapter:v1|vga_controller:controller" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/part2/vga_adapter/vga_adapter.v Line: 262
+Info (12128): Elaborating entity "DE1_SoC_Audio_Example" for hierarchy "DE1_SoC_Audio_Example:d1" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 151
+Warning (10230): Verilog HDL assignment warning at DE1_SoC_Audio_Example.v(74): truncated value with size 20 to match size of target (19) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/DE1_SoC_Audio_Example.v Line: 74
+Warning (10230): Verilog HDL assignment warning at DE1_SoC_Audio_Example.v(104): truncated value with size 32 to match size of target (19) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/DE1_SoC_Audio_Example.v Line: 104
+Warning (10230): Verilog HDL assignment warning at DE1_SoC_Audio_Example.v(112): truncated value with size 32 to match size of target (10) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/DE1_SoC_Audio_Example.v Line: 112
+Warning (10230): Verilog HDL assignment warning at DE1_SoC_Audio_Example.v(116): truncated value with size 32 to match size of target (10) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/DE1_SoC_Audio_Example.v Line: 116
+Warning (10230): Verilog HDL assignment warning at DE1_SoC_Audio_Example.v(121): truncated value with size 32 to match size of target (27) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/DE1_SoC_Audio_Example.v Line: 121
+Info (12128): Elaborating entity "testram" for hierarchy "DE1_SoC_Audio_Example:d1|testram:test" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/DE1_SoC_Audio_Example.v Line: 79
+Info (12128): Elaborating entity "altsyncram" for hierarchy "DE1_SoC_Audio_Example:d1|testram:test|altsyncram:altsyncram_component" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/testram.v Line: 85
+Info (12130): Elaborated megafunction instantiation "DE1_SoC_Audio_Example:d1|testram:test|altsyncram:altsyncram_component" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/testram.v Line: 85
+Info (12133): Instantiated megafunction "DE1_SoC_Audio_Example:d1|testram:test|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/testram.v Line: 85
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "init_file" = "Tokyo_Ghoul.mif"
@@ -3239,16 +3242,16 @@ Info (12133): Instantiated megafunction "DE1_SoC_Audio_Example:d1|testram:test|a
     Info (12134): Parameter "width_a" = "20"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_f0p1.tdf
-    Info (12023): Found entity 1: altsyncram_f0p1 File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/altsyncram_f0p1.tdf Line: 27
-Info (12128): Elaborating entity "altsyncram_f0p1" for hierarchy "DE1_SoC_Audio_Example:d1|testram:test|altsyncram:altsyncram_component|altsyncram_f0p1:auto_generated" File: d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Info (12128): Elaborating entity "Audio_Controller" for hierarchy "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/DE1_SoC_Audio_Example.v Line: 179
-Info (12128): Elaborating entity "Altera_UP_Clock_Edge" for hierarchy "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Clock_Edge:Bit_Clock_Edges" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Audio_Controller.v Line: 182
-Info (12128): Elaborating entity "Altera_UP_Audio_In_Deserializer" for hierarchy "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Audio_Controller.v Line: 237
-Info (12128): Elaborating entity "Altera_UP_Audio_Bit_Counter" for hierarchy "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Altera_UP_Audio_In_Deserializer.v Line: 159
-Info (12128): Elaborating entity "Altera_UP_SYNC_FIFO" for hierarchy "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Altera_UP_Audio_In_Deserializer.v Line: 181
-Info (12128): Elaborating entity "scfifo" for hierarchy "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Altera_UP_SYNC_FIFO.v Line: 115
-Info (12130): Elaborated megafunction instantiation "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Altera_UP_SYNC_FIFO.v Line: 115
-Info (12133): Instantiated megafunction "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO" with the following parameter: File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Altera_UP_SYNC_FIFO.v Line: 115
+    Info (12023): Found entity 1: altsyncram_f0p1 File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_f0p1.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_f0p1" for hierarchy "DE1_SoC_Audio_Example:d1|testram:test|altsyncram:altsyncram_component|altsyncram_f0p1:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Info (12128): Elaborating entity "Audio_Controller" for hierarchy "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/DE1_SoC_Audio_Example.v Line: 171
+Info (12128): Elaborating entity "Altera_UP_Clock_Edge" for hierarchy "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Clock_Edge:Bit_Clock_Edges" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Audio_Controller.v Line: 182
+Info (12128): Elaborating entity "Altera_UP_Audio_In_Deserializer" for hierarchy "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Audio_Controller.v Line: 237
+Info (12128): Elaborating entity "Altera_UP_Audio_Bit_Counter" for hierarchy "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Altera_UP_Audio_In_Deserializer.v Line: 159
+Info (12128): Elaborating entity "Altera_UP_SYNC_FIFO" for hierarchy "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Altera_UP_Audio_In_Deserializer.v Line: 181
+Info (12128): Elaborating entity "scfifo" for hierarchy "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Altera_UP_SYNC_FIFO.v Line: 115
+Info (12130): Elaborated megafunction instantiation "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Altera_UP_SYNC_FIFO.v Line: 115
+Info (12133): Instantiated megafunction "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO" with the following parameter: File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Altera_UP_SYNC_FIFO.v Line: 115
     Info (12134): Parameter "add_ram_output_register" = "OFF"
     Info (12134): Parameter "intended_device_family" = "Cyclone II"
     Info (12134): Parameter "lpm_numwords" = "128"
@@ -3260,32 +3263,32 @@ Info (12133): Instantiated megafunction "DE1_SoC_Audio_Example:d1|Audio_Controll
     Info (12134): Parameter "underflow_checking" = "OFF"
     Info (12134): Parameter "use_eab" = "ON"
 Info (12021): Found 1 design units, including 1 entities, in source file db/scfifo_7ba1.tdf
-    Info (12023): Found entity 1: scfifo_7ba1 File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/scfifo_7ba1.tdf Line: 24
-Info (12128): Elaborating entity "scfifo_7ba1" for hierarchy "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated" File: d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/scfifo.tdf Line: 299
+    Info (12023): Found entity 1: scfifo_7ba1 File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/scfifo_7ba1.tdf Line: 24
+Info (12128): Elaborating entity "scfifo_7ba1" for hierarchy "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/scfifo.tdf Line: 299
 Info (12021): Found 1 design units, including 1 entities, in source file db/a_dpfifo_q2a1.tdf
-    Info (12023): Found entity 1: a_dpfifo_q2a1 File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/a_dpfifo_q2a1.tdf Line: 32
-Info (12128): Elaborating entity "a_dpfifo_q2a1" for hierarchy "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated|a_dpfifo_q2a1:dpfifo" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/scfifo_7ba1.tdf Line: 37
+    Info (12023): Found entity 1: a_dpfifo_q2a1 File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/a_dpfifo_q2a1.tdf Line: 32
+Info (12128): Elaborating entity "a_dpfifo_q2a1" for hierarchy "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated|a_dpfifo_q2a1:dpfifo" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/scfifo_7ba1.tdf Line: 37
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_n3i1.tdf
-    Info (12023): Found entity 1: altsyncram_n3i1 File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/altsyncram_n3i1.tdf Line: 27
-Info (12128): Elaborating entity "altsyncram_n3i1" for hierarchy "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated|a_dpfifo_q2a1:dpfifo|altsyncram_n3i1:FIFOram" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/a_dpfifo_q2a1.tdf Line: 45
+    Info (12023): Found entity 1: altsyncram_n3i1 File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_n3i1.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_n3i1" for hierarchy "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated|a_dpfifo_q2a1:dpfifo|altsyncram_n3i1:FIFOram" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/a_dpfifo_q2a1.tdf Line: 45
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_6l8.tdf
-    Info (12023): Found entity 1: cmpr_6l8 File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/cmpr_6l8.tdf Line: 22
-Info (12128): Elaborating entity "cmpr_6l8" for hierarchy "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated|a_dpfifo_q2a1:dpfifo|cmpr_6l8:almost_full_comparer" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/a_dpfifo_q2a1.tdf Line: 54
-Info (12128): Elaborating entity "cmpr_6l8" for hierarchy "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated|a_dpfifo_q2a1:dpfifo|cmpr_6l8:three_comparison" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/a_dpfifo_q2a1.tdf Line: 55
+    Info (12023): Found entity 1: cmpr_6l8 File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/cmpr_6l8.tdf Line: 22
+Info (12128): Elaborating entity "cmpr_6l8" for hierarchy "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated|a_dpfifo_q2a1:dpfifo|cmpr_6l8:almost_full_comparer" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/a_dpfifo_q2a1.tdf Line: 54
+Info (12128): Elaborating entity "cmpr_6l8" for hierarchy "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated|a_dpfifo_q2a1:dpfifo|cmpr_6l8:three_comparison" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/a_dpfifo_q2a1.tdf Line: 55
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_h2b.tdf
-    Info (12023): Found entity 1: cntr_h2b File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/cntr_h2b.tdf Line: 25
-Info (12128): Elaborating entity "cntr_h2b" for hierarchy "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated|a_dpfifo_q2a1:dpfifo|cntr_h2b:rd_ptr_msb" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/a_dpfifo_q2a1.tdf Line: 56
+    Info (12023): Found entity 1: cntr_h2b File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/cntr_h2b.tdf Line: 25
+Info (12128): Elaborating entity "cntr_h2b" for hierarchy "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated|a_dpfifo_q2a1:dpfifo|cntr_h2b:rd_ptr_msb" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/a_dpfifo_q2a1.tdf Line: 56
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_u27.tdf
-    Info (12023): Found entity 1: cntr_u27 File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/cntr_u27.tdf Line: 25
-Info (12128): Elaborating entity "cntr_u27" for hierarchy "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated|a_dpfifo_q2a1:dpfifo|cntr_u27:usedw_counter" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/a_dpfifo_q2a1.tdf Line: 57
+    Info (12023): Found entity 1: cntr_u27 File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/cntr_u27.tdf Line: 25
+Info (12128): Elaborating entity "cntr_u27" for hierarchy "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated|a_dpfifo_q2a1:dpfifo|cntr_u27:usedw_counter" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/a_dpfifo_q2a1.tdf Line: 57
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_i2b.tdf
-    Info (12023): Found entity 1: cntr_i2b File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/cntr_i2b.tdf Line: 25
-Info (12128): Elaborating entity "cntr_i2b" for hierarchy "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated|a_dpfifo_q2a1:dpfifo|cntr_i2b:wr_ptr" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/a_dpfifo_q2a1.tdf Line: 58
-Info (12128): Elaborating entity "Altera_UP_Audio_Out_Serializer" for hierarchy "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Audio_Controller.v Line: 265
-Info (12128): Elaborating entity "Audio_Clock" for hierarchy "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Audio_Clock:Audio_Clock" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Audio_Controller.v Line: 277
-Info (12128): Elaborating entity "altpll" for hierarchy "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Audio_Clock:Audio_Clock|altpll:altpll_component" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Audio_Clock.v Line: 94
-Info (12130): Elaborated megafunction instantiation "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Audio_Clock:Audio_Clock|altpll:altpll_component" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Audio_Clock.v Line: 94
-Info (12133): Instantiated megafunction "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Audio_Clock:Audio_Clock|altpll:altpll_component" with the following parameter: File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Audio_Clock.v Line: 94
+    Info (12023): Found entity 1: cntr_i2b File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/cntr_i2b.tdf Line: 25
+Info (12128): Elaborating entity "cntr_i2b" for hierarchy "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_7ba1:auto_generated|a_dpfifo_q2a1:dpfifo|cntr_i2b:wr_ptr" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/a_dpfifo_q2a1.tdf Line: 58
+Info (12128): Elaborating entity "Altera_UP_Audio_Out_Serializer" for hierarchy "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Audio_Controller.v Line: 265
+Info (12128): Elaborating entity "Audio_Clock" for hierarchy "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Audio_Clock:Audio_Clock" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Audio_Controller.v Line: 277
+Info (12128): Elaborating entity "altpll" for hierarchy "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Audio_Clock:Audio_Clock|altpll:altpll_component" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Audio_Clock.v Line: 94
+Info (12130): Elaborated megafunction instantiation "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Audio_Clock:Audio_Clock|altpll:altpll_component" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Audio_Clock.v Line: 94
+Info (12133): Instantiated megafunction "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Audio_Clock:Audio_Clock|altpll:altpll_component" with the following parameter: File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/Audio_Controller/Audio_Clock.v Line: 94
     Info (12134): Parameter "clk0_divide_by" = "4"
     Info (12134): Parameter "clk0_duty_cycle" = "50"
     Info (12134): Parameter "clk0_multiply_by" = "1"
@@ -3341,37 +3344,37 @@ Info (12133): Instantiated megafunction "DE1_SoC_Audio_Example:d1|Audio_Controll
     Info (12134): Parameter "port_extclk3" = "PORT_UNUSED"
     Info (12134): Parameter "valid_lock_multiplier" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/audio_clock_altpll.v
-    Info (12023): Found entity 1: Audio_Clock_altpll File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/audio_clock_altpll.v Line: 29
-Info (12128): Elaborating entity "Audio_Clock_altpll" for hierarchy "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Audio_Clock:Audio_Clock|altpll:altpll_component|Audio_Clock_altpll:auto_generated" File: d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altpll.tdf Line: 897
-Info (12128): Elaborating entity "avconf" for hierarchy "DE1_SoC_Audio_Example:d1|avconf:avc" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/DE1_SoC_Audio_Example.v Line: 186
-Warning (10230): Verilog HDL assignment warning at avconf.v(68): truncated value with size 32 to match size of target (16) File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/avconf/avconf.v Line: 68
-Warning (10230): Verilog HDL assignment warning at avconf.v(119): truncated value with size 32 to match size of target (6) File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/avconf/avconf.v Line: 119
-Warning (10230): Verilog HDL assignment warning at avconf.v(137): truncated value with size 32 to match size of target (16) File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/avconf/avconf.v Line: 137
-Warning (10270): Verilog HDL Case Statement warning at avconf.v(131): incomplete case statement has no default case item File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/avconf/avconf.v Line: 131
-Info (12128): Elaborating entity "I2C_Controller" for hierarchy "DE1_SoC_Audio_Example:d1|avconf:avc|I2C_Controller:u0" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/avconf/avconf.v Line: 84
-Warning (10230): Verilog HDL assignment warning at I2C_Controller.v(79): truncated value with size 32 to match size of target (1) File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/avconf/I2C_Controller.v Line: 79
-Warning (10230): Verilog HDL assignment warning at I2C_Controller.v(78): truncated value with size 32 to match size of target (1) File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/avconf/I2C_Controller.v Line: 78
-Warning (10230): Verilog HDL assignment warning at I2C_Controller.v(91): truncated value with size 32 to match size of target (6) File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/avconf/I2C_Controller.v Line: 91
-Info (12128): Elaborating entity "part2" for hierarchy "part2:p2" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 164
-Info (12128): Elaborating entity "control" for hierarchy "part2:p2|control:c1" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 204
-Warning (10270): Verilog HDL Case Statement warning at control.v(24): incomplete case statement has no default case item File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/control.v Line: 24
-Info (10264): Verilog HDL Case Statement information at control.v(24): all case item expressions in this case statement are onehot File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/control.v Line: 24
-Warning (10240): Verilog HDL Always Construct warning at control.v(23): inferring latch(es) for variable "next_state", which holds its previous value in one or more paths through the always construct File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/control.v Line: 23
-Warning (10270): Verilog HDL Case Statement warning at control.v(48): incomplete case statement has no default case item File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/control.v Line: 48
-Info (10264): Verilog HDL Case Statement information at control.v(48): all case item expressions in this case statement are onehot File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/control.v Line: 48
-Info (10041): Inferred latch for "next_state.S_Done" at control.v(23) File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/control.v Line: 23
-Info (10041): Inferred latch for "next_state.S_StartAnimation" at control.v(23) File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/control.v Line: 23
-Info (10041): Inferred latch for "next_state.S_GenerateLocation" at control.v(23) File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/control.v Line: 23
-Info (10041): Inferred latch for "next_state.S_DrawBG" at control.v(23) File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/control.v Line: 23
-Info (10041): Inferred latch for "next_state.S_ClearScreen" at control.v(23) File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/control.v Line: 23
-Info (10041): Inferred latch for "next_state.S_Reset" at control.v(23) File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/control.v Line: 23
-Info (12128): Elaborating entity "RateDivider" for hierarchy "part2:p2|RateDivider:r1" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 207
-Info (12128): Elaborating entity "genloc" for hierarchy "part2:p2|genloc:gl" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 210
-Info (12128): Elaborating entity "loadLocation" for hierarchy "part2:p2|genloc:gl|loadLocation:la" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/loadStuff.v Line: 84
-Info (12128): Elaborating entity "ramMapX" for hierarchy "part2:p2|genloc:gl|loadLocation:la|ramMapX:rax" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/loadStuff.v Line: 133
-Info (12128): Elaborating entity "altsyncram" for hierarchy "part2:p2|genloc:gl|loadLocation:la|ramMapX:rax|altsyncram:altsyncram_component" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ramMapX.v Line: 85
-Info (12130): Elaborated megafunction instantiation "part2:p2|genloc:gl|loadLocation:la|ramMapX:rax|altsyncram:altsyncram_component" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ramMapX.v Line: 85
-Info (12133): Instantiated megafunction "part2:p2|genloc:gl|loadLocation:la|ramMapX:rax|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ramMapX.v Line: 85
+    Info (12023): Found entity 1: Audio_Clock_altpll File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/audio_clock_altpll.v Line: 29
+Info (12128): Elaborating entity "Audio_Clock_altpll" for hierarchy "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Audio_Clock:Audio_Clock|altpll:altpll_component|Audio_Clock_altpll:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altpll.tdf Line: 897
+Info (12128): Elaborating entity "avconf" for hierarchy "DE1_SoC_Audio_Example:d1|avconf:avc" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/DE1_SoC_Audio_Example.v Line: 178
+Warning (10230): Verilog HDL assignment warning at avconf.v(68): truncated value with size 32 to match size of target (16) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/avconf/avconf.v Line: 68
+Warning (10230): Verilog HDL assignment warning at avconf.v(119): truncated value with size 32 to match size of target (6) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/avconf/avconf.v Line: 119
+Warning (10230): Verilog HDL assignment warning at avconf.v(137): truncated value with size 32 to match size of target (16) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/avconf/avconf.v Line: 137
+Warning (10270): Verilog HDL Case Statement warning at avconf.v(131): incomplete case statement has no default case item File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/avconf/avconf.v Line: 131
+Info (12128): Elaborating entity "I2C_Controller" for hierarchy "DE1_SoC_Audio_Example:d1|avconf:avc|I2C_Controller:u0" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/avconf/avconf.v Line: 84
+Warning (10230): Verilog HDL assignment warning at I2C_Controller.v(79): truncated value with size 32 to match size of target (1) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/avconf/I2C_Controller.v Line: 79
+Warning (10230): Verilog HDL assignment warning at I2C_Controller.v(78): truncated value with size 32 to match size of target (1) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/avconf/I2C_Controller.v Line: 78
+Warning (10230): Verilog HDL assignment warning at I2C_Controller.v(91): truncated value with size 32 to match size of target (6) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/avconf/I2C_Controller.v Line: 91
+Info (12128): Elaborating entity "part2" for hierarchy "part2:p2" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 164
+Info (12128): Elaborating entity "control" for hierarchy "part2:p2|control:c1" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 204
+Warning (10270): Verilog HDL Case Statement warning at control.v(24): incomplete case statement has no default case item File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/control.v Line: 24
+Info (10264): Verilog HDL Case Statement information at control.v(24): all case item expressions in this case statement are onehot File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/control.v Line: 24
+Warning (10240): Verilog HDL Always Construct warning at control.v(23): inferring latch(es) for variable "next_state", which holds its previous value in one or more paths through the always construct File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/control.v Line: 23
+Warning (10270): Verilog HDL Case Statement warning at control.v(48): incomplete case statement has no default case item File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/control.v Line: 48
+Info (10264): Verilog HDL Case Statement information at control.v(48): all case item expressions in this case statement are onehot File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/control.v Line: 48
+Info (10041): Inferred latch for "next_state.S_Done" at control.v(23) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/control.v Line: 23
+Info (10041): Inferred latch for "next_state.S_StartAnimation" at control.v(23) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/control.v Line: 23
+Info (10041): Inferred latch for "next_state.S_GenerateLocation" at control.v(23) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/control.v Line: 23
+Info (10041): Inferred latch for "next_state.S_DrawBG" at control.v(23) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/control.v Line: 23
+Info (10041): Inferred latch for "next_state.S_ClearScreen" at control.v(23) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/control.v Line: 23
+Info (10041): Inferred latch for "next_state.S_Reset" at control.v(23) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/control.v Line: 23
+Info (12128): Elaborating entity "RateDivider" for hierarchy "part2:p2|RateDivider:r1" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 207
+Info (12128): Elaborating entity "genloc" for hierarchy "part2:p2|genloc:gl" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 210
+Info (12128): Elaborating entity "loadLocation" for hierarchy "part2:p2|genloc:gl|loadLocation:la" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/loadStuff.v Line: 84
+Info (12128): Elaborating entity "ramMapX" for hierarchy "part2:p2|genloc:gl|loadLocation:la|ramMapX:rax" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/loadStuff.v Line: 133
+Info (12128): Elaborating entity "altsyncram" for hierarchy "part2:p2|genloc:gl|loadLocation:la|ramMapX:rax|altsyncram:altsyncram_component" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ramMapX.v Line: 85
+Info (12130): Elaborated megafunction instantiation "part2:p2|genloc:gl|loadLocation:la|ramMapX:rax|altsyncram:altsyncram_component" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ramMapX.v Line: 85
+Info (12133): Instantiated megafunction "part2:p2|genloc:gl|loadLocation:la|ramMapX:rax|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ramMapX.v Line: 85
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "init_file" = "../graphics/beatmapx.mif"
@@ -3388,12 +3391,12 @@ Info (12133): Instantiated megafunction "part2:p2|genloc:gl|loadLocation:la|ramM
     Info (12134): Parameter "width_a" = "8"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_tip1.tdf
-    Info (12023): Found entity 1: altsyncram_tip1 File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/altsyncram_tip1.tdf Line: 27
-Info (12128): Elaborating entity "altsyncram_tip1" for hierarchy "part2:p2|genloc:gl|loadLocation:la|ramMapX:rax|altsyncram:altsyncram_component|altsyncram_tip1:auto_generated" File: d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Info (12128): Elaborating entity "ramMapY" for hierarchy "part2:p2|genloc:gl|loadLocation:la|ramMapY:ray" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/loadStuff.v Line: 134
-Info (12128): Elaborating entity "altsyncram" for hierarchy "part2:p2|genloc:gl|loadLocation:la|ramMapY:ray|altsyncram:altsyncram_component" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ramMapY.v Line: 85
-Info (12130): Elaborated megafunction instantiation "part2:p2|genloc:gl|loadLocation:la|ramMapY:ray|altsyncram:altsyncram_component" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ramMapY.v Line: 85
-Info (12133): Instantiated megafunction "part2:p2|genloc:gl|loadLocation:la|ramMapY:ray|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ramMapY.v Line: 85
+    Info (12023): Found entity 1: altsyncram_tip1 File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_tip1.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_tip1" for hierarchy "part2:p2|genloc:gl|loadLocation:la|ramMapX:rax|altsyncram:altsyncram_component|altsyncram_tip1:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Info (12128): Elaborating entity "ramMapY" for hierarchy "part2:p2|genloc:gl|loadLocation:la|ramMapY:ray" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/loadStuff.v Line: 134
+Info (12128): Elaborating entity "altsyncram" for hierarchy "part2:p2|genloc:gl|loadLocation:la|ramMapY:ray|altsyncram:altsyncram_component" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ramMapY.v Line: 85
+Info (12130): Elaborated megafunction instantiation "part2:p2|genloc:gl|loadLocation:la|ramMapY:ray|altsyncram:altsyncram_component" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ramMapY.v Line: 85
+Info (12133): Instantiated megafunction "part2:p2|genloc:gl|loadLocation:la|ramMapY:ray|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ramMapY.v Line: 85
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "init_file" = "../graphics/beatmapy.mif"
@@ -3410,12 +3413,12 @@ Info (12133): Instantiated megafunction "part2:p2|genloc:gl|loadLocation:la|ramM
     Info (12134): Parameter "width_a" = "8"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_uip1.tdf
-    Info (12023): Found entity 1: altsyncram_uip1 File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/altsyncram_uip1.tdf Line: 27
-Info (12128): Elaborating entity "altsyncram_uip1" for hierarchy "part2:p2|genloc:gl|loadLocation:la|ramMapY:ray|altsyncram:altsyncram_component|altsyncram_uip1:auto_generated" File: d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Info (12128): Elaborating entity "keyRam" for hierarchy "part2:p2|genloc:gl|keyRam:kr" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/loadStuff.v Line: 85
-Info (12128): Elaborating entity "altsyncram" for hierarchy "part2:p2|genloc:gl|keyRam:kr|altsyncram:altsyncram_component" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/keyRam.v Line: 85
-Info (12130): Elaborated megafunction instantiation "part2:p2|genloc:gl|keyRam:kr|altsyncram:altsyncram_component" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/keyRam.v Line: 85
-Info (12133): Instantiated megafunction "part2:p2|genloc:gl|keyRam:kr|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/keyRam.v Line: 85
+    Info (12023): Found entity 1: altsyncram_uip1 File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_uip1.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_uip1" for hierarchy "part2:p2|genloc:gl|loadLocation:la|ramMapY:ray|altsyncram:altsyncram_component|altsyncram_uip1:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Info (12128): Elaborating entity "keyRam" for hierarchy "part2:p2|genloc:gl|keyRam:kr" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/loadStuff.v Line: 85
+Info (12128): Elaborating entity "altsyncram" for hierarchy "part2:p2|genloc:gl|keyRam:kr|altsyncram:altsyncram_component" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/keyRam.v Line: 85
+Info (12130): Elaborated megafunction instantiation "part2:p2|genloc:gl|keyRam:kr|altsyncram:altsyncram_component" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/keyRam.v Line: 85
+Info (12133): Instantiated megafunction "part2:p2|genloc:gl|keyRam:kr|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/keyRam.v Line: 85
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "init_file" = "./graphics/key.mif"
@@ -3432,20 +3435,20 @@ Info (12133): Instantiated megafunction "part2:p2|genloc:gl|keyRam:kr|altsyncram
     Info (12134): Parameter "width_a" = "2"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_r0p1.tdf
-    Info (12023): Found entity 1: altsyncram_r0p1 File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/altsyncram_r0p1.tdf Line: 27
-Info (12128): Elaborating entity "altsyncram_r0p1" for hierarchy "part2:p2|genloc:gl|keyRam:kr|altsyncram:altsyncram_component|altsyncram_r0p1:auto_generated" File: d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Info (12128): Elaborating entity "datapath" for hierarchy "part2:p2|datapath:d1" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 229
-Warning (10230): Verilog HDL assignment warning at datapath.v(112): truncated value with size 6 to match size of target (5) File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/datapath.v Line: 112
-Warning (10230): Verilog HDL assignment warning at datapath.v(113): truncated value with size 6 to match size of target (5) File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/datapath.v Line: 113
-Warning (10230): Verilog HDL assignment warning at datapath.v(126): truncated value with size 9 to match size of target (8) File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/datapath.v Line: 126
-Warning (10230): Verilog HDL assignment warning at datapath.v(170): truncated value with size 6 to match size of target (4) File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/datapath.v Line: 170
-Warning (10230): Verilog HDL assignment warning at datapath.v(177): truncated value with size 6 to match size of target (5) File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/datapath.v Line: 177
-Warning (10230): Verilog HDL assignment warning at datapath.v(178): truncated value with size 6 to match size of target (4) File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/datapath.v Line: 178
-Info (12128): Elaborating entity "loadImage" for hierarchy "part2:p2|datapath:d1|loadImage:la" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/datapath.v Line: 66
-Info (12128): Elaborating entity "loadA" for hierarchy "part2:p2|datapath:d1|loadImage:la|loadA:a" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/loadStuff.v Line: 21
-Info (12128): Elaborating entity "altsyncram" for hierarchy "part2:p2|datapath:d1|loadImage:la|loadA:a|altsyncram:altsyncram_component" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/loadA.v Line: 85
-Info (12130): Elaborated megafunction instantiation "part2:p2|datapath:d1|loadImage:la|loadA:a|altsyncram:altsyncram_component" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/loadA.v Line: 85
-Info (12133): Instantiated megafunction "part2:p2|datapath:d1|loadImage:la|loadA:a|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/loadA.v Line: 85
+    Info (12023): Found entity 1: altsyncram_r0p1 File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_r0p1.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_r0p1" for hierarchy "part2:p2|genloc:gl|keyRam:kr|altsyncram:altsyncram_component|altsyncram_r0p1:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Info (12128): Elaborating entity "datapath" for hierarchy "part2:p2|datapath:d1" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 229
+Warning (10230): Verilog HDL assignment warning at datapath.v(112): truncated value with size 6 to match size of target (5) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 112
+Warning (10230): Verilog HDL assignment warning at datapath.v(113): truncated value with size 6 to match size of target (5) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 113
+Warning (10230): Verilog HDL assignment warning at datapath.v(126): truncated value with size 9 to match size of target (8) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 126
+Warning (10230): Verilog HDL assignment warning at datapath.v(170): truncated value with size 6 to match size of target (4) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 170
+Warning (10230): Verilog HDL assignment warning at datapath.v(177): truncated value with size 6 to match size of target (5) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 177
+Warning (10230): Verilog HDL assignment warning at datapath.v(178): truncated value with size 6 to match size of target (4) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 178
+Info (12128): Elaborating entity "loadImage" for hierarchy "part2:p2|datapath:d1|loadImage:la" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 66
+Info (12128): Elaborating entity "loadA" for hierarchy "part2:p2|datapath:d1|loadImage:la|loadA:a" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/loadStuff.v Line: 21
+Info (12128): Elaborating entity "altsyncram" for hierarchy "part2:p2|datapath:d1|loadImage:la|loadA:a|altsyncram:altsyncram_component" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/loadA.v Line: 85
+Info (12130): Elaborated megafunction instantiation "part2:p2|datapath:d1|loadImage:la|loadA:a|altsyncram:altsyncram_component" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/loadA.v Line: 85
+Info (12133): Instantiated megafunction "part2:p2|datapath:d1|loadImage:la|loadA:a|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/loadA.v Line: 85
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "init_file" = "./graphics/Circles/circlesA.mif"
@@ -3462,12 +3465,12 @@ Info (12133): Instantiated megafunction "part2:p2|datapath:d1|loadImage:la|loadA
     Info (12134): Parameter "width_a" = "3"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_qdq1.tdf
-    Info (12023): Found entity 1: altsyncram_qdq1 File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/altsyncram_qdq1.tdf Line: 27
-Info (12128): Elaborating entity "altsyncram_qdq1" for hierarchy "part2:p2|datapath:d1|loadImage:la|loadA:a|altsyncram:altsyncram_component|altsyncram_qdq1:auto_generated" File: d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Info (12128): Elaborating entity "loadS" for hierarchy "part2:p2|datapath:d1|loadImage:la|loadS:s" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/loadStuff.v Line: 22
-Info (12128): Elaborating entity "altsyncram" for hierarchy "part2:p2|datapath:d1|loadImage:la|loadS:s|altsyncram:altsyncram_component" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/loadS.v Line: 85
-Info (12130): Elaborated megafunction instantiation "part2:p2|datapath:d1|loadImage:la|loadS:s|altsyncram:altsyncram_component" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/loadS.v Line: 85
-Info (12133): Instantiated megafunction "part2:p2|datapath:d1|loadImage:la|loadS:s|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/loadS.v Line: 85
+    Info (12023): Found entity 1: altsyncram_qdq1 File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_qdq1.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_qdq1" for hierarchy "part2:p2|datapath:d1|loadImage:la|loadA:a|altsyncram:altsyncram_component|altsyncram_qdq1:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Info (12128): Elaborating entity "loadS" for hierarchy "part2:p2|datapath:d1|loadImage:la|loadS:s" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/loadStuff.v Line: 22
+Info (12128): Elaborating entity "altsyncram" for hierarchy "part2:p2|datapath:d1|loadImage:la|loadS:s|altsyncram:altsyncram_component" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/loadS.v Line: 85
+Info (12130): Elaborated megafunction instantiation "part2:p2|datapath:d1|loadImage:la|loadS:s|altsyncram:altsyncram_component" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/loadS.v Line: 85
+Info (12133): Instantiated megafunction "part2:p2|datapath:d1|loadImage:la|loadS:s|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/loadS.v Line: 85
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "init_file" = "./graphics/Circles/circlesS.mif"
@@ -3484,12 +3487,12 @@ Info (12133): Instantiated megafunction "part2:p2|datapath:d1|loadImage:la|loadS
     Info (12134): Parameter "width_a" = "3"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ceq1.tdf
-    Info (12023): Found entity 1: altsyncram_ceq1 File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/altsyncram_ceq1.tdf Line: 27
-Info (12128): Elaborating entity "altsyncram_ceq1" for hierarchy "part2:p2|datapath:d1|loadImage:la|loadS:s|altsyncram:altsyncram_component|altsyncram_ceq1:auto_generated" File: d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Info (12128): Elaborating entity "loadD" for hierarchy "part2:p2|datapath:d1|loadImage:la|loadD:d" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/loadStuff.v Line: 23
-Info (12128): Elaborating entity "altsyncram" for hierarchy "part2:p2|datapath:d1|loadImage:la|loadD:d|altsyncram:altsyncram_component" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/loadD.v Line: 85
-Info (12130): Elaborated megafunction instantiation "part2:p2|datapath:d1|loadImage:la|loadD:d|altsyncram:altsyncram_component" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/loadD.v Line: 85
-Info (12133): Instantiated megafunction "part2:p2|datapath:d1|loadImage:la|loadD:d|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/loadD.v Line: 85
+    Info (12023): Found entity 1: altsyncram_ceq1 File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_ceq1.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_ceq1" for hierarchy "part2:p2|datapath:d1|loadImage:la|loadS:s|altsyncram:altsyncram_component|altsyncram_ceq1:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Info (12128): Elaborating entity "loadD" for hierarchy "part2:p2|datapath:d1|loadImage:la|loadD:d" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/loadStuff.v Line: 23
+Info (12128): Elaborating entity "altsyncram" for hierarchy "part2:p2|datapath:d1|loadImage:la|loadD:d|altsyncram:altsyncram_component" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/loadD.v Line: 85
+Info (12130): Elaborated megafunction instantiation "part2:p2|datapath:d1|loadImage:la|loadD:d|altsyncram:altsyncram_component" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/loadD.v Line: 85
+Info (12133): Instantiated megafunction "part2:p2|datapath:d1|loadImage:la|loadD:d|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/loadD.v Line: 85
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "init_file" = "./graphics/Circles/circlesD.mif"
@@ -3506,12 +3509,12 @@ Info (12133): Instantiated megafunction "part2:p2|datapath:d1|loadImage:la|loadD
     Info (12134): Parameter "width_a" = "3"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_tdq1.tdf
-    Info (12023): Found entity 1: altsyncram_tdq1 File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/altsyncram_tdq1.tdf Line: 27
-Info (12128): Elaborating entity "altsyncram_tdq1" for hierarchy "part2:p2|datapath:d1|loadImage:la|loadD:d|altsyncram:altsyncram_component|altsyncram_tdq1:auto_generated" File: d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Info (12128): Elaborating entity "loadF" for hierarchy "part2:p2|datapath:d1|loadImage:la|loadF:f" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/loadStuff.v Line: 24
-Info (12128): Elaborating entity "altsyncram" for hierarchy "part2:p2|datapath:d1|loadImage:la|loadF:f|altsyncram:altsyncram_component" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/loadF.v Line: 85
-Info (12130): Elaborated megafunction instantiation "part2:p2|datapath:d1|loadImage:la|loadF:f|altsyncram:altsyncram_component" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/loadF.v Line: 85
-Info (12133): Instantiated megafunction "part2:p2|datapath:d1|loadImage:la|loadF:f|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/loadF.v Line: 85
+    Info (12023): Found entity 1: altsyncram_tdq1 File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_tdq1.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_tdq1" for hierarchy "part2:p2|datapath:d1|loadImage:la|loadD:d|altsyncram:altsyncram_component|altsyncram_tdq1:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Info (12128): Elaborating entity "loadF" for hierarchy "part2:p2|datapath:d1|loadImage:la|loadF:f" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/loadStuff.v Line: 24
+Info (12128): Elaborating entity "altsyncram" for hierarchy "part2:p2|datapath:d1|loadImage:la|loadF:f|altsyncram:altsyncram_component" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/loadF.v Line: 85
+Info (12130): Elaborated megafunction instantiation "part2:p2|datapath:d1|loadImage:la|loadF:f|altsyncram:altsyncram_component" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/loadF.v Line: 85
+Info (12133): Instantiated megafunction "part2:p2|datapath:d1|loadImage:la|loadF:f|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/loadF.v Line: 85
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "init_file" = "./graphics/Circles/circlesF.mif"
@@ -3528,13 +3531,13 @@ Info (12133): Instantiated megafunction "part2:p2|datapath:d1|loadImage:la|loadF
     Info (12134): Parameter "width_a" = "3"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_vdq1.tdf
-    Info (12023): Found entity 1: altsyncram_vdq1 File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/altsyncram_vdq1.tdf Line: 27
-Info (12128): Elaborating entity "altsyncram_vdq1" for hierarchy "part2:p2|datapath:d1|loadImage:la|loadF:f|altsyncram:altsyncram_component|altsyncram_vdq1:auto_generated" File: d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Info (12128): Elaborating entity "loadBG" for hierarchy "part2:p2|datapath:d1|loadBG:bg" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/datapath.v Line: 67
-Info (12128): Elaborating entity "BGRam" for hierarchy "part2:p2|datapath:d1|loadBG:bg|BGRam:bgram" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/loadStuff.v Line: 48
-Info (12128): Elaborating entity "altsyncram" for hierarchy "part2:p2|datapath:d1|loadBG:bg|BGRam:bgram|altsyncram:altsyncram_component" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/BGRam.v Line: 85
-Info (12130): Elaborated megafunction instantiation "part2:p2|datapath:d1|loadBG:bg|BGRam:bgram|altsyncram:altsyncram_component" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/BGRam.v Line: 85
-Info (12133): Instantiated megafunction "part2:p2|datapath:d1|loadBG:bg|BGRam:bgram|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/BGRam.v Line: 85
+    Info (12023): Found entity 1: altsyncram_vdq1 File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_vdq1.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_vdq1" for hierarchy "part2:p2|datapath:d1|loadImage:la|loadF:f|altsyncram:altsyncram_component|altsyncram_vdq1:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Info (12128): Elaborating entity "loadBG" for hierarchy "part2:p2|datapath:d1|loadBG:bg" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 67
+Info (12128): Elaborating entity "BGRam" for hierarchy "part2:p2|datapath:d1|loadBG:bg|BGRam:bgram" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/loadStuff.v Line: 48
+Info (12128): Elaborating entity "altsyncram" for hierarchy "part2:p2|datapath:d1|loadBG:bg|BGRam:bgram|altsyncram:altsyncram_component" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/BGRam.v Line: 85
+Info (12130): Elaborated megafunction instantiation "part2:p2|datapath:d1|loadBG:bg|BGRam:bgram|altsyncram:altsyncram_component" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/BGRam.v Line: 85
+Info (12133): Instantiated megafunction "part2:p2|datapath:d1|loadBG:bg|BGRam:bgram|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/BGRam.v Line: 85
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "init_file" = "./graphics/carbon_fibre_@2X.mif"
@@ -3551,57 +3554,57 @@ Info (12133): Instantiated megafunction "part2:p2|datapath:d1|loadBG:bg|BGRam:bg
     Info (12134): Parameter "width_a" = "15"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_odq1.tdf
-    Info (12023): Found entity 1: altsyncram_odq1 File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/altsyncram_odq1.tdf Line: 27
-Info (12128): Elaborating entity "altsyncram_odq1" for hierarchy "part2:p2|datapath:d1|loadBG:bg|BGRam:bgram|altsyncram:altsyncram_component|altsyncram_odq1:auto_generated" File: d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Warning (12020): Port "address_a" on the entity instantiation of "altsyncram_component" is connected to a signal of width 6. The formal width of the signal in the module is 4.  The extra bits will be ignored. File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/keyRam.v Line: 85
+    Info (12023): Found entity 1: altsyncram_odq1 File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_odq1.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_odq1" for hierarchy "part2:p2|datapath:d1|loadBG:bg|BGRam:bgram|altsyncram:altsyncram_component|altsyncram_odq1:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Warning (12020): Port "address_a" on the entity instantiation of "altsyncram_component" is connected to a signal of width 6. The formal width of the signal in the module is 4.  The extra bits will be ignored. File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/keyRam.v Line: 85
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "part2:p2|randX[8]" is missing source, defaulting to GND File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 184
+    Warning (12110): Net "part2:p2|randX[8]" is missing source, defaulting to GND File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 184
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following RAM node(s):
-        Warning (14320): Synthesized away node "DE1_SoC_Audio_Example:d1|testram:test|altsyncram:altsyncram_component|altsyncram_f0p1:auto_generated|q_a[19]" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/altsyncram_f0p1.tdf Line: 492
+        Warning (14320): Synthesized away node "DE1_SoC_Audio_Example:d1|testram:test|altsyncram:altsyncram_component|altsyncram_f0p1:auto_generated|q_a[19]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_f0p1.tdf Line: 492
 Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276004): RAM logic "DE1_SoC_Audio_Example:d1|avconf:avc|Ram0" is uninferred due to inappropriate RAM size File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/Audio_Demo/avconf/avconf.v Line: 131
+    Info (276004): RAM logic "DE1_SoC_Audio_Example:d1|avconf:avc|Ram0" is uninferred due to inappropriate RAM size File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/avconf/avconf.v Line: 131
 Warning (12241): 17 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "HEX2[0]" is stuck at VCC File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
-    Warning (13410): Pin "HEX2[1]" is stuck at VCC File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
-    Warning (13410): Pin "HEX2[2]" is stuck at VCC File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
-    Warning (13410): Pin "HEX2[3]" is stuck at VCC File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
-    Warning (13410): Pin "HEX2[4]" is stuck at VCC File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
-    Warning (13410): Pin "HEX2[5]" is stuck at VCC File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
-    Warning (13410): Pin "HEX2[6]" is stuck at VCC File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
-    Warning (13410): Pin "HEX3[0]" is stuck at VCC File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
-    Warning (13410): Pin "HEX3[1]" is stuck at VCC File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
-    Warning (13410): Pin "HEX3[2]" is stuck at VCC File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
-    Warning (13410): Pin "HEX3[3]" is stuck at VCC File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
-    Warning (13410): Pin "HEX3[4]" is stuck at VCC File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
-    Warning (13410): Pin "HEX3[5]" is stuck at VCC File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
-    Warning (13410): Pin "HEX3[6]" is stuck at VCC File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
-    Warning (13410): Pin "HEX4[0]" is stuck at VCC File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
-    Warning (13410): Pin "HEX4[1]" is stuck at VCC File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
-    Warning (13410): Pin "HEX4[2]" is stuck at VCC File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
-    Warning (13410): Pin "HEX4[3]" is stuck at VCC File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
-    Warning (13410): Pin "HEX4[4]" is stuck at VCC File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
-    Warning (13410): Pin "HEX4[5]" is stuck at VCC File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
-    Warning (13410): Pin "HEX4[6]" is stuck at VCC File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
-    Warning (13410): Pin "HEX5[0]" is stuck at VCC File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
-    Warning (13410): Pin "HEX5[1]" is stuck at VCC File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
-    Warning (13410): Pin "HEX5[2]" is stuck at VCC File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
-    Warning (13410): Pin "HEX5[3]" is stuck at VCC File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
-    Warning (13410): Pin "HEX5[4]" is stuck at VCC File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
-    Warning (13410): Pin "HEX5[5]" is stuck at VCC File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
-    Warning (13410): Pin "HEX5[6]" is stuck at VCC File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
-    Warning (13410): Pin "VGA_R[8]" is stuck at GND File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 39
-    Warning (13410): Pin "VGA_R[9]" is stuck at GND File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 39
-    Warning (13410): Pin "VGA_G[8]" is stuck at GND File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 40
-    Warning (13410): Pin "VGA_G[9]" is stuck at GND File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 40
-    Warning (13410): Pin "VGA_B[8]" is stuck at GND File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 41
-    Warning (13410): Pin "VGA_B[9]" is stuck at GND File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 41
-    Warning (13410): Pin "VGA_SYNC" is stuck at VCC File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 45
+    Warning (13410): Pin "HEX2[0]" is stuck at VCC File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
+    Warning (13410): Pin "HEX2[1]" is stuck at VCC File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
+    Warning (13410): Pin "HEX2[2]" is stuck at VCC File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
+    Warning (13410): Pin "HEX2[3]" is stuck at VCC File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
+    Warning (13410): Pin "HEX2[4]" is stuck at VCC File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
+    Warning (13410): Pin "HEX2[5]" is stuck at VCC File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
+    Warning (13410): Pin "HEX2[6]" is stuck at VCC File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
+    Warning (13410): Pin "HEX3[0]" is stuck at VCC File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
+    Warning (13410): Pin "HEX3[1]" is stuck at VCC File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
+    Warning (13410): Pin "HEX3[2]" is stuck at VCC File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
+    Warning (13410): Pin "HEX3[3]" is stuck at VCC File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
+    Warning (13410): Pin "HEX3[4]" is stuck at VCC File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
+    Warning (13410): Pin "HEX3[5]" is stuck at VCC File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
+    Warning (13410): Pin "HEX3[6]" is stuck at VCC File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
+    Warning (13410): Pin "HEX4[0]" is stuck at VCC File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
+    Warning (13410): Pin "HEX4[1]" is stuck at VCC File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
+    Warning (13410): Pin "HEX4[2]" is stuck at VCC File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
+    Warning (13410): Pin "HEX4[3]" is stuck at VCC File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
+    Warning (13410): Pin "HEX4[4]" is stuck at VCC File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
+    Warning (13410): Pin "HEX4[5]" is stuck at VCC File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
+    Warning (13410): Pin "HEX4[6]" is stuck at VCC File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
+    Warning (13410): Pin "HEX5[0]" is stuck at VCC File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
+    Warning (13410): Pin "HEX5[1]" is stuck at VCC File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
+    Warning (13410): Pin "HEX5[2]" is stuck at VCC File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
+    Warning (13410): Pin "HEX5[3]" is stuck at VCC File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
+    Warning (13410): Pin "HEX5[4]" is stuck at VCC File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
+    Warning (13410): Pin "HEX5[5]" is stuck at VCC File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
+    Warning (13410): Pin "HEX5[6]" is stuck at VCC File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 61
+    Warning (13410): Pin "VGA_R[8]" is stuck at GND File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 39
+    Warning (13410): Pin "VGA_R[9]" is stuck at GND File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 39
+    Warning (13410): Pin "VGA_G[8]" is stuck at GND File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 40
+    Warning (13410): Pin "VGA_G[9]" is stuck at GND File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 40
+    Warning (13410): Pin "VGA_B[8]" is stuck at GND File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 41
+    Warning (13410): Pin "VGA_B[9]" is stuck at GND File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 41
+    Warning (13410): Pin "VGA_SYNC" is stuck at VCC File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 45
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 26 registers lost all their fanouts during netlist optimizations.
-Info (17036): Removed 2 MSB VCC or GND address nodes from RAM block "part2:p2|genloc:gl|loadLocation:la|ramMapX:rax|altsyncram:altsyncram_component|altsyncram_tip1:auto_generated|ALTSYNCRAM" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/altsyncram_tip1.tdf Line: 32
-Info (17036): Removed 2 MSB VCC or GND address nodes from RAM block "part2:p2|genloc:gl|loadLocation:la|ramMapY:ray|altsyncram:altsyncram_component|altsyncram_uip1:auto_generated|ALTSYNCRAM" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/altsyncram_uip1.tdf Line: 32
+Info (17036): Removed 2 MSB VCC or GND address nodes from RAM block "part2:p2|genloc:gl|loadLocation:la|ramMapX:rax|altsyncram:altsyncram_component|altsyncram_tip1:auto_generated|ALTSYNCRAM" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_tip1.tdf Line: 32
+Info (17036): Removed 2 MSB VCC or GND address nodes from RAM block "part2:p2|genloc:gl|loadLocation:la|ramMapY:ray|altsyncram:altsyncram_component|altsyncram_uip1:auto_generated|ALTSYNCRAM" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_uip1.tdf Line: 32
 Warning (20013): Ignored 385 assignments for entity "DE1_SoC" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC_CS_N -entity DE1_SoC was ignored
     Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC_DIN -entity DE1_SoC was ignored
@@ -3988,22 +3991,22 @@ Warning (20013): Ignored 385 assignments for entity "DE1_SoC" -- entity does not
     Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_R[7] -entity DE1_SoC was ignored
     Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_SYNC_N -entity DE1_SoC was ignored
     Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_VS -entity DE1_SoC was ignored
-Info (144001): Generated suppressed messages file C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/output_files/ECE241FinalProject.map.smsg
+Info (144001): Generated suppressed messages file C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/output_files/ECE241FinalProject.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 8 node(s), including 0 DDIO, 2 PLL, 0 transceiver and 0 LCELL
-Warning: RST port on the PLL is not properly connected on instance vga_adapter:v1|vga_pll:mypll|altpll:altpll_component|altpll_80u:auto_generated|generic_pll1. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/altpll_80u.tdf Line: 33
+Warning: RST port on the PLL is not properly connected on instance vga_adapter:v1|vga_pll:mypll|altpll:altpll_component|altpll_80u:auto_generated|generic_pll1. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altpll_80u.tdf Line: 33
     Info: Must be connected
-Warning: RST port on the PLL is not properly connected on instance DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Audio_Clock:Audio_Clock|altpll:altpll_component|Audio_Clock_altpll:auto_generated|generic_pll1. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/db/audio_clock_altpll.v Line: 62
+Warning: RST port on the PLL is not properly connected on instance DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Audio_Clock:Audio_Clock|altpll:altpll_component|Audio_Clock_altpll:auto_generated|generic_pll1. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/audio_clock_altpll.v Line: 62
     Info: Must be connected
 Warning (21074): Design contains 8 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "SW[4]" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 35
-    Warning (15610): No output dependent on input pin "SW[5]" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 35
-    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 35
-    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 35
-    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 35
-    Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 35
-    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 36
-    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 36
+    Warning (15610): No output dependent on input pin "SW[4]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 35
+    Warning (15610): No output dependent on input pin "SW[5]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 35
+    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 35
+    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 35
+    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 35
+    Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 35
+    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 36
+    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 36
 Info (21057): Implemented 1595 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 16 input pins
     Info (21059): Implemented 80 output pins
@@ -4011,16 +4014,16 @@ Info (21057): Implemented 1595 device resources after synthesis - the final reso
     Info (21061): Implemented 1149 logic cells
     Info (21064): Implemented 342 RAM segments
     Info (21065): Implemented 2 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 472 warnings
-    Info: Peak virtual memory: 4913 megabytes
-    Info: Processing ended: Mon Nov 26 00:24:47 2018
-    Info: Elapsed time: 00:00:38
-    Info: Total CPU time (on all processors): 00:00:55
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 473 warnings
+    Info: Peak virtual memory: 4910 megabytes
+    Info: Processing ended: Mon Nov 26 15:51:15 2018
+    Info: Elapsed time: 00:00:25
+    Info: Total CPU time (on all processors): 00:00:39
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/meteo/OneDrive/Documents/GitHub/ECE241FinalProject/output_files/ECE241FinalProject.map.smsg.
+The suppressed messages can be found in C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/output_files/ECE241FinalProject.map.smsg.
 
 
