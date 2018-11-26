@@ -22,7 +22,7 @@ module loadImage(
 	loadS s(.address({tempj,i}), .clock(clock),.wren(1'b0), .q(qs));
 	loadD d(.address({tempj,i}), .clock(clock),.wren(1'b0), .q(qd));
 	loadF f(.address({tempj,i}), .clock(clock),.wren(1'b0), .q(qf));
-	always @(*)
+	always @(posedge clock)
 	begin
 		if(id2 == 2'd1)
 			q <= qs;

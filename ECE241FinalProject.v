@@ -75,7 +75,7 @@ output				FPGA_I2C_SCLK;
 	assign black = ~KEY[2];
 	reg plot;
    assign reset = KEY[0];
-	
+	//ic A 1b S 23 D 2b F
 	always@(*)
 	begin
 		case(black)
