@@ -25,13 +25,13 @@ module loadImage(
 	always @(*)
 	begin
 		if(id2 == 2'd1)
-			q = qs;
+			q <= qs;
 		else if(id2 == 2'd2)
-			q = qd;
+			q <= qd;
 		else if(id2 == 2'd3)
-			q = qf;
+			q <= qf;
 		else
-			q = qa;
+			q <= qa;
 		
 	end
 	assign colour = q;
@@ -82,7 +82,7 @@ module genloc(
 	reg bool;
 	
 	loadLocation la (clock,reset,i[4:0], outx, outy);
-	keyRam kr (.address({1'b0,i[4:0]}), .clock(clock),.wren(1'b0), .q(outid)); 
+	keyRam kr (.address({2'b00,i[3:0]}), .clock(clock),.wren(1'b0), .q(outid)); 
 	always @(posedge clock)
 	begin: iter
 	   locx <= outx;

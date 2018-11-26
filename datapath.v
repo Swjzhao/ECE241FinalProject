@@ -63,7 +63,7 @@ module datapath(
 				end
 	 end
 	 // RateDivider r4(clock, reset, 26'b10111110101111000001111111, w5);	
-	 loadImage la (clk, reset, id,2'd1, i , j ,colour);
+	 loadImage la (clk, reset, id,id2, i , j ,colour);
 	 loadBG bg (clk, reset, bgi, bgj, bgcolour);
 	 
 //	 always @(posedge clk) begin
