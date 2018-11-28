@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ECE241FinalProject
-Wed Nov 28 17:23:18 2018
+Wed Nov 28 17:48:05 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -81,35 +81,34 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
  73. Port Connectivity Checks: "secondlevel:p2|datapath:d1|loadscore:ls|scoreCounterRam:scoreCount"
  74. Port Connectivity Checks: "secondlevel:p2|datapath:d1|loadscore:ls"
  75. Port Connectivity Checks: "secondlevel:p2|datapath:d1|loadgameover:lgm|gameoversign:go"
- 76. Port Connectivity Checks: "secondlevel:p2|datapath:d1|loadgameover:lgm"
- 77. Port Connectivity Checks: "secondlevel:p2|datapath:d1|loadosu:lo|osulogoRAM:oss"
- 78. Port Connectivity Checks: "secondlevel:p2|datapath:d1|loadosu:lo"
- 79. Port Connectivity Checks: "secondlevel:p2|datapath:d1|loadBG:bg|BGRam:bgram"
- 80. Port Connectivity Checks: "secondlevel:p2|datapath:d1|loadImage:la|loadF:f"
- 81. Port Connectivity Checks: "secondlevel:p2|datapath:d1|loadImage:la|loadD:d"
- 82. Port Connectivity Checks: "secondlevel:p2|datapath:d1|loadImage:la|loadS:s"
- 83. Port Connectivity Checks: "secondlevel:p2|datapath:d1|loadImage:la|loadA:a"
- 84. Port Connectivity Checks: "secondlevel:p2|datapath:d1|loadImage:la"
- 85. Port Connectivity Checks: "secondlevel:p2|datapath:d1"
- 86. Port Connectivity Checks: "secondlevel:p2|genloc:gl|keyRam:kr"
- 87. Port Connectivity Checks: "secondlevel:p2|genloc:gl|loadLocation:la|ramMapY:ray"
- 88. Port Connectivity Checks: "secondlevel:p2|genloc:gl|loadLocation:la|ramMapX:rax"
- 89. Port Connectivity Checks: "secondlevel:p2|genloc:gl"
- 90. Port Connectivity Checks: "secondlevel:p2|RateDivider:r1"
- 91. Port Connectivity Checks: "DE1_SoC_Audio_Example:d1|avconf:avc|I2C_Controller:u0"
- 92. Port Connectivity Checks: "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Audio_Clock:Audio_Clock"
- 93. Port Connectivity Checks: "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer"
- 94. Port Connectivity Checks: "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer"
- 95. Port Connectivity Checks: "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller"
- 96. Port Connectivity Checks: "DE1_SoC_Audio_Example:d1|testram:test"
- 97. Port Connectivity Checks: "DE1_SoC_Audio_Example:d1"
- 98. Port Connectivity Checks: "vga_adapter:v1|vga_controller:controller"
- 99. Port Connectivity Checks: "vga_adapter:v1"
-100. Port Connectivity Checks: "PS2_Demo:pc0|PS2_Controller:PS2"
-101. Post-Synthesis Netlist Statistics for Top Partition
-102. Elapsed Time Per Partition
-103. Analysis & Synthesis Messages
-104. Analysis & Synthesis Suppressed Messages
+ 76. Port Connectivity Checks: "secondlevel:p2|datapath:d1|loadosu:lo|osulogoRAM:oss"
+ 77. Port Connectivity Checks: "secondlevel:p2|datapath:d1|loadosu:lo"
+ 78. Port Connectivity Checks: "secondlevel:p2|datapath:d1|loadBG:bg|BGRam:bgram"
+ 79. Port Connectivity Checks: "secondlevel:p2|datapath:d1|loadImage:la|loadF:f"
+ 80. Port Connectivity Checks: "secondlevel:p2|datapath:d1|loadImage:la|loadD:d"
+ 81. Port Connectivity Checks: "secondlevel:p2|datapath:d1|loadImage:la|loadS:s"
+ 82. Port Connectivity Checks: "secondlevel:p2|datapath:d1|loadImage:la|loadA:a"
+ 83. Port Connectivity Checks: "secondlevel:p2|datapath:d1|loadImage:la"
+ 84. Port Connectivity Checks: "secondlevel:p2|datapath:d1"
+ 85. Port Connectivity Checks: "secondlevel:p2|genloc:gl|keyRam:kr"
+ 86. Port Connectivity Checks: "secondlevel:p2|genloc:gl|loadLocation:la|ramMapY:ray"
+ 87. Port Connectivity Checks: "secondlevel:p2|genloc:gl|loadLocation:la|ramMapX:rax"
+ 88. Port Connectivity Checks: "secondlevel:p2|genloc:gl"
+ 89. Port Connectivity Checks: "secondlevel:p2|RateDivider:r1"
+ 90. Port Connectivity Checks: "DE1_SoC_Audio_Example:d1|avconf:avc|I2C_Controller:u0"
+ 91. Port Connectivity Checks: "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Audio_Clock:Audio_Clock"
+ 92. Port Connectivity Checks: "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer"
+ 93. Port Connectivity Checks: "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer"
+ 94. Port Connectivity Checks: "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller"
+ 95. Port Connectivity Checks: "DE1_SoC_Audio_Example:d1|testram:test"
+ 96. Port Connectivity Checks: "DE1_SoC_Audio_Example:d1"
+ 97. Port Connectivity Checks: "vga_adapter:v1|vga_controller:controller"
+ 98. Port Connectivity Checks: "vga_adapter:v1"
+ 99. Port Connectivity Checks: "PS2_Demo:pc0|PS2_Controller:PS2"
+100. Post-Synthesis Netlist Statistics for Top Partition
+101. Elapsed Time Per Partition
+102. Analysis & Synthesis Messages
+103. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -135,16 +134,16 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Nov 28 17:23:17 2018       ;
+; Analysis & Synthesis Status     ; Successful - Wed Nov 28 17:48:05 2018       ;
 ; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                   ; ECE241FinalProject                          ;
 ; Top-level Entity Name           ; top                                         ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 756                                         ;
+; Total registers                 ; 755                                         ;
 ; Total pins                      ; 112                                         ;
 ; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 1,221,236                                   ;
+; Total block memory bits         ; 1,225,236                                   ;
 ; Total DSP Blocks                ; 0                                           ;
 ; Total HSSI RX PCSs              ; 0                                           ;
 ; Total HSSI PMA RX Deserializers ; 0                                           ;
@@ -360,7 +359,7 @@ refer to the applicable agreement for further details.
 ; db/altsyncram_j0p1.tdf                                        ; yes             ; Auto-Generated Megafunction            ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_j0p1.tdf                                        ;         ;
 ; graphics/gameover.mif                                         ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/graphics/gameover.mif                                         ;         ;
 ; db/altsyncram_uvo1.tdf                                        ; yes             ; Auto-Generated Megafunction            ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_uvo1.tdf                                        ;         ;
-; ./graphics/combined.mif                                       ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/graphics/combined.mif                                         ;         ;
+; graphics/combined.mif                                         ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/graphics/combined.mif                                         ;         ;
 +---------------------------------------------------------------+-----------------+----------------------------------------+--------------------------------------------------------------------------------------------------------------------+---------+
 
 
@@ -369,20 +368,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 704            ;
+; Estimate of Logic utilization (ALMs needed) ; 711            ;
 ;                                             ;                ;
-; Combinational ALUT usage for logic          ; 1169           ;
-;     -- 7 input functions                    ; 7              ;
-;     -- 6 input functions                    ; 217            ;
-;     -- 5 input functions                    ; 183            ;
-;     -- 4 input functions                    ; 111            ;
-;     -- <=3 input functions                  ; 651            ;
+; Combinational ALUT usage for logic          ; 1184           ;
+;     -- 7 input functions                    ; 9              ;
+;     -- 6 input functions                    ; 214            ;
+;     -- 5 input functions                    ; 197            ;
+;     -- 4 input functions                    ; 114            ;
+;     -- <=3 input functions                  ; 650            ;
 ;                                             ;                ;
-; Dedicated logic registers                   ; 756            ;
+; Dedicated logic registers                   ; 755            ;
 ;                                             ;                ;
 ; I/O pins                                    ; 112            ;
 ; Total MLAB memory bits                      ; 0              ;
-; Total block memory bits                     ; 1221236        ;
+; Total block memory bits                     ; 1225236        ;
 ;                                             ;                ;
 ; Total DSP Blocks                            ; 0              ;
 ;                                             ;                ;
@@ -391,7 +390,7 @@ refer to the applicable agreement for further details.
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
 ; Maximum fan-out                             ; 1024           ;
-; Total fan-out                               ; 14573          ;
+; Total fan-out                               ; 14658          ;
 ; Average fan-out                             ; 5.79           ;
 +---------------------------------------------+----------------+
 
@@ -401,8 +400,8 @@ refer to the applicable agreement for further details.
 +------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+--------------+
 ; Compilation Hierarchy Node                                       ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                            ; Entity Name                     ; Library Name ;
 +------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+--------------+
-; |top                                                             ; 1169 (1)            ; 756 (0)                   ; 1221236           ; 0          ; 112  ; 0            ; |top                                                                                                                                                                                                                                                           ; top                             ; work         ;
-;    |DE1_SoC_Audio_Example:d1|                                    ; 486 (132)           ; 358 (61)                  ; 21172             ; 0          ; 0    ; 0            ; |top|DE1_SoC_Audio_Example:d1                                                                                                                                                                                                                                  ; DE1_SoC_Audio_Example           ; work         ;
+; |top                                                             ; 1184 (1)            ; 755 (0)                   ; 1225236           ; 0          ; 112  ; 0            ; |top                                                                                                                                                                                                                                                           ; top                             ; work         ;
+;    |DE1_SoC_Audio_Example:d1|                                    ; 487 (133)           ; 358 (61)                  ; 21172             ; 0          ; 0    ; 0            ; |top|DE1_SoC_Audio_Example:d1                                                                                                                                                                                                                                  ; DE1_SoC_Audio_Example           ; work         ;
 ;       |Audio_Controller:Audio_Controller|                        ; 262 (4)             ; 222 (4)                   ; 16384             ; 0          ; 0    ; 0            ; |top|DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller                                                                                                                                                                                                ; Audio_Controller                ; work         ;
 ;          |Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer| ; 108 (5)             ; 108 (36)                  ; 8192              ; 0          ; 0    ; 0            ; |top|DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer                                                                                                                                          ; Altera_UP_Audio_In_Deserializer ; work         ;
 ;             |Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter|  ; 9 (9)               ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |top|DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter                                                                                        ; Altera_UP_Audio_Bit_Counter     ; work         ;
@@ -450,15 +449,15 @@ refer to the applicable agreement for further details.
 ;       |testram:test|                                             ; 0 (0)               ; 0 (0)                     ; 4788              ; 0          ; 0    ; 0            ; |top|DE1_SoC_Audio_Example:d1|testram:test                                                                                                                                                                                                                     ; testram                         ; work         ;
 ;          |altsyncram:altsyncram_component|                       ; 0 (0)               ; 0 (0)                     ; 4788              ; 0          ; 0    ; 0            ; |top|DE1_SoC_Audio_Example:d1|testram:test|altsyncram:altsyncram_component                                                                                                                                                                                     ; altsyncram                      ; work         ;
 ;             |altsyncram_f0p1:auto_generated|                     ; 0 (0)               ; 0 (0)                     ; 4788              ; 0          ; 0    ; 0            ; |top|DE1_SoC_Audio_Example:d1|testram:test|altsyncram:altsyncram_component|altsyncram_f0p1:auto_generated                                                                                                                                                      ; altsyncram_f0p1                 ; work         ;
-;    |PS2_Demo:pc0|                                                ; 118 (1)             ; 98 (8)                    ; 0                 ; 0          ; 0    ; 0            ; |top|PS2_Demo:pc0                                                                                                                                                                                                                                              ; PS2_Demo                        ; work         ;
+;    |PS2_Demo:pc0|                                                ; 119 (1)             ; 98 (8)                    ; 0                 ; 0          ; 0    ; 0            ; |top|PS2_Demo:pc0                                                                                                                                                                                                                                              ; PS2_Demo                        ; work         ;
 ;       |Hexadecimal_To_Seven_Segment:Segment0|                    ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|PS2_Demo:pc0|Hexadecimal_To_Seven_Segment:Segment0                                                                                                                                                                                                        ; Hexadecimal_To_Seven_Segment    ; work         ;
 ;       |Hexadecimal_To_Seven_Segment:Segment1|                    ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|PS2_Demo:pc0|Hexadecimal_To_Seven_Segment:Segment1                                                                                                                                                                                                        ; Hexadecimal_To_Seven_Segment    ; work         ;
-;       |PS2_Controller:PS2|                                       ; 103 (7)             ; 90 (5)                    ; 0                 ; 0          ; 0    ; 0            ; |top|PS2_Demo:pc0|PS2_Controller:PS2                                                                                                                                                                                                                           ; PS2_Controller                  ; work         ;
-;          |Altera_UP_PS2_Command_Out:PS2_Command_Out|             ; 82 (82)             ; 60 (60)                   ; 0                 ; 0          ; 0    ; 0            ; |top|PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out                                                                                                                                                                                 ; Altera_UP_PS2_Command_Out       ; work         ;
+;       |PS2_Controller:PS2|                                       ; 104 (7)             ; 90 (5)                    ; 0                 ; 0          ; 0    ; 0            ; |top|PS2_Demo:pc0|PS2_Controller:PS2                                                                                                                                                                                                                           ; PS2_Controller                  ; work         ;
+;          |Altera_UP_PS2_Command_Out:PS2_Command_Out|             ; 83 (83)             ; 60 (60)                   ; 0                 ; 0          ; 0    ; 0            ; |top|PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out                                                                                                                                                                                 ; Altera_UP_PS2_Command_Out       ; work         ;
 ;          |Altera_UP_PS2_Data_In:PS2_Data_In|                     ; 14 (14)             ; 25 (25)                   ; 0                 ; 0          ; 0    ; 0            ; |top|PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In                                                                                                                                                                                         ; Altera_UP_PS2_Data_In           ; work         ;
-;    |secondlevel:p2|                                              ; 428 (0)             ; 266 (0)                   ; 48064             ; 0          ; 0    ; 0            ; |top|secondlevel:p2                                                                                                                                                                                                                                            ; secondlevel                     ; work         ;
+;    |secondlevel:p2|                                              ; 441 (0)             ; 265 (0)                   ; 52064             ; 0          ; 0    ; 0            ; |top|secondlevel:p2                                                                                                                                                                                                                                            ; secondlevel                     ; work         ;
 ;       |control:c1|                                               ; 8 (8)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |top|secondlevel:p2|control:c1                                                                                                                                                                                                                                 ; control                         ; work         ;
-;       |datapath:d1|                                              ; 402 (368)           ; 231 (228)                 ; 47008             ; 0          ; 0    ; 0            ; |top|secondlevel:p2|datapath:d1                                                                                                                                                                                                                                ; datapath                        ; work         ;
+;       |datapath:d1|                                              ; 415 (381)           ; 230 (227)                 ; 51008             ; 0          ; 0    ; 0            ; |top|secondlevel:p2|datapath:d1                                                                                                                                                                                                                                ; datapath                        ; work         ;
 ;          |loadBG:bg|                                             ; 0 (0)               ; 0 (0)                     ; 15360             ; 0          ; 0    ; 0            ; |top|secondlevel:p2|datapath:d1|loadBG:bg                                                                                                                                                                                                                      ; loadBG                          ; work         ;
 ;             |BGRam:bgram|                                        ; 0 (0)               ; 0 (0)                     ; 15360             ; 0          ; 0    ; 0            ; |top|secondlevel:p2|datapath:d1|loadBG:bg|BGRam:bgram                                                                                                                                                                                                          ; BGRam                           ; work         ;
 ;                |altsyncram:altsyncram_component|                 ; 0 (0)               ; 0 (0)                     ; 15360             ; 0          ; 0    ; 0            ; |top|secondlevel:p2|datapath:d1|loadBG:bg|BGRam:bgram|altsyncram:altsyncram_component                                                                                                                                                                          ; altsyncram                      ; work         ;
@@ -476,6 +475,10 @@ refer to the applicable agreement for further details.
 ;             |loadS:s|                                            ; 0 (0)               ; 0 (0)                     ; 3072              ; 0          ; 0    ; 0            ; |top|secondlevel:p2|datapath:d1|loadImage:la|loadS:s                                                                                                                                                                                                           ; loadS                           ; work         ;
 ;                |altsyncram:altsyncram_component|                 ; 0 (0)               ; 0 (0)                     ; 3072              ; 0          ; 0    ; 0            ; |top|secondlevel:p2|datapath:d1|loadImage:la|loadS:s|altsyncram:altsyncram_component                                                                                                                                                                           ; altsyncram                      ; work         ;
 ;                   |altsyncram_ceq1:auto_generated|               ; 0 (0)               ; 0 (0)                     ; 3072              ; 0          ; 0    ; 0            ; |top|secondlevel:p2|datapath:d1|loadImage:la|loadS:s|altsyncram:altsyncram_component|altsyncram_ceq1:auto_generated                                                                                                                                            ; altsyncram_ceq1                 ; work         ;
+;          |loadgameover:lgm|                                      ; 0 (0)               ; 0 (0)                     ; 4000              ; 0          ; 0    ; 0            ; |top|secondlevel:p2|datapath:d1|loadgameover:lgm                                                                                                                                                                                                               ; loadgameover                    ; work         ;
+;             |gameoversign:go|                                    ; 0 (0)               ; 0 (0)                     ; 4000              ; 0          ; 0    ; 0            ; |top|secondlevel:p2|datapath:d1|loadgameover:lgm|gameoversign:go                                                                                                                                                                                               ; gameoversign                    ; work         ;
+;                |altsyncram:altsyncram_component|                 ; 0 (0)               ; 0 (0)                     ; 4000              ; 0          ; 0    ; 0            ; |top|secondlevel:p2|datapath:d1|loadgameover:lgm|gameoversign:go|altsyncram:altsyncram_component                                                                                                                                                               ; altsyncram                      ; work         ;
+;                   |altsyncram_j0p1:auto_generated|               ; 0 (0)               ; 0 (0)                     ; 4000              ; 0          ; 0    ; 0            ; |top|secondlevel:p2|datapath:d1|loadgameover:lgm|gameoversign:go|altsyncram:altsyncram_component|altsyncram_j0p1:auto_generated                                                                                                                                ; altsyncram_j0p1                 ; work         ;
 ;          |loadosu:lo|                                            ; 10 (10)             ; 0 (0)                     ; 15360             ; 0          ; 0    ; 0            ; |top|secondlevel:p2|datapath:d1|loadosu:lo                                                                                                                                                                                                                     ; loadosu                         ; work         ;
 ;             |osulogoRAM:oss|                                     ; 0 (0)               ; 0 (0)                     ; 15360             ; 0          ; 0    ; 0            ; |top|secondlevel:p2|datapath:d1|loadosu:lo|osulogoRAM:oss                                                                                                                                                                                                      ; osulogoRAM                      ; work         ;
 ;                |altsyncram:altsyncram_component|                 ; 0 (0)               ; 0 (0)                     ; 15360             ; 0          ; 0    ; 0            ; |top|secondlevel:p2|datapath:d1|loadosu:lo|osulogoRAM:oss|altsyncram:altsyncram_component                                                                                                                                                                      ; altsyncram                      ; work         ;
@@ -526,6 +529,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; secondlevel:p2|datapath:d1|loadImage:la|loadD:d|altsyncram:altsyncram_component|altsyncram_tdq1:auto_generated|ALTSYNCRAM                                                                                                                                            ; AUTO ; Single Port      ; 1024         ; 3            ; --           ; --           ; 3072    ; ./graphics/Circles/circlesD.mif ;
 ; secondlevel:p2|datapath:d1|loadImage:la|loadF:f|altsyncram:altsyncram_component|altsyncram_vdq1:auto_generated|ALTSYNCRAM                                                                                                                                            ; AUTO ; Single Port      ; 1024         ; 3            ; --           ; --           ; 3072    ; ./graphics/Circles/circlesF.mif ;
 ; secondlevel:p2|datapath:d1|loadImage:la|loadS:s|altsyncram:altsyncram_component|altsyncram_ceq1:auto_generated|ALTSYNCRAM                                                                                                                                            ; AUTO ; Single Port      ; 1024         ; 3            ; --           ; --           ; 3072    ; ./graphics/Circles/circlesS.mif ;
+; secondlevel:p2|datapath:d1|loadgameover:lgm|gameoversign:go|altsyncram:altsyncram_component|altsyncram_j0p1:auto_generated|ALTSYNCRAM                                                                                                                                ; AUTO ; Single Port      ; 4000         ; 15           ; --           ; --           ; 60000   ; ./graphics/gameover.mif         ;
 ; secondlevel:p2|datapath:d1|loadosu:lo|osulogoRAM:oss|altsyncram:altsyncram_component|altsyncram_pdp1:auto_generated|ALTSYNCRAM                                                                                                                                       ; AUTO ; Single Port      ; 1024         ; 15           ; --           ; --           ; 15360   ; ./graphics/osupictureV2.mif     ;
 ; secondlevel:p2|datapath:d1|loadscore:ls|scoreCounterRam:scoreCount|altsyncram:altsyncram_component|altsyncram_uvo1:auto_generated|ALTSYNCRAM                                                                                                                         ; AUTO ; Single Port      ; 4000         ; 15           ; --           ; --           ; 60000   ; ./graphics/combined.mif         ;
 ; secondlevel:p2|genloc:gl|keyRam:kr|altsyncram:altsyncram_component|altsyncram_r0p1:auto_generated|ALTSYNCRAM                                                                                                                                                         ; AUTO ; Single Port      ; 16           ; 2            ; --           ; --           ; 32      ; ./graphics/key.mif              ;
@@ -666,8 +670,8 @@ Encoding Type:  One-Hot
 ; PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|s_ps2_receiver~3                                         ; Lost fanout                                                                                          ;
 ; PS2_Demo:pc0|PS2_Controller:PS2|s_ps2_transceiver.PS2_STATE_2_COMMAND_OUT                                                  ; Stuck at GND due to stuck port data_in                                                               ;
 ; PS2_Demo:pc0|PS2_Controller:PS2|s_ps2_transceiver.PS2_STATE_4_END_DELAYED                                                  ; Stuck at GND due to stuck port data_in                                                               ;
-; PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|error_communication_timed_out                    ; Lost fanout                                                                                          ;
 ; PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|command_was_sent                                 ; Lost fanout                                                                                          ;
+; PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|error_communication_timed_out                    ; Lost fanout                                                                                          ;
 ; PS2_Demo:pc0|PS2_Controller:PS2|s_ps2_transceiver.PS2_STATE_3_END_TRANSFER                                                 ; Stuck at GND due to stuck port data_in                                                               ;
 ; PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|s_ps2_receiver.PS2_STATE_1_WAIT_FOR_DATA                 ; Stuck at GND due to stuck port data_in                                                               ;
 ; PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|s_ps2_transmitter.PS2_STATE_0_IDLE               ; Stuck at GND due to stuck port data_in                                                               ;
@@ -688,8 +692,8 @@ Encoding Type:  One-Hot
 ;                                                                           ;                           ; PS2_Demo:pc0|PS2_Controller:PS2|idle_counter[5],                                                                           ;
 ;                                                                           ;                           ; PS2_Demo:pc0|PS2_Controller:PS2|idle_counter[6],                                                                           ;
 ;                                                                           ;                           ; PS2_Demo:pc0|PS2_Controller:PS2|idle_counter[7]                                                                            ;
-; PS2_Demo:pc0|PS2_Controller:PS2|s_ps2_transceiver~2                       ; Lost Fanouts              ; PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|error_communication_timed_out,                   ;
-;                                                                           ;                           ; PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|command_was_sent,                                ;
+; PS2_Demo:pc0|PS2_Controller:PS2|s_ps2_transceiver~2                       ; Lost Fanouts              ; PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|command_was_sent,                                ;
+;                                                                           ;                           ; PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|error_communication_timed_out,                   ;
 ;                                                                           ;                           ; PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|s_ps2_transmitter.PS2_STATE_6_COMMAND_WAS_SENT,  ;
 ;                                                                           ;                           ; PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|s_ps2_transmitter.PS2_STATE_7_TRANSMISSION_ERROR ;
 ; PS2_Demo:pc0|PS2_Controller:PS2|s_ps2_transceiver.PS2_STATE_2_COMMAND_OUT ; Stuck at GND              ; PS2_Demo:pc0|PS2_Controller:PS2|s_ps2_transceiver.PS2_STATE_3_END_TRANSFER,                                                ;
@@ -710,12 +714,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 756   ;
-; Number of registers using Synchronous Clear  ; 506   ;
+; Total registers                              ; 755   ;
+; Number of registers using Synchronous Clear  ; 505   ;
 ; Number of registers using Synchronous Load   ; 6     ;
 ; Number of registers using Asynchronous Clear ; 59    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 466   ;
+; Number of registers using Clock Enable       ; 465   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -746,51 +750,51 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                                                             ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |top|PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|received_data[0]                                                                                                ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |top|PS2_Demo:pc0|last_data_received[0]                                                                                                                                                ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |top|PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|received_data[7]                                                                                                ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |top|PS2_Demo:pc0|last_data_received[2]                                                                                                                                                ;
 ; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|loadImage:la|q[0]                                                                                                                                      ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |top|PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|data_shift_reg[7]                                                                                               ;
-; 3:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |top|vga_adapter:v1|vga_controller:controller|yCounter[0]                                                                                                                              ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|scoreid1[0]                                                                                                                                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top|DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|data_in_shift_reg[26]                                            ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |top|PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|data_shift_reg[0]                                                                                               ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |top|vga_adapter:v1|vga_controller:controller|yCounter[3]                                                                                                                              ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|scoreid1[4]                                                                                                                                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top|DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|data_in_shift_reg[19]                                            ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top|DE1_SoC_Audio_Example:d1|limit[12]                                                                                                                                                ;
-; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |top|secondlevel:p2|genloc:gl|i[2]                                                                                                                                                     ;
-; 4:1                ; 13 bits   ; 26 LEs        ; 0 LEs                ; 26 LEs                 ; Yes        ; |top|secondlevel:p2|datapath:d1|gameoveradd[3]                                                                                                                                         ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|tempid[2]                                                                                                                                              ;
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |top|secondlevel:p2|genloc:gl|i[3]                                                                                                                                                     ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |top|secondlevel:p2|datapath:d1|gameoveradd[2]                                                                                                                                         ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|tempid[1]                                                                                                                                              ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|scoreid2[1]                                                                                                                                            ;
-; 4:1                ; 26 bits   ; 52 LEs        ; 0 LEs                ; 52 LEs                 ; Yes        ; |top|secondlevel:p2|datapath:d1|freq[2]                                                                                                                                                ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |top|DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter|bit_counter[4] ;
-; 4:1                ; 13 bits   ; 26 LEs        ; 0 LEs                ; 26 LEs                 ; Yes        ; |top|PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|command_initiate_counter[9]                                                                             ;
-; 4:1                ; 20 bits   ; 40 LEs        ; 0 LEs                ; 40 LEs                 ; Yes        ; |top|PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|waiting_counter[4]                                                                                      ;
+; 4:1                ; 26 bits   ; 52 LEs        ; 0 LEs                ; 52 LEs                 ; Yes        ; |top|secondlevel:p2|datapath:d1|freq[1]                                                                                                                                                ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |top|DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter|bit_counter[3] ;
+; 4:1                ; 13 bits   ; 26 LEs        ; 0 LEs                ; 26 LEs                 ; Yes        ; |top|PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|command_initiate_counter[1]                                                                             ;
+; 4:1                ; 20 bits   ; 40 LEs        ; 0 LEs                ; 40 LEs                 ; Yes        ; |top|PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|waiting_counter[14]                                                                                     ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |top|PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|cur_bit[0]                                                                                              ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |top|PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|data_count[2]                                                                                                   ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |top|secondlevel:p2|datapath:d1|circlecounter[2]                                                                                                                                       ;
-; 4:1                ; 17 bits   ; 34 LEs        ; 0 LEs                ; 34 LEs                 ; Yes        ; |top|PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|transfer_counter[16]                                                                                    ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|bgiid[3]                                                                                                                                               ;
-; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|bgj[3]                                                                                                                                                 ;
-; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|scorej[1]                                                                                                                                              ;
-; 4:1                ; 11 bits   ; 22 LEs        ; 0 LEs                ; 22 LEs                 ; Yes        ; |top|secondlevel:p2|datapath:d1|osucd[0]                                                                                                                                               ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|scoreid3[4]                                                                                                                                            ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |top|PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|data_count[3]                                                                                                   ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |top|secondlevel:p2|datapath:d1|circlecounter[7]                                                                                                                                       ;
+; 4:1                ; 17 bits   ; 34 LEs        ; 0 LEs                ; 34 LEs                 ; Yes        ; |top|PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|transfer_counter[2]                                                                                     ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|bgiid[1]                                                                                                                                               ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|bgj[5]                                                                                                                                                 ;
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|scorej[2]                                                                                                                                              ;
+; 4:1                ; 11 bits   ; 22 LEs        ; 0 LEs                ; 22 LEs                 ; Yes        ; |top|secondlevel:p2|datapath:d1|osucd[6]                                                                                                                                               ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|scoreid3[1]                                                                                                                                            ;
 ; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|bgjid[3]                                                                                                                                               ;
-; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|i[1]                                                                                                                                                   ;
-; 5:1                ; 7 bits    ; 21 LEs        ; 14 LEs               ; 7 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|j[1]                                                                                                                                                   ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|id[1]                                                                                                                                                  ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |top|DE1_SoC_Audio_Example:d1|address[7]                                                                                                                                               ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|scoreid[1]                                                                                                                                             ;
+; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|i[4]                                                                                                                                                   ;
+; 5:1                ; 7 bits    ; 21 LEs        ; 14 LEs               ; 7 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|j[5]                                                                                                                                                   ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|id[2]                                                                                                                                                  ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |top|DE1_SoC_Audio_Example:d1|address[9]                                                                                                                                               ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|scoreid[0]                                                                                                                                             ;
 ; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|bgi[0]                                                                                                                                                 ;
-; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|scorei[0]                                                                                                                                              ;
-; 6:1                ; 18 bits   ; 72 LEs        ; 0 LEs                ; 72 LEs                 ; Yes        ; |top|secondlevel:p2|datapath:d1|blackcounter[4]                                                                                                                                        ;
-; 6:1                ; 31 bits   ; 124 LEs       ; 62 LEs               ; 62 LEs                 ; Yes        ; |top|DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|data_out_shift_reg[32]                                             ;
+; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|scorei[3]                                                                                                                                              ;
+; 6:1                ; 18 bits   ; 72 LEs        ; 0 LEs                ; 72 LEs                 ; Yes        ; |top|secondlevel:p2|datapath:d1|blackcounter[7]                                                                                                                                        ;
+; 6:1                ; 31 bits   ; 124 LEs       ; 62 LEs               ; 62 LEs                 ; Yes        ; |top|DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|data_out_shift_reg[29]                                             ;
 ; 6:1                ; 26 bits   ; 104 LEs       ; 0 LEs                ; 104 LEs                ; Yes        ; |top|secondlevel:p2|datapath:d1|scorefreq[12]                                                                                                                                          ;
-; 8:1                ; 15 bits   ; 75 LEs        ; 30 LEs               ; 45 LEs                 ; Yes        ; |top|secondlevel:p2|datapath:d1|Colour[0]                                                                                                                                              ;
-; 10:1               ; 6 bits    ; 36 LEs        ; 36 LEs               ; 0 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|X[5]                                                                                                                                                   ;
+; 8:1                ; 15 bits   ; 75 LEs        ; 45 LEs               ; 30 LEs                 ; Yes        ; |top|secondlevel:p2|datapath:d1|Colour[4]                                                                                                                                              ;
+; 10:1               ; 6 bits    ; 36 LEs        ; 36 LEs               ; 0 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|X[1]                                                                                                                                                   ;
 ; 10:1               ; 3 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|Y[5]                                                                                                                                                   ;
 ; 10:1               ; 4 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|Y[1]                                                                                                                                                   ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |top|DE1_SoC_Audio_Example:d1|avconf:avc|I2C_Controller:u0|SD_COUNTER[3]                                                                                                               ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |top|DE1_SoC_Audio_Example:d1|limit[8]                                                                                                                                                 ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |top|DE1_SoC_Audio_Example:d1|avconf:avc|I2C_Controller:u0|SD_COUNTER[4]                                                                                                               ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |top|DE1_SoC_Audio_Example:d1|limit[14]                                                                                                                                                ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |top|secondlevel:p2|datapath:d1|scoreweight                                                                                                                                            ;
 ; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |top|secondlevel:p2|datapath:d1|scoreweight                                                                                                                                            ;
-; 9:1                ; 15 bits   ; 90 LEs        ; 90 LEs               ; 0 LEs                  ; No         ; |top|vga_adapter:v1|altsyncram:VideoMemory|altsyncram_o7n1:auto_generated|mux_lib:mux3|l4_w4_n0_mux_dataout                                                                            ;
+; 9:1                ; 15 bits   ; 90 LEs        ; 90 LEs               ; 0 LEs                  ; No         ; |top|vga_adapter:v1|altsyncram:VideoMemory|altsyncram_o7n1:auto_generated|mux_lib:mux3|l4_w14_n0_mux_dataout                                                                           ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -3048,15 +3052,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "secondlevel:p2|datapath:d1|loadgameover:lgm"                                                                                                                                             ;
-+-------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port        ; Type  ; Severity ; Details                                                                                                                                                                            ;
-+-------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; gameoveradd ; Input ; Warning  ; Input port expression (13 bits) is wider than the input port (12 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-+-------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "secondlevel:p2|datapath:d1|loadosu:lo|osulogoRAM:oss"                                                                                       ;
 +------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
@@ -3308,36 +3303,36 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 756                         ;
+; arriav_ff             ; 755                         ;
 ;     CLR               ; 19                          ;
 ;     CLR SCLR          ; 26                          ;
 ;     ENA               ; 81                          ;
 ;     ENA CLR           ; 4                           ;
 ;     ENA CLR SCLR      ; 10                          ;
-;     ENA SCLR          ; 367                         ;
+;     ENA SCLR          ; 366                         ;
 ;     ENA SCLR SLD      ; 4                           ;
 ;     SCLR              ; 99                          ;
 ;     SLD               ; 2                           ;
 ;     plain             ; 144                         ;
 ; arriav_io_obuf        ; 6                           ;
-; arriav_lcell_comb     ; 1172                        ;
-;     arith             ; 464                         ;
+; arriav_lcell_comb     ; 1187                        ;
+;     arith             ; 463                         ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 367                         ;
+;         1 data inputs ; 366                         ;
 ;         2 data inputs ; 47                          ;
 ;         3 data inputs ; 44                          ;
 ;         4 data inputs ; 1                           ;
 ;         5 data inputs ; 4                           ;
-;     extend            ; 7                           ;
-;         7 data inputs ; 7                           ;
-;     normal            ; 679                         ;
+;     extend            ; 9                           ;
+;         7 data inputs ; 9                           ;
+;     normal            ; 693                         ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 6                           ;
-;         2 data inputs ; 83                          ;
-;         3 data inputs ; 82                          ;
-;         4 data inputs ; 110                         ;
-;         5 data inputs ; 179                         ;
-;         6 data inputs ; 217                         ;
+;         2 data inputs ; 84                          ;
+;         3 data inputs ; 81                          ;
+;         4 data inputs ; 113                         ;
+;         5 data inputs ; 193                         ;
+;         6 data inputs ; 214                         ;
 ;     shared            ; 22                          ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 4                           ;
@@ -3345,7 +3340,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         3 data inputs ; 2                           ;
 ; boundary_port         ; 112                         ;
 ; generic_pll           ; 2                           ;
-; stratixv_ram_block    ; 358                         ;
+; stratixv_ram_block    ; 359                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 6.30                        ;
 ; Average LUT depth     ; 2.20                        ;
@@ -3367,7 +3362,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Wed Nov 28 17:22:53 2018
+    Info: Processing started: Wed Nov 28 17:47:42 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ECE241FinalProject -c ECE241FinalProject
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -3747,6 +3742,7 @@ Info (12128): Elaborating entity "altsyncram_r0p1" for hierarchy "secondlevel:p2
 Info (12128): Elaborating entity "datapath" for hierarchy "secondlevel:p2|datapath:d1" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 260
 Warning (10230): Verilog HDL assignment warning at datapath.v(391): truncated value with size 6 to match size of target (5) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 391
 Warning (10230): Verilog HDL assignment warning at datapath.v(392): truncated value with size 6 to match size of target (5) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 392
+Warning (10230): Verilog HDL assignment warning at datapath.v(405): truncated value with size 13 to match size of target (12) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 405
 Warning (10230): Verilog HDL assignment warning at datapath.v(416): truncated value with size 9 to match size of target (8) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 416
 Warning (10230): Verilog HDL assignment warning at datapath.v(460): truncated value with size 6 to match size of target (4) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 460
 Warning (10230): Verilog HDL assignment warning at datapath.v(467): truncated value with size 6 to match size of target (5) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 467
@@ -3932,19 +3928,6 @@ Info (12133): Instantiated megafunction "secondlevel:p2|datapath:d1|loadscore:ls
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_uvo1.tdf
     Info (12023): Found entity 1: altsyncram_uvo1 File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_uvo1.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_uvo1" for hierarchy "secondlevel:p2|datapath:d1|loadscore:ls|scoreCounterRam:scoreCount|altsyncram:altsyncram_component|altsyncram_uvo1:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Warning (113016): Width of data items in "combined.mif" is smaller than the memory width. Padding data items with 0 on MSB to fit in memory.  File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/graphics/combined.mif Line: 5
-Warning (113028): 605296 out of 610400 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 319 warnings found, and 10 warnings are reported. File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/graphics/combined.mif Line: 1
-    Warning (113027): Addresses ranging from 16 to 255 are not initialized File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/graphics/combined.mif Line: 1
-    Warning (113027): Addresses ranging from 272 to 511 are not initialized File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/graphics/combined.mif Line: 1
-    Warning (113027): Addresses ranging from 528 to 767 are not initialized File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/graphics/combined.mif Line: 1
-    Warning (113027): Addresses ranging from 784 to 1023 are not initialized File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/graphics/combined.mif Line: 1
-    Warning (113027): Addresses ranging from 1040 to 1279 are not initialized File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/graphics/combined.mif Line: 1
-    Warning (113027): Addresses ranging from 1296 to 1535 are not initialized File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/graphics/combined.mif Line: 1
-    Warning (113027): Addresses ranging from 1552 to 1791 are not initialized File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/graphics/combined.mif Line: 1
-    Warning (113027): Addresses ranging from 1808 to 2047 are not initialized File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/graphics/combined.mif Line: 1
-    Warning (113027): Addresses ranging from 2064 to 2303 are not initialized File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/graphics/combined.mif Line: 1
-    Warning (113027): Addresses ranging from 2320 to 2559 are not initialized File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/graphics/combined.mif Line: 1
-Critical Warning (127004): Memory depth (4000) in the design file differs from memory depth (610400) in the Memory Initialization File "C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/graphics/combined.mif" -- truncated remaining initial content value to fit RAM File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/scoreCounterRam.v Line: 85
 Warning (12020): Port "address_a" on the entity instantiation of "altsyncram_component" is connected to a signal of width 15. The formal width of the signal in the module is 12.  The extra bits will be ignored. File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/scoreCounterRam.v Line: 85
 Warning (12010): Port "data_a" on the entity instantiation of "altsyncram_component" is connected to a signal of width 3. The formal width of the signal in the module is 15.  The extra bits will be driven by GND. File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/gameoversign.v Line: 85
 Warning (12030): Port "q_a" on the entity instantiation of "altsyncram_component" is connected to a signal of width 3. The formal width of the signal in the module is 15.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/gameoversign.v Line: 85
@@ -3969,7 +3952,6 @@ Warning (14284): Synthesized away the following node(s):
         Warning (14320): Synthesized away node "secondlevel:p2|datapath:d1|loadscore:ls|scoreCounterRam:scoreCount|altsyncram:altsyncram_component|altsyncram_uvo1:auto_generated|q_a[12]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_uvo1.tdf Line: 336
         Warning (14320): Synthesized away node "secondlevel:p2|datapath:d1|loadscore:ls|scoreCounterRam:scoreCount|altsyncram:altsyncram_component|altsyncram_uvo1:auto_generated|q_a[13]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_uvo1.tdf Line: 361
         Warning (14320): Synthesized away node "secondlevel:p2|datapath:d1|loadscore:ls|scoreCounterRam:scoreCount|altsyncram:altsyncram_component|altsyncram_uvo1:auto_generated|q_a[14]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_uvo1.tdf Line: 386
-        Warning (14320): Synthesized away node "secondlevel:p2|datapath:d1|loadgameover:lgm|gameoversign:go|altsyncram:altsyncram_component|altsyncram_j0p1:auto_generated|q_a[0]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_j0p1.tdf Line: 36
         Warning (14320): Synthesized away node "secondlevel:p2|datapath:d1|loadgameover:lgm|gameoversign:go|altsyncram:altsyncram_component|altsyncram_j0p1:auto_generated|q_a[1]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_j0p1.tdf Line: 61
         Warning (14320): Synthesized away node "secondlevel:p2|datapath:d1|loadgameover:lgm|gameoversign:go|altsyncram:altsyncram_component|altsyncram_j0p1:auto_generated|q_a[2]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_j0p1.tdf Line: 86
         Warning (14320): Synthesized away node "secondlevel:p2|datapath:d1|loadgameover:lgm|gameoversign:go|altsyncram:altsyncram_component|altsyncram_j0p1:auto_generated|q_a[3]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_j0p1.tdf Line: 111
@@ -3987,7 +3969,7 @@ Warning (14284): Synthesized away the following node(s):
         Warning (14320): Synthesized away node "DE1_SoC_Audio_Example:d1|testram:test|altsyncram:altsyncram_component|altsyncram_f0p1:auto_generated|q_a[19]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_f0p1.tdf Line: 492
 Info (276014): Found 1 instances of uninferred RAM logic
     Info (276004): RAM logic "DE1_SoC_Audio_Example:d1|avconf:avc|Ram0" is uninferred due to inappropriate RAM size File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/avconf/avconf.v Line: 131
-Warning (12241): 21 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12241): 20 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "LEDR[7]" is stuck at GND File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 63
     Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 63
@@ -4432,18 +4414,18 @@ Warning (21074): Design contains 9 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 37
     Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 37
     Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 37
-Info (21057): Implemented 1786 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1802 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 16 input pins
     Info (21059): Implemented 90 output pins
     Info (21060): Implemented 6 bidirectional pins
-    Info (21061): Implemented 1314 logic cells
-    Info (21064): Implemented 358 RAM segments
+    Info (21061): Implemented 1329 logic cells
+    Info (21064): Implemented 359 RAM segments
     Info (21065): Implemented 2 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 525 warnings
-    Info: Peak virtual memory: 4927 megabytes
-    Info: Processing ended: Wed Nov 28 17:23:18 2018
-    Info: Elapsed time: 00:00:25
-    Info: Total CPU time (on all processors): 00:00:37
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 512 warnings
+    Info: Peak virtual memory: 4916 megabytes
+    Info: Processing ended: Wed Nov 28 17:48:05 2018
+    Info: Elapsed time: 00:00:23
+    Info: Total CPU time (on all processors): 00:00:36
 
 
 +------------------------------------------+

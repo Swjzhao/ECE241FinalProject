@@ -47,7 +47,7 @@ module datapath(
 	
 	 reg [7:0] circlecounter;
 	
-	 reg [12:0] gameoveradd;
+	 reg [11:0] gameoveradd;
 	 wire [2:0] gameovercolour;
 		
 	 wire [2:0] colour;
@@ -577,10 +577,10 @@ module datapath(
 				end
 			else if(ld_gameover)
 			begin
-				if(gameovercolour == 3'b111)
-					Colour<=15'b111111111111111;
-				else
+				if(gameovercolour == 3'b000)
 					Colour<=15'b0; 
+				else
+				Colour<=15'b111111111111111;
 					
 				X <= 8'd144 + gameoveradd [5:0];
 				Y <= 7'd112 + gameoveradd [9:6];
