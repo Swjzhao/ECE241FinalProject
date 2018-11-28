@@ -25,7 +25,7 @@ module control(
 	always @(*)
 	begin: state_table
 		case(current_state)
-			S_Reset: next_state = reset? S_Reset: S_DrawBG	;
+			S_Reset: next_state = reset? S_Reset: S_DrawBG;
 			//S_Reset: next_state = S_GenerateLocation;
 			S_DrawBG: next_state = draw? S_DrawScore: S_DrawBG;
 			S_DrawScore: next_state = drewScore? S_DrawOSU: S_DrawScore;
@@ -37,7 +37,7 @@ module control(
 						if(done) 
 							next_state = S_DrawBG;
 						else if(gameover)
-							next_state = S_Done;
+							next_state = S_Clearscreen;
 						else 
 							next_state = S_StartAnimation;
 					end

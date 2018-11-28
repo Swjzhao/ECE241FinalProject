@@ -36,7 +36,9 @@ module datapath(
 	 
 	 reg [11:0] score;
 	 reg [2:0]  scoreid;
-	 reg [2:0]  scoreid2;
+	 reg [4:0]  scoreid1;
+	 reg [4:0]  scoreid2;
+	 reg [4:0]  scoreid3;
 	 reg [4:0]  scorei;
 	 reg [6:0]  scorej;
 	 
@@ -47,6 +49,8 @@ module datapath(
 	 wire [2:0] colour;
 	 wire [14:0] bgcolour;
 	 reg [25:0] freq;
+	 reg [25:0] scorefreq;
+	 reg [4:0] scoreweight;
 	// wire clock;
 	// RateDivider r1(clk, reset, 26'b0100111110101111000001111, freq);
 	// assign clock = (freq  == 26'b00000000000000000000000000)? 1'b1 : 1'b0;
@@ -58,23 +62,63 @@ module datapath(
 //			keyboard_data2 <= datareceived;
 //		end
 //	 end
+	reg pressed;
 	 always@(posedge clk)
 	 begin 
+			
+			if(!reset)
+				begin
+				scoreweight = 5'd7;
+				 scorefreq <= 26'd0;
+				end
+			else if(ld_coord)
+			begin
+				scoreweight = 5'd7;
+				 scorefreq <= 26'd0;
+				end
+			else if(scorefreq == 26'b0100111110101111000001111)
+			begin
+				if(scoreweight > 5'd1)
+					scoreweight = scoreweight - 1'b1;
+				else
+					scoreweight = scoreweight;
+				
+				scorefreq <= 26'd0;
+//					done <= 1'b0;
+			end
+			else
+			begin
+			
+			scoreweight = scoreweight;
+			 scorefreq <=  scorefreq + 1'b1;
+			end
+		
+	
+			scoreid1 = scoreid1;
+			scoreid2 = scoreid2;
+			scoreid3 = scoreid3;
 			if(!reset)
 				begin
 					id <= 3'd0;
 //					done <= 1'b0;
 					freq <= 26'b0;
+					score <= 12'b0;
+					scoreid1 = 5'b0;
+					scoreid2 = 5'b0;
+					scoreid3 = 5'b0;
+					pressed <= 1'b0;
 				end
 			else if (ld_coord)
 				begin 
 					id <= 3'd0;
 					freq <= freq;
+				
 //					done <= 1'b0;
 				end 
 			else if(id == 3'd4)
 				begin
 					freq <= freq;
+					scorefreq <= scorefreq;
 //					done <= 1'b1;
 					id <= 3'd1;
 			
@@ -82,36 +126,122 @@ module datapath(
 			else if(freq == 26'b0100111110101111000001111)
 				begin
 					id <= id + 1'b1;
+					
 					freq <= 26'b0;
 //					done <= 1'b0;
 				end
 			else
 				begin
 				id<= id;
+				
 				freq <= freq + 1'b1;
 				end
 				
 			if(id2 == 2'd0 && datareceived == 8'h1C) 
 					begin 
-						
+					if(pressed == 1'b0)
+					begin
+							score <= score + scoreweight;
+							if(scoreid3 + scoreweight > 5'd8)
+							begin
+							scoreid3 = scoreid3 + scoreweight - 5'd9;
+							scoreid2 = scoreid2 + 1'd1;
+							end
+							else
+							begin
+							scoreid3 = scoreid3 + scoreweight;
+							end
+						if(scoreid2 > 5'd8)
+							begin
+							scoreid2 = 5'd0;
+							if(scoreid1 < 5'd8)
+								scoreid1 = scoreid1 + 1'b1;
+						end
+						pressed <= 1'b1;
+					end
 						done <= 1'b1;
+						
 					end
 				else if(id2 == 2'd1 && datareceived == 8'h1b)
 					begin
-					 
+					 		if(pressed == 1'b0)
+					begin
+							score <= score + scoreweight;
+							if(scoreid3 + scoreweight > 5'd8)
+							begin
+							scoreid3 = scoreid3 + scoreweight - 5'd9;
+							scoreid2 = scoreid2 + 1'd1;
+							end
+							else
+							begin
+							scoreid3 = scoreid3 + scoreweight;
+							end
+						if(scoreid2 > 5'd8)
+							begin
+							scoreid2 = 5'd0;
+							if(scoreid1 < 5'd8)
+								scoreid1 = scoreid1 + 1'b1;
+						end
+						pressed <= 1'b1;
+					end
 						done <= 1'b1;
 					end
 				else if(id2 == 2'd2 && datareceived == 8'h23)
 					begin
-						
+							if(pressed == 1'b0)
+					begin
+							score <= score + scoreweight;
+							if(scoreid3 + scoreweight > 5'd8)
+							begin
+							scoreid3 = scoreid3 + scoreweight - 5'd9;
+							scoreid2 = scoreid2 + 1'd1;
+							end
+							else
+							begin
+							scoreid3 = scoreid3 + scoreweight;
+							end
+						if(scoreid2 > 5'd8)
+							begin
+							scoreid2 = 5'd0;
+							if(scoreid1 < 5'd8)
+								scoreid1 = scoreid1 + 1'b1;
+						end
+						pressed <= 1'b1;
+					end
 						done <= 1'b1;
 					end
 				else if(id2 == 2'd3 && datareceived == 8'h2b)
 					begin
+							if(pressed == 1'b0)
+					begin
+							score <= score + scoreweight;
+							if(scoreid3 + scoreweight > 5'd8)
+							begin
+							scoreid3 = scoreid3 + scoreweight - 5'd9;
+							scoreid2 = scoreid2 + 1'd1;
+							end
+							else
+							begin
+							scoreid3 = scoreid3 + scoreweight;
+							end
+						if(scoreid2 > 5'd8)
+							begin
+							scoreid2 = 5'd0;
+							if(scoreid1 < 5'd10)
+								scoreid1 = scoreid1 + 1'b1;
+						end
+						pressed <= 1'b1;
+					end
 						done <= 1'b1;
 					end
 				else
 					begin 
+						score <= score;
+						scoreid1 = scoreid1;
+						pressed <= 1'b0;
+						scoreid2 = scoreid2;
+						
+						scoreid3 = scoreid3;
 						done <= 1'b0;
 					end
 					
@@ -122,7 +252,32 @@ module datapath(
 	 loadImage la (clk, reset, id,id2, i , j ,colour);
 	 loadBG bg (clk, reset, bgi, bgj, bgcolour);
 	 loadosu lo (clk, reset, osucd, osucolour);	
-	 loadscore ls (clk, reset, scoreid2, scorei, scorej, scorecolour);
+	 
+	 reg [11:0] tempscore;
+	 
+	
+	 
+	 reg [4:0] tempid;
+	 always@(posedge clk)
+	 begin:scoreids
+		
+		
+			
+		if(scoreid == 5'd0)
+			tempid <= scoreid1;
+		
+		else if(scoreid == 5'd1)
+		
+			tempid <= scoreid2;
+		else if(scoreid == 5'd2)
+			
+			tempid <= scoreid3;
+		else
+			tempid <= scoreid1;
+	 
+	 end
+	 
+	 loadscore ls (clk, reset, tempid, scorei, scorej, scorecolour);
 		
 	 always@(posedge clk)
     begin: states
@@ -165,6 +320,7 @@ module datapath(
 							scorei <= 5'd0;
 							scorej <= 7'd0;
 							scoreid <= 3'b0;
+						
 							gameover <= 1'b0;
 							
 				end
@@ -233,7 +389,7 @@ module datapath(
 				end
 			else if(ld_score)
 			
-	begin
+			begin
 				X <= 9'd272 + scorei + scoreid * (5'd16);
 				Y <= 8'b0 + scorej;
 				
@@ -263,13 +419,17 @@ module datapath(
 				end
 			else
 				begin
+			
 					scoreid <= scoreid +  1'b1;
 					scorej <= 7'd0;
 					scorei <= 5'd0;
 				end
 				
 				if(scoreid == 3'd3)
+				begin
+					scoreid <= 3'd0;
 					drewScore <= 1'b1;
+					end
 					
 			end
 				

@@ -237,6 +237,7 @@ module secondlevel(
 		.locY(randY),
 		.id2(id2),
 		.black(black),
+		.ld_coord(ld_coord),
 		.ld_plot(ld_plot),
 		.ld_BG(ld_BG),
 		.ld_osu(ld_osu),
