@@ -1,7 +1,7 @@
 // megafunction wizard: %RAM: 1-PORT%
 // GENERATION: STANDARD
 // VERSION: WM1.0
-// MODULE: altsyncram 
+// MODULE: altsyncram
 
 // ============================================================
 // File Name: gameoversign.v
@@ -19,12 +19,12 @@
 
 
 //Copyright (C) 2018  Intel Corporation. All rights reserved.
-//Your use of Intel Corporation's design tools, logic functions 
-//and other software and tools, and its AMPP partner logic 
-//functions, and any output files from any of the foregoing 
-//(including device programming or simulation files), and any 
-//associated documentation or information are expressly subject 
-//to the terms and conditions of the Intel Program License 
+//Your use of Intel Corporation's design tools, logic functions
+//and other software and tools, and its AMPP partner logic
+//functions, and any output files from any of the foregoing
+//(including device programming or simulation files), and any
+//associated documentation or information are expressly subject
+//to the terms and conditions of the Intel Program License
 //Subscription Agreement, the Intel Quartus Prime License Agreement,
 //the Intel FPGA IP License Agreement, or other applicable license
 //agreement, including, without limitation, that your use is for
@@ -45,9 +45,9 @@ module gameoversign (
 
 	input	[11:0]  address;
 	input	  clock;
-	input	[14:0]  data;
+	input	[2:0]  data;
 	input	  wren;
-	output	[14:0]  q;
+	output	[2:0]  q;
 `ifndef ALTERA_RESERVED_QIS
 // synopsys translate_off
 `endif
@@ -56,8 +56,8 @@ module gameoversign (
 // synopsys translate_on
 `endif
 
-	wire [14:0] sub_wire0;
-	wire [14:0] q = sub_wire0[14:0];
+	wire [2:0] sub_wire0;
+	wire [2:0] q = sub_wire0[2:0];
 
 	altsyncram	altsyncram_component (
 				.address_a (address),

@@ -1,9 +1,9 @@
 module control(
 	input clk,
-	input go, black, reset,
+	input go, reset,
 	input cleared, done, draw, drewOsu, drewScore, gameover,
 	output reg  [9:0] LED,
-	output reg  ld_plot, ld_coord,ld_BG, ld_osu, ld_line, ld_score, ld_gameover
+	output reg  ld_black, ld_plot, ld_coord,ld_BG, ld_osu, ld_line, ld_score, ld_gameover
 );
 
     reg [4:0] current_state;
@@ -25,7 +25,7 @@ module control(
 	always @(*)
 	begin: state_table
 		case(current_state)
-			S_Reset: next_state = reset? S_Reset: S_DrawBG;
+			S_Reset: next_state = reset? S_Reset: S_DrawBG	;
 			//S_Reset: next_state = S_GenerateLocation;
 			S_DrawBG: next_state = draw? S_DrawScore: S_DrawBG;
 			S_DrawScore: next_state = drewScore? S_DrawOSU: S_DrawScore;
@@ -37,10 +37,11 @@ module control(
 						if(done) 
 							next_state = S_DrawBG;
 						else if(gameover)
-							next_state = S_Clearscreen;
+							next_state = S_ClearScreen;
 						else 
 							next_state = S_StartAnimation;
 					end
+			S_ClearScreen: next_state = cleared? S_Done: S_ClearScreen;
 			S_Done: next_state = S_Done;
 			//S_Done: next_state = S_GenerateLocation;
 			endcase
@@ -54,6 +55,7 @@ module control(
 		ld_osu = 1'b0;
 		ld_line = 1'b0;
 		ld_score = 1'b0;
+		ld_black = 1'b0;
 		ld_gameover = 1'b0;
 		LED[0] = 1'b0;
 		LED[1] = 1'b0;
@@ -75,10 +77,12 @@ module control(
 			S_DrawScore:
 				begin
 					ld_score = 1'b1;
+					LED[5] = 1'b1; 
 				end
 			S_DrawOSU:
 				begin 
 					ld_osu = 1'b1;
+					LED[6] = 1'b1;
 				end
 			S_DrawLine:
 				begin
@@ -94,6 +98,11 @@ module control(
 					ld_coord = 1'b0;
 					ld_plot = 1'b1;
 					LED[2] = 1'b1;
+				end
+			S_ClearScreen:
+				begin
+					ld_black = 1'b1;
+					LED[4] = 1'b1;
 				end
 			S_Done:
 				begin

@@ -7,7 +7,7 @@ module datapath(
 	input [8:0] locX,
 	input [7:0] locY,
 	input [1:0] id2,
-	input black, ld_coord, ld_plot, ld_BG, ld_osu, ld_line, ld_score, ld_gameover,
+	input ld_black, ld_coord, ld_plot, ld_BG, ld_osu, ld_line, ld_score, ld_gameover,
 	input [7:0] datareceived,
 	output reg writeEn,
 	output reg [8:0] X, 
@@ -45,7 +45,11 @@ module datapath(
 	 reg [10:0] osucd;
 	 wire [14:0] osucolour;
 	
+	 reg [7:0] circlecounter;
 	
+	 reg [12:0] gameoveradd;
+	 wire [2:0] gameovercolour;
+		
 	 wire [2:0] colour;
 	 wire [14:0] bgcolour;
 	 reg [25:0] freq;
@@ -97,6 +101,7 @@ module datapath(
 			scoreid1 = scoreid1;
 			scoreid2 = scoreid2;
 			scoreid3 = scoreid3;
+			gameover = 1'b0;
 			if(!reset)
 				begin
 					id <= 3'd0;
@@ -107,6 +112,8 @@ module datapath(
 					scoreid2 = 5'b0;
 					scoreid3 = 5'b0;
 					pressed <= 1'b0;
+					circlecounter <= 8'b0;
+					gameover = 1'b0;
 				end
 			else if (ld_coord)
 				begin 
@@ -142,7 +149,7 @@ module datapath(
 					if(pressed == 1'b0)
 					begin
 							score <= score + scoreweight;
-							if(scoreid3 + scoreweight > 5'd8)
+							if(scoreid3 + scoreweight > 5'd9)
 							begin
 							scoreid3 = scoreid3 + scoreweight - 5'd9;
 							scoreid2 = scoreid2 + 1'd1;
@@ -151,15 +158,34 @@ module datapath(
 							begin
 							scoreid3 = scoreid3 + scoreweight;
 							end
-						if(scoreid2 > 5'd8)
+						if(scoreid2 > 5'd9)
 							begin
 							scoreid2 = 5'd0;
-							if(scoreid1 < 5'd8)
+							if(scoreid1 < 5'd9)
 								scoreid1 = scoreid1 + 1'b1;
+							else
+								scoreid1 = scoreid1;
 						end
+						else
+							begin
+							scoreid1 <= scoreid1;
+							scoreid2 <= scoreid2;
+							
+							
+							end
 						pressed <= 1'b1;
+							
+						circlecounter <= circlecounter + 1'b1;
+						if(circlecounter >= 8'd100)
+							gameover = 1'b1;
+						else
+							begin
+							done <= 1'b1;
+							gameover = 1'b0;
+							end
+						
 					end
-						done <= 1'b1;
+					
 						
 					end
 				else if(id2 == 2'd1 && datareceived == 8'h1b)
@@ -167,7 +193,7 @@ module datapath(
 					 		if(pressed == 1'b0)
 					begin
 							score <= score + scoreweight;
-							if(scoreid3 + scoreweight > 5'd8)
+							if(scoreid3 + scoreweight > 5'd9)
 							begin
 							scoreid3 = scoreid3 + scoreweight - 5'd9;
 							scoreid2 = scoreid2 + 1'd1;
@@ -176,22 +202,40 @@ module datapath(
 							begin
 							scoreid3 = scoreid3 + scoreweight;
 							end
-						if(scoreid2 > 5'd8)
+						if(scoreid2 > 5'd9)
 							begin
 							scoreid2 = 5'd0;
-							if(scoreid1 < 5'd8)
+							if(scoreid1 < 5'd9)
 								scoreid1 = scoreid1 + 1'b1;
+							else
+								scoreid1 = scoreid1;
 						end
+						else
+							begin
+							scoreid1 <= scoreid1;
+							scoreid2 <= scoreid2;
+							
+							
+							end
 						pressed <= 1'b1;
+						circlecounter <= circlecounter + 1'b1;
+						if(circlecounter >= 8'd100)
+							gameover = 1'b1;
+						else
+							begin
+							done <= 1'b1;
+							gameover = 1'b0;
+							end
 					end
-						done <= 1'b1;
+						
+						
 					end
 				else if(id2 == 2'd2 && datareceived == 8'h23)
 					begin
 							if(pressed == 1'b0)
 					begin
 							score <= score + scoreweight;
-							if(scoreid3 + scoreweight > 5'd8)
+							if(scoreid3 + scoreweight > 5'd9)
 							begin
 							scoreid3 = scoreid3 + scoreweight - 5'd9;
 							scoreid2 = scoreid2 + 1'd1;
@@ -200,22 +244,40 @@ module datapath(
 							begin
 							scoreid3 = scoreid3 + scoreweight;
 							end
-						if(scoreid2 > 5'd8)
+						if(scoreid2 > 5'd9)
 							begin
 							scoreid2 = 5'd0;
-							if(scoreid1 < 5'd8)
+							if(scoreid1 < 5'd9)
 								scoreid1 = scoreid1 + 1'b1;
+							else
+								scoreid1 = scoreid1;
 						end
+						else
+							begin
+							scoreid1 <= scoreid1;
+							scoreid2 <= scoreid2;
+							
+							
+							end
 						pressed <= 1'b1;
+						circlecounter <= circlecounter + 1'b1;
+						if(circlecounter >= 8'd100)
+							gameover = 1'b1;
+						else
+							begin
+							done <= 1'b1;
+							gameover = 1'b0;
+							end
 					end
-						done <= 1'b1;
+						
+						
 					end
 				else if(id2 == 2'd3 && datareceived == 8'h2b)
 					begin
 							if(pressed == 1'b0)
 					begin
 							score <= score + scoreweight;
-							if(scoreid3 + scoreweight > 5'd8)
+							if(scoreid3 + scoreweight > 5'd9)
 							begin
 							scoreid3 = scoreid3 + scoreweight - 5'd9;
 							scoreid2 = scoreid2 + 1'd1;
@@ -224,15 +286,31 @@ module datapath(
 							begin
 							scoreid3 = scoreid3 + scoreweight;
 							end
-						if(scoreid2 > 5'd8)
+						if(scoreid2 > 5'd9)
 							begin
 							scoreid2 = 5'd0;
-							if(scoreid1 < 5'd10)
+							if(scoreid1 < 5'd9)
 								scoreid1 = scoreid1 + 1'b1;
+							else
+								scoreid1 = scoreid1;
 						end
+						else
+							begin
+							scoreid1 <= scoreid1;
+							scoreid2 <= scoreid2;
+							
+							
+							end
 						pressed <= 1'b1;
+						circlecounter <= circlecounter + 1'b1;
+						if(circlecounter >= 8'd100)
+							gameover = 1'b1;
+						else
+							begin
+							done <= 1'b1;
+							end
 					end
-						done <= 1'b1;
+				
 					end
 				else
 					begin 
@@ -240,9 +318,10 @@ module datapath(
 						scoreid1 = scoreid1;
 						pressed <= 1'b0;
 						scoreid2 = scoreid2;
-						
+						circlecounter <= circlecounter;
 						scoreid3 = scoreid3;
 						done <= 1'b0;
+						gameover = 1'b0;
 					end
 					
 	 end
@@ -252,6 +331,7 @@ module datapath(
 	 loadImage la (clk, reset, id,id2, i , j ,colour);
 	 loadBG bg (clk, reset, bgi, bgj, bgcolour);
 	 loadosu lo (clk, reset, osucd, osucolour);	
+	 loadgameover lgm (clk, reset, gameoveradd, gameovercolour);
 	 
 	 reg [11:0] tempscore;
 	 
@@ -321,15 +401,17 @@ module datapath(
 							scorej <= 7'd0;
 							scoreid <= 3'b0;
 						
-							gameover <= 1'b0;
+							
+							gameoveradd <= 13'b0;
+	                
 							
 				end
-			else if(black)
+			else if(ld_black)
 				begin
 					Colour <= 15'b0;
 					if(blackcounter <= 17'b11111111111111111)
 						begin
-							cleared <= 1'b1;
+							cleared <= 1'b0;
 							X <= blackcounter[8:0];
 							Y <= blackcounter[17:9];
 							blackcounter <= blackcounter + 1'b1;
@@ -438,7 +520,7 @@ module datapath(
 			begin
 				
 				X <= osucd[4:0] + 9'd144;
-				Y <= osucd[9:5] + 8'd104 ;
+				Y <= osucd[9:5] + 8'd104;
 				Colour <= osucolour;
 			
 				
@@ -493,7 +575,25 @@ module datapath(
 						
 					end
 				end
-
+			else if(ld_gameover)
+			begin
+				if(gameovercolour == 3'b111)
+					Colour<=15'b111111111111111;
+				else
+					Colour<=15'b0; 
+					
+				X <= 8'd144 + gameoveradd [5:0];
+				Y <= 7'd112 + gameoveradd [9:6];
+				if(gameoveradd == 12'b001000000000)
+				begin
+					gameoveradd <= 12'b0;
+				end
+				else
+				begin 
+					gameoveradd <= gameoveradd + 1'b1;
+				end	
+			
+			end
 			else
 				begin
 					if(xx>=8'd304)

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ECE241FinalProject
-Wed Nov 28 11:30:47 2018
+Wed Nov 28 17:23:18 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -40,72 +40,76 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
  32. Source assignments for secondlevel:p2|datapath:d1|loadImage:la|loadF:f|altsyncram:altsyncram_component|altsyncram_vdq1:auto_generated
  33. Source assignments for secondlevel:p2|datapath:d1|loadBG:bg|BGRam:bgram|altsyncram:altsyncram_component|altsyncram_i4p1:auto_generated
  34. Source assignments for secondlevel:p2|datapath:d1|loadosu:lo|osulogoRAM:oss|altsyncram:altsyncram_component|altsyncram_pdp1:auto_generated
- 35. Source assignments for secondlevel:p2|datapath:d1|loadscore:ls|scoreCounterRam:scoreCount|altsyncram:altsyncram_component|altsyncram_uvo1:auto_generated
- 36. Parameter Settings for User Entity Instance: PS2_Demo:pc0|PS2_Controller:PS2
- 37. Parameter Settings for User Entity Instance: PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out
- 38. Parameter Settings for User Entity Instance: vga_adapter:v1
- 39. Parameter Settings for User Entity Instance: vga_adapter:v1|vga_address_translator:user_input_translator
- 40. Parameter Settings for User Entity Instance: vga_adapter:v1|altsyncram:VideoMemory
- 41. Parameter Settings for User Entity Instance: vga_adapter:v1|vga_pll:mypll|altpll:altpll_component
- 42. Parameter Settings for User Entity Instance: vga_adapter:v1|vga_controller:controller
- 43. Parameter Settings for User Entity Instance: vga_adapter:v1|vga_controller:controller|vga_address_translator:controller_translator
- 44. Parameter Settings for User Entity Instance: DE1_SoC_Audio_Example:d1|testram:test|altsyncram:altsyncram_component
- 45. Parameter Settings for User Entity Instance: DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer
- 46. Parameter Settings for User Entity Instance: DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter
- 47. Parameter Settings for User Entity Instance: DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO
- 48. Parameter Settings for User Entity Instance: DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO
- 49. Parameter Settings for User Entity Instance: DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO
- 50. Parameter Settings for User Entity Instance: DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO
- 51. Parameter Settings for User Entity Instance: DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer
- 52. Parameter Settings for User Entity Instance: DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO
- 53. Parameter Settings for User Entity Instance: DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO
- 54. Parameter Settings for User Entity Instance: DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO
- 55. Parameter Settings for User Entity Instance: DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO
- 56. Parameter Settings for User Entity Instance: DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Audio_Clock:Audio_Clock|altpll:altpll_component
- 57. Parameter Settings for User Entity Instance: DE1_SoC_Audio_Example:d1|avconf:avc
- 58. Parameter Settings for User Entity Instance: secondlevel:p2|genloc:gl|loadLocation:la|ramMapX:rax|altsyncram:altsyncram_component
- 59. Parameter Settings for User Entity Instance: secondlevel:p2|genloc:gl|loadLocation:la|ramMapY:ray|altsyncram:altsyncram_component
- 60. Parameter Settings for User Entity Instance: secondlevel:p2|genloc:gl|keyRam:kr|altsyncram:altsyncram_component
- 61. Parameter Settings for User Entity Instance: secondlevel:p2|datapath:d1|loadImage:la|loadA:a|altsyncram:altsyncram_component
- 62. Parameter Settings for User Entity Instance: secondlevel:p2|datapath:d1|loadImage:la|loadS:s|altsyncram:altsyncram_component
- 63. Parameter Settings for User Entity Instance: secondlevel:p2|datapath:d1|loadImage:la|loadD:d|altsyncram:altsyncram_component
- 64. Parameter Settings for User Entity Instance: secondlevel:p2|datapath:d1|loadImage:la|loadF:f|altsyncram:altsyncram_component
- 65. Parameter Settings for User Entity Instance: secondlevel:p2|datapath:d1|loadBG:bg|BGRam:bgram|altsyncram:altsyncram_component
- 66. Parameter Settings for User Entity Instance: secondlevel:p2|datapath:d1|loadosu:lo|osulogoRAM:oss|altsyncram:altsyncram_component
- 67. Parameter Settings for User Entity Instance: secondlevel:p2|datapath:d1|loadscore:ls|scoreCounterRam:scoreCount|altsyncram:altsyncram_component
- 68. altsyncram Parameter Settings by Entity Instance
- 69. altpll Parameter Settings by Entity Instance
- 70. scfifo Parameter Settings by Entity Instance
- 71. Port Connectivity Checks: "secondlevel:p2|datapath:d1|loadscore:ls|scoreCounterRam:scoreCount"
- 72. Port Connectivity Checks: "secondlevel:p2|datapath:d1|loadscore:ls"
- 73. Port Connectivity Checks: "secondlevel:p2|datapath:d1|loadosu:lo|osulogoRAM:oss"
- 74. Port Connectivity Checks: "secondlevel:p2|datapath:d1|loadosu:lo"
- 75. Port Connectivity Checks: "secondlevel:p2|datapath:d1|loadBG:bg|BGRam:bgram"
- 76. Port Connectivity Checks: "secondlevel:p2|datapath:d1|loadImage:la|loadF:f"
- 77. Port Connectivity Checks: "secondlevel:p2|datapath:d1|loadImage:la|loadD:d"
- 78. Port Connectivity Checks: "secondlevel:p2|datapath:d1|loadImage:la|loadS:s"
- 79. Port Connectivity Checks: "secondlevel:p2|datapath:d1|loadImage:la|loadA:a"
- 80. Port Connectivity Checks: "secondlevel:p2|datapath:d1|loadImage:la"
- 81. Port Connectivity Checks: "secondlevel:p2|datapath:d1"
- 82. Port Connectivity Checks: "secondlevel:p2|genloc:gl|keyRam:kr"
- 83. Port Connectivity Checks: "secondlevel:p2|genloc:gl|loadLocation:la|ramMapY:ray"
- 84. Port Connectivity Checks: "secondlevel:p2|genloc:gl|loadLocation:la|ramMapX:rax"
- 85. Port Connectivity Checks: "secondlevel:p2|genloc:gl"
- 86. Port Connectivity Checks: "secondlevel:p2|RateDivider:r1"
- 87. Port Connectivity Checks: "DE1_SoC_Audio_Example:d1|avconf:avc|I2C_Controller:u0"
- 88. Port Connectivity Checks: "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Audio_Clock:Audio_Clock"
- 89. Port Connectivity Checks: "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer"
- 90. Port Connectivity Checks: "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer"
- 91. Port Connectivity Checks: "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller"
- 92. Port Connectivity Checks: "DE1_SoC_Audio_Example:d1|testram:test"
- 93. Port Connectivity Checks: "DE1_SoC_Audio_Example:d1"
- 94. Port Connectivity Checks: "vga_adapter:v1|vga_controller:controller"
- 95. Port Connectivity Checks: "vga_adapter:v1"
- 96. Port Connectivity Checks: "PS2_Demo:pc0|PS2_Controller:PS2"
- 97. Post-Synthesis Netlist Statistics for Top Partition
- 98. Elapsed Time Per Partition
- 99. Analysis & Synthesis Messages
-100. Analysis & Synthesis Suppressed Messages
+ 35. Source assignments for secondlevel:p2|datapath:d1|loadgameover:lgm|gameoversign:go|altsyncram:altsyncram_component|altsyncram_j0p1:auto_generated
+ 36. Source assignments for secondlevel:p2|datapath:d1|loadscore:ls|scoreCounterRam:scoreCount|altsyncram:altsyncram_component|altsyncram_uvo1:auto_generated
+ 37. Parameter Settings for User Entity Instance: PS2_Demo:pc0|PS2_Controller:PS2
+ 38. Parameter Settings for User Entity Instance: PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out
+ 39. Parameter Settings for User Entity Instance: vga_adapter:v1
+ 40. Parameter Settings for User Entity Instance: vga_adapter:v1|vga_address_translator:user_input_translator
+ 41. Parameter Settings for User Entity Instance: vga_adapter:v1|altsyncram:VideoMemory
+ 42. Parameter Settings for User Entity Instance: vga_adapter:v1|vga_pll:mypll|altpll:altpll_component
+ 43. Parameter Settings for User Entity Instance: vga_adapter:v1|vga_controller:controller
+ 44. Parameter Settings for User Entity Instance: vga_adapter:v1|vga_controller:controller|vga_address_translator:controller_translator
+ 45. Parameter Settings for User Entity Instance: DE1_SoC_Audio_Example:d1|testram:test|altsyncram:altsyncram_component
+ 46. Parameter Settings for User Entity Instance: DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer
+ 47. Parameter Settings for User Entity Instance: DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter
+ 48. Parameter Settings for User Entity Instance: DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO
+ 49. Parameter Settings for User Entity Instance: DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO
+ 50. Parameter Settings for User Entity Instance: DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO
+ 51. Parameter Settings for User Entity Instance: DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO
+ 52. Parameter Settings for User Entity Instance: DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer
+ 53. Parameter Settings for User Entity Instance: DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO
+ 54. Parameter Settings for User Entity Instance: DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO
+ 55. Parameter Settings for User Entity Instance: DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO
+ 56. Parameter Settings for User Entity Instance: DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO
+ 57. Parameter Settings for User Entity Instance: DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Audio_Clock:Audio_Clock|altpll:altpll_component
+ 58. Parameter Settings for User Entity Instance: DE1_SoC_Audio_Example:d1|avconf:avc
+ 59. Parameter Settings for User Entity Instance: secondlevel:p2|genloc:gl|loadLocation:la|ramMapX:rax|altsyncram:altsyncram_component
+ 60. Parameter Settings for User Entity Instance: secondlevel:p2|genloc:gl|loadLocation:la|ramMapY:ray|altsyncram:altsyncram_component
+ 61. Parameter Settings for User Entity Instance: secondlevel:p2|genloc:gl|keyRam:kr|altsyncram:altsyncram_component
+ 62. Parameter Settings for User Entity Instance: secondlevel:p2|datapath:d1|loadImage:la|loadA:a|altsyncram:altsyncram_component
+ 63. Parameter Settings for User Entity Instance: secondlevel:p2|datapath:d1|loadImage:la|loadS:s|altsyncram:altsyncram_component
+ 64. Parameter Settings for User Entity Instance: secondlevel:p2|datapath:d1|loadImage:la|loadD:d|altsyncram:altsyncram_component
+ 65. Parameter Settings for User Entity Instance: secondlevel:p2|datapath:d1|loadImage:la|loadF:f|altsyncram:altsyncram_component
+ 66. Parameter Settings for User Entity Instance: secondlevel:p2|datapath:d1|loadBG:bg|BGRam:bgram|altsyncram:altsyncram_component
+ 67. Parameter Settings for User Entity Instance: secondlevel:p2|datapath:d1|loadosu:lo|osulogoRAM:oss|altsyncram:altsyncram_component
+ 68. Parameter Settings for User Entity Instance: secondlevel:p2|datapath:d1|loadgameover:lgm|gameoversign:go|altsyncram:altsyncram_component
+ 69. Parameter Settings for User Entity Instance: secondlevel:p2|datapath:d1|loadscore:ls|scoreCounterRam:scoreCount|altsyncram:altsyncram_component
+ 70. altsyncram Parameter Settings by Entity Instance
+ 71. altpll Parameter Settings by Entity Instance
+ 72. scfifo Parameter Settings by Entity Instance
+ 73. Port Connectivity Checks: "secondlevel:p2|datapath:d1|loadscore:ls|scoreCounterRam:scoreCount"
+ 74. Port Connectivity Checks: "secondlevel:p2|datapath:d1|loadscore:ls"
+ 75. Port Connectivity Checks: "secondlevel:p2|datapath:d1|loadgameover:lgm|gameoversign:go"
+ 76. Port Connectivity Checks: "secondlevel:p2|datapath:d1|loadgameover:lgm"
+ 77. Port Connectivity Checks: "secondlevel:p2|datapath:d1|loadosu:lo|osulogoRAM:oss"
+ 78. Port Connectivity Checks: "secondlevel:p2|datapath:d1|loadosu:lo"
+ 79. Port Connectivity Checks: "secondlevel:p2|datapath:d1|loadBG:bg|BGRam:bgram"
+ 80. Port Connectivity Checks: "secondlevel:p2|datapath:d1|loadImage:la|loadF:f"
+ 81. Port Connectivity Checks: "secondlevel:p2|datapath:d1|loadImage:la|loadD:d"
+ 82. Port Connectivity Checks: "secondlevel:p2|datapath:d1|loadImage:la|loadS:s"
+ 83. Port Connectivity Checks: "secondlevel:p2|datapath:d1|loadImage:la|loadA:a"
+ 84. Port Connectivity Checks: "secondlevel:p2|datapath:d1|loadImage:la"
+ 85. Port Connectivity Checks: "secondlevel:p2|datapath:d1"
+ 86. Port Connectivity Checks: "secondlevel:p2|genloc:gl|keyRam:kr"
+ 87. Port Connectivity Checks: "secondlevel:p2|genloc:gl|loadLocation:la|ramMapY:ray"
+ 88. Port Connectivity Checks: "secondlevel:p2|genloc:gl|loadLocation:la|ramMapX:rax"
+ 89. Port Connectivity Checks: "secondlevel:p2|genloc:gl"
+ 90. Port Connectivity Checks: "secondlevel:p2|RateDivider:r1"
+ 91. Port Connectivity Checks: "DE1_SoC_Audio_Example:d1|avconf:avc|I2C_Controller:u0"
+ 92. Port Connectivity Checks: "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Audio_Clock:Audio_Clock"
+ 93. Port Connectivity Checks: "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer"
+ 94. Port Connectivity Checks: "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer"
+ 95. Port Connectivity Checks: "DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller"
+ 96. Port Connectivity Checks: "DE1_SoC_Audio_Example:d1|testram:test"
+ 97. Port Connectivity Checks: "DE1_SoC_Audio_Example:d1"
+ 98. Port Connectivity Checks: "vga_adapter:v1|vga_controller:controller"
+ 99. Port Connectivity Checks: "vga_adapter:v1"
+100. Port Connectivity Checks: "PS2_Demo:pc0|PS2_Controller:PS2"
+101. Post-Synthesis Netlist Statistics for Top Partition
+102. Elapsed Time Per Partition
+103. Analysis & Synthesis Messages
+104. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -131,13 +135,13 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Nov 28 11:30:47 2018       ;
+; Analysis & Synthesis Status     ; Successful - Wed Nov 28 17:23:17 2018       ;
 ; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                   ; ECE241FinalProject                          ;
 ; Top-level Entity Name           ; top                                         ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 729                                         ;
+; Total registers                 ; 756                                         ;
 ; Total pins                      ; 112                                         ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 1,221,236                                   ;
@@ -262,10 +266,12 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------+-----------------+----------------------------------------+--------------------------------------------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path                              ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                                                       ; Library ;
 +---------------------------------------------------------------+-----------------+----------------------------------------+--------------------------------------------------------------------------------------------------------------------+---------+
-; scoreCounterRam.v                                             ; yes             ; User Wizard-Generated File             ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/scoreCounterRam.v                                             ;         ;
+; gameoversign.v                                                ; yes             ; User Wizard-Generated File             ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/gameoversign.v                                                ;         ;
+; scoreCounterRam.v                                             ; yes             ; User Verilog HDL File                  ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/scoreCounterRam.v                                             ;         ;
 ; score.v                                                       ; yes             ; User Verilog HDL File                  ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/score.v                                                       ;         ;
 ; osulogoRAM.v                                                  ; yes             ; User Wizard-Generated File             ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/osulogoRAM.v                                                  ;         ;
 ; osulogo.v                                                     ; yes             ; User Verilog HDL File                  ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/osulogo.v                                                     ;         ;
+; gameoverV2.v                                                  ; yes             ; User Verilog HDL File                  ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/gameoverV2.v                                                  ;         ;
 ; PS2_Demo/PS2_Demo.v                                           ; yes             ; User Verilog HDL File                  ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/PS2_Demo/PS2_Demo.v                                           ;         ;
 ; PS2_Demo/PS2_Controller.v                                     ; yes             ; User Verilog HDL File                  ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/PS2_Demo/PS2_Controller.v                                     ;         ;
 ; PS2_Demo/Hexadecimal_To_Seven_Segment.v                       ; yes             ; User Verilog HDL File                  ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/PS2_Demo/Hexadecimal_To_Seven_Segment.v                       ;         ;
@@ -351,8 +357,10 @@ refer to the applicable agreement for further details.
 ; graphics/bg6.mif                                              ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/graphics/bg6.mif                                              ;         ;
 ; db/altsyncram_pdp1.tdf                                        ; yes             ; Auto-Generated Megafunction            ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_pdp1.tdf                                        ;         ;
 ; graphics/osupicturev2.mif                                     ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/graphics/osupicturev2.mif                                     ;         ;
+; db/altsyncram_j0p1.tdf                                        ; yes             ; Auto-Generated Megafunction            ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_j0p1.tdf                                        ;         ;
+; graphics/gameover.mif                                         ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/graphics/gameover.mif                                         ;         ;
 ; db/altsyncram_uvo1.tdf                                        ; yes             ; Auto-Generated Megafunction            ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_uvo1.tdf                                        ;         ;
-; graphics/combined.mif                                         ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/graphics/combined.mif                                         ;         ;
+; ./graphics/combined.mif                                       ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/graphics/combined.mif                                         ;         ;
 +---------------------------------------------------------------+-----------------+----------------------------------------+--------------------------------------------------------------------------------------------------------------------+---------+
 
 
@@ -361,16 +369,16 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 691            ;
+; Estimate of Logic utilization (ALMs needed) ; 704            ;
 ;                                             ;                ;
-; Combinational ALUT usage for logic          ; 1142           ;
-;     -- 7 input functions                    ; 3              ;
-;     -- 6 input functions                    ; 221            ;
-;     -- 5 input functions                    ; 166            ;
-;     -- 4 input functions                    ; 126            ;
-;     -- <=3 input functions                  ; 626            ;
+; Combinational ALUT usage for logic          ; 1169           ;
+;     -- 7 input functions                    ; 7              ;
+;     -- 6 input functions                    ; 217            ;
+;     -- 5 input functions                    ; 183            ;
+;     -- 4 input functions                    ; 111            ;
+;     -- <=3 input functions                  ; 651            ;
 ;                                             ;                ;
-; Dedicated logic registers                   ; 729            ;
+; Dedicated logic registers                   ; 756            ;
 ;                                             ;                ;
 ; I/O pins                                    ; 112            ;
 ; Total MLAB memory bits                      ; 0              ;
@@ -382,9 +390,9 @@ refer to the applicable agreement for further details.
 ;     -- PLLs                                 ; 2              ;
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 997            ;
-; Total fan-out                               ; 14396          ;
-; Average fan-out                             ; 5.85           ;
+; Maximum fan-out                             ; 1024           ;
+; Total fan-out                               ; 14573          ;
+; Average fan-out                             ; 5.79           ;
 +---------------------------------------------+----------------+
 
 
@@ -393,8 +401,8 @@ refer to the applicable agreement for further details.
 +------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+--------------+
 ; Compilation Hierarchy Node                                       ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                            ; Entity Name                     ; Library Name ;
 +------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+--------------+
-; |top                                                             ; 1142 (1)            ; 729 (0)                   ; 1221236           ; 0          ; 112  ; 0            ; |top                                                                                                                                                                                                                                                           ; top                             ; work         ;
-;    |DE1_SoC_Audio_Example:d1|                                    ; 484 (130)           ; 356 (59)                  ; 21172             ; 0          ; 0    ; 0            ; |top|DE1_SoC_Audio_Example:d1                                                                                                                                                                                                                                  ; DE1_SoC_Audio_Example           ; work         ;
+; |top                                                             ; 1169 (1)            ; 756 (0)                   ; 1221236           ; 0          ; 112  ; 0            ; |top                                                                                                                                                                                                                                                           ; top                             ; work         ;
+;    |DE1_SoC_Audio_Example:d1|                                    ; 486 (132)           ; 358 (61)                  ; 21172             ; 0          ; 0    ; 0            ; |top|DE1_SoC_Audio_Example:d1                                                                                                                                                                                                                                  ; DE1_SoC_Audio_Example           ; work         ;
 ;       |Audio_Controller:Audio_Controller|                        ; 262 (4)             ; 222 (4)                   ; 16384             ; 0          ; 0    ; 0            ; |top|DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller                                                                                                                                                                                                ; Audio_Controller                ; work         ;
 ;          |Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer| ; 108 (5)             ; 108 (36)                  ; 8192              ; 0          ; 0    ; 0            ; |top|DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer                                                                                                                                          ; Altera_UP_Audio_In_Deserializer ; work         ;
 ;             |Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter|  ; 9 (9)               ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |top|DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter                                                                                        ; Altera_UP_Audio_Bit_Counter     ; work         ;
@@ -442,15 +450,15 @@ refer to the applicable agreement for further details.
 ;       |testram:test|                                             ; 0 (0)               ; 0 (0)                     ; 4788              ; 0          ; 0    ; 0            ; |top|DE1_SoC_Audio_Example:d1|testram:test                                                                                                                                                                                                                     ; testram                         ; work         ;
 ;          |altsyncram:altsyncram_component|                       ; 0 (0)               ; 0 (0)                     ; 4788              ; 0          ; 0    ; 0            ; |top|DE1_SoC_Audio_Example:d1|testram:test|altsyncram:altsyncram_component                                                                                                                                                                                     ; altsyncram                      ; work         ;
 ;             |altsyncram_f0p1:auto_generated|                     ; 0 (0)               ; 0 (0)                     ; 4788              ; 0          ; 0    ; 0            ; |top|DE1_SoC_Audio_Example:d1|testram:test|altsyncram:altsyncram_component|altsyncram_f0p1:auto_generated                                                                                                                                                      ; altsyncram_f0p1                 ; work         ;
-;    |PS2_Demo:pc0|                                                ; 119 (1)             ; 98 (8)                    ; 0                 ; 0          ; 0    ; 0            ; |top|PS2_Demo:pc0                                                                                                                                                                                                                                              ; PS2_Demo                        ; work         ;
+;    |PS2_Demo:pc0|                                                ; 118 (1)             ; 98 (8)                    ; 0                 ; 0          ; 0    ; 0            ; |top|PS2_Demo:pc0                                                                                                                                                                                                                                              ; PS2_Demo                        ; work         ;
 ;       |Hexadecimal_To_Seven_Segment:Segment0|                    ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|PS2_Demo:pc0|Hexadecimal_To_Seven_Segment:Segment0                                                                                                                                                                                                        ; Hexadecimal_To_Seven_Segment    ; work         ;
 ;       |Hexadecimal_To_Seven_Segment:Segment1|                    ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|PS2_Demo:pc0|Hexadecimal_To_Seven_Segment:Segment1                                                                                                                                                                                                        ; Hexadecimal_To_Seven_Segment    ; work         ;
-;       |PS2_Controller:PS2|                                       ; 104 (7)             ; 90 (5)                    ; 0                 ; 0          ; 0    ; 0            ; |top|PS2_Demo:pc0|PS2_Controller:PS2                                                                                                                                                                                                                           ; PS2_Controller                  ; work         ;
-;          |Altera_UP_PS2_Command_Out:PS2_Command_Out|             ; 83 (83)             ; 60 (60)                   ; 0                 ; 0          ; 0    ; 0            ; |top|PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out                                                                                                                                                                                 ; Altera_UP_PS2_Command_Out       ; work         ;
+;       |PS2_Controller:PS2|                                       ; 103 (7)             ; 90 (5)                    ; 0                 ; 0          ; 0    ; 0            ; |top|PS2_Demo:pc0|PS2_Controller:PS2                                                                                                                                                                                                                           ; PS2_Controller                  ; work         ;
+;          |Altera_UP_PS2_Command_Out:PS2_Command_Out|             ; 82 (82)             ; 60 (60)                   ; 0                 ; 0          ; 0    ; 0            ; |top|PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out                                                                                                                                                                                 ; Altera_UP_PS2_Command_Out       ; work         ;
 ;          |Altera_UP_PS2_Data_In:PS2_Data_In|                     ; 14 (14)             ; 25 (25)                   ; 0                 ; 0          ; 0    ; 0            ; |top|PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In                                                                                                                                                                                         ; Altera_UP_PS2_Data_In           ; work         ;
-;    |secondlevel:p2|                                              ; 402 (0)             ; 241 (0)                   ; 48064             ; 0          ; 0    ; 0            ; |top|secondlevel:p2                                                                                                                                                                                                                                            ; secondlevel                     ; work         ;
-;       |control:c1|                                               ; 6 (6)               ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |top|secondlevel:p2|control:c1                                                                                                                                                                                                                                 ; control                         ; work         ;
-;       |datapath:d1|                                              ; 378 (344)           ; 208 (205)                 ; 47008             ; 0          ; 0    ; 0            ; |top|secondlevel:p2|datapath:d1                                                                                                                                                                                                                                ; datapath                        ; work         ;
+;    |secondlevel:p2|                                              ; 428 (0)             ; 266 (0)                   ; 48064             ; 0          ; 0    ; 0            ; |top|secondlevel:p2                                                                                                                                                                                                                                            ; secondlevel                     ; work         ;
+;       |control:c1|                                               ; 8 (8)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |top|secondlevel:p2|control:c1                                                                                                                                                                                                                                 ; control                         ; work         ;
+;       |datapath:d1|                                              ; 402 (368)           ; 231 (228)                 ; 47008             ; 0          ; 0    ; 0            ; |top|secondlevel:p2|datapath:d1                                                                                                                                                                                                                                ; datapath                        ; work         ;
 ;          |loadBG:bg|                                             ; 0 (0)               ; 0 (0)                     ; 15360             ; 0          ; 0    ; 0            ; |top|secondlevel:p2|datapath:d1|loadBG:bg                                                                                                                                                                                                                      ; loadBG                          ; work         ;
 ;             |BGRam:bgram|                                        ; 0 (0)               ; 0 (0)                     ; 15360             ; 0          ; 0    ; 0            ; |top|secondlevel:p2|datapath:d1|loadBG:bg|BGRam:bgram                                                                                                                                                                                                          ; BGRam                           ; work         ;
 ;                |altsyncram:altsyncram_component|                 ; 0 (0)               ; 0 (0)                     ; 15360             ; 0          ; 0    ; 0            ; |top|secondlevel:p2|datapath:d1|loadBG:bg|BGRam:bgram|altsyncram:altsyncram_component                                                                                                                                                                          ; altsyncram                      ; work         ;
@@ -544,20 +552,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 Encoding Type:  One-Hot
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |top|secondlevel:p2|control:c1|current_state                                                                                                                                                                                                  ;
-+----------------------------------+--------------------------------+----------------------------------+--------------------------+-------------------------+---------------------------+------------------------+-----------------------+----------------------+
-; Name                             ; current_state.S_StartAnimation ; current_state.S_GenerateLocation ; current_state.S_DrawLine ; current_state.S_DrawOSU ; current_state.S_DrawScore ; current_state.S_DrawBG ; current_state.S_Reset ; current_state.S_Done ;
-+----------------------------------+--------------------------------+----------------------------------+--------------------------+-------------------------+---------------------------+------------------------+-----------------------+----------------------+
-; current_state.S_Reset            ; 0                              ; 0                                ; 0                        ; 0                       ; 0                         ; 0                      ; 0                     ; 0                    ;
-; current_state.S_DrawBG           ; 0                              ; 0                                ; 0                        ; 0                       ; 0                         ; 1                      ; 1                     ; 0                    ;
-; current_state.S_DrawScore        ; 0                              ; 0                                ; 0                        ; 0                       ; 1                         ; 0                      ; 1                     ; 0                    ;
-; current_state.S_DrawOSU          ; 0                              ; 0                                ; 0                        ; 1                       ; 0                         ; 0                      ; 1                     ; 0                    ;
-; current_state.S_DrawLine         ; 0                              ; 0                                ; 1                        ; 0                       ; 0                         ; 0                      ; 1                     ; 0                    ;
-; current_state.S_GenerateLocation ; 0                              ; 1                                ; 0                        ; 0                       ; 0                         ; 0                      ; 1                     ; 0                    ;
-; current_state.S_StartAnimation   ; 1                              ; 0                                ; 0                        ; 0                       ; 0                         ; 0                      ; 1                     ; 0                    ;
-; current_state.S_Done             ; 0                              ; 0                                ; 0                        ; 0                       ; 0                         ; 0                      ; 1                     ; 1                    ;
-+----------------------------------+--------------------------------+----------------------------------+--------------------------+-------------------------+---------------------------+------------------------+-----------------------+----------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |top|secondlevel:p2|control:c1|current_state                                                                                                                                                                                                                                ;
++----------------------------------+--------------------------------+----------------------------------+--------------------------+-------------------------+---------------------------+------------------------+-----------------------------+-----------------------+----------------------+
+; Name                             ; current_state.S_StartAnimation ; current_state.S_GenerateLocation ; current_state.S_DrawLine ; current_state.S_DrawOSU ; current_state.S_DrawScore ; current_state.S_DrawBG ; current_state.S_ClearScreen ; current_state.S_Reset ; current_state.S_Done ;
++----------------------------------+--------------------------------+----------------------------------+--------------------------+-------------------------+---------------------------+------------------------+-----------------------------+-----------------------+----------------------+
+; current_state.S_Reset            ; 0                              ; 0                                ; 0                        ; 0                       ; 0                         ; 0                      ; 0                           ; 0                     ; 0                    ;
+; current_state.S_ClearScreen      ; 0                              ; 0                                ; 0                        ; 0                       ; 0                         ; 0                      ; 1                           ; 1                     ; 0                    ;
+; current_state.S_DrawBG           ; 0                              ; 0                                ; 0                        ; 0                       ; 0                         ; 1                      ; 0                           ; 1                     ; 0                    ;
+; current_state.S_DrawScore        ; 0                              ; 0                                ; 0                        ; 0                       ; 1                         ; 0                      ; 0                           ; 1                     ; 0                    ;
+; current_state.S_DrawOSU          ; 0                              ; 0                                ; 0                        ; 1                       ; 0                         ; 0                      ; 0                           ; 1                     ; 0                    ;
+; current_state.S_DrawLine         ; 0                              ; 0                                ; 1                        ; 0                       ; 0                         ; 0                      ; 0                           ; 1                     ; 0                    ;
+; current_state.S_GenerateLocation ; 0                              ; 1                                ; 0                        ; 0                       ; 0                         ; 0                      ; 0                           ; 1                     ; 0                    ;
+; current_state.S_StartAnimation   ; 1                              ; 0                                ; 0                        ; 0                       ; 0                         ; 0                      ; 0                           ; 1                     ; 0                    ;
+; current_state.S_Done             ; 0                              ; 0                                ; 0                        ; 0                       ; 0                         ; 0                      ; 0                           ; 1                     ; 1                    ;
++----------------------------------+--------------------------------+----------------------------------+--------------------------+-------------------------+---------------------------+------------------------+-----------------------------+-----------------------+----------------------+
 
 
 Encoding Type:  One-Hot
@@ -622,23 +631,26 @@ Encoding Type:  One-Hot
 +----------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
 ; Register name                                                                                                              ; Reason for Removal                                                                                   ;
 +----------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
-; secondlevel:p2|datapath:d1|gameover                                                                                        ; Stuck at GND due to stuck port data_in                                                               ;
 ; secondlevel:p2|datapath:d1|xx[8]                                                                                           ; Stuck at GND due to stuck port data_in                                                               ;
 ; PS2_Demo:pc0|PS2_Controller:PS2|idle_counter[0..7]                                                                         ; Lost fanout                                                                                          ;
 ; DE1_SoC_Audio_Example:d1|avconf:avc|mI2C_DATA[16,17,19,23]                                                                 ; Stuck at GND due to stuck port data_in                                                               ;
 ; DE1_SoC_Audio_Example:d1|avconf:avc|I2C_Controller:u0|SD[16,17,19,23]                                                      ; Stuck at GND due to stuck port data_in                                                               ;
-; DE1_SoC_Audio_Example:d1|limit[18]                                                                                         ; Merged with DE1_SoC_Audio_Example:d1|limit[7]                                                        ;
-; DE1_SoC_Audio_Example:d1|limit[10,16,17,20..22]                                                                            ; Merged with DE1_SoC_Audio_Example:d1|limit[6]                                                        ;
-; DE1_SoC_Audio_Example:d1|limit[0..4,9,11,12,15,24..26]                                                                     ; Merged with DE1_SoC_Audio_Example:d1|limit[5]                                                        ;
-; DE1_SoC_Audio_Example:d1|limit[13,14,19,23]                                                                                ; Merged with DE1_SoC_Audio_Example:d1|limit[8]                                                        ;
+; secondlevel:p2|datapath:d1|tempid[3,4]                                                                                     ; Lost fanout                                                                                          ;
+; DE1_SoC_Audio_Example:d1|limit[13]                                                                                         ; Merged with DE1_SoC_Audio_Example:d1|limit[7]                                                        ;
+; DE1_SoC_Audio_Example:d1|limit[5,17,20..22]                                                                                ; Merged with DE1_SoC_Audio_Example:d1|limit[6]                                                        ;
+; DE1_SoC_Audio_Example:d1|limit[0..3,9,11,16,24..26]                                                                        ; Merged with DE1_SoC_Audio_Example:d1|limit[4]                                                        ;
+; DE1_SoC_Audio_Example:d1|limit[18,19]                                                                                      ; Merged with DE1_SoC_Audio_Example:d1|limit[8]                                                        ;
+; DE1_SoC_Audio_Example:d1|limit[15]                                                                                         ; Merged with DE1_SoC_Audio_Example:d1|limit[10]                                                       ;
 ; PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|ps2_command[1..7]                                ; Merged with PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|ps2_command[0] ;
 ; DE1_SoC_Audio_Example:d1|avconf:avc|I2C_Controller:u0|SD[20,21]                                                            ; Merged with DE1_SoC_Audio_Example:d1|avconf:avc|I2C_Controller:u0|SD[18]                             ;
 ; DE1_SoC_Audio_Example:d1|avconf:avc|mI2C_DATA[20,21]                                                                       ; Merged with DE1_SoC_Audio_Example:d1|avconf:avc|mI2C_DATA[18]                                        ;
-; DE1_SoC_Audio_Example:d1|limit[5]                                                                                          ; Stuck at GND due to stuck port data_in                                                               ;
+; DE1_SoC_Audio_Example:d1|limit[4]                                                                                          ; Stuck at GND due to stuck port data_in                                                               ;
 ; PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|ps2_command[0]                                   ; Stuck at GND due to stuck port data_in                                                               ;
 ; DE1_SoC_Audio_Example:d1|limit[7]                                                                                          ; Stuck at VCC due to stuck port data_in                                                               ;
 ; secondlevel:p2|datapath:d1|scoreid[2]                                                                                      ; Stuck at GND due to stuck port data_in                                                               ;
 ; secondlevel:p2|datapath:d1|scoreid2[4]                                                                                     ; Stuck at GND due to stuck port data_in                                                               ;
+; DE1_SoC_Audio_Example:d1|limit[6]                                                                                          ; Merged with DE1_SoC_Audio_Example:d1|limit[23]                                                       ;
+; DE1_SoC_Audio_Example:d1|limit[12]                                                                                         ; Merged with DE1_SoC_Audio_Example:d1|limit[8]                                                        ;
 ; secondlevel:p2|control:c1|current_state~2                                                                                  ; Lost fanout                                                                                          ;
 ; secondlevel:p2|control:c1|current_state~3                                                                                  ; Lost fanout                                                                                          ;
 ; secondlevel:p2|control:c1|current_state~4                                                                                  ; Lost fanout                                                                                          ;
@@ -652,11 +664,10 @@ Encoding Type:  One-Hot
 ; PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|s_ps2_transmitter~4                              ; Lost fanout                                                                                          ;
 ; PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|s_ps2_receiver~2                                         ; Lost fanout                                                                                          ;
 ; PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|s_ps2_receiver~3                                         ; Lost fanout                                                                                          ;
-; secondlevel:p2|control:c1|current_state.S_Done                                                                             ; Stuck at GND due to stuck port data_in                                                               ;
 ; PS2_Demo:pc0|PS2_Controller:PS2|s_ps2_transceiver.PS2_STATE_2_COMMAND_OUT                                                  ; Stuck at GND due to stuck port data_in                                                               ;
 ; PS2_Demo:pc0|PS2_Controller:PS2|s_ps2_transceiver.PS2_STATE_4_END_DELAYED                                                  ; Stuck at GND due to stuck port data_in                                                               ;
-; PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|command_was_sent                                 ; Lost fanout                                                                                          ;
 ; PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|error_communication_timed_out                    ; Lost fanout                                                                                          ;
+; PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|command_was_sent                                 ; Lost fanout                                                                                          ;
 ; PS2_Demo:pc0|PS2_Controller:PS2|s_ps2_transceiver.PS2_STATE_3_END_TRANSFER                                                 ; Stuck at GND due to stuck port data_in                                                               ;
 ; PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|s_ps2_receiver.PS2_STATE_1_WAIT_FOR_DATA                 ; Stuck at GND due to stuck port data_in                                                               ;
 ; PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|s_ps2_transmitter.PS2_STATE_0_IDLE               ; Stuck at GND due to stuck port data_in                                                               ;
@@ -664,7 +675,7 @@ Encoding Type:  One-Hot
 ; PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|s_ps2_transmitter.PS2_STATE_7_TRANSMISSION_ERROR ; Lost fanout                                                                                          ;
 ; secondlevel:p2|datapath:d1|i[4]                                                                                            ; Stuck at GND due to stuck port data_in                                                               ;
 ; secondlevel:p2|datapath:d1|bgjid[4]                                                                                        ; Stuck at GND due to stuck port data_in                                                               ;
-; Total Number of Removed Registers = 82                                                                                     ;                                                                                                      ;
+; Total Number of Removed Registers = 80                                                                                     ;                                                                                                      ;
 +----------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
 
 
@@ -677,8 +688,8 @@ Encoding Type:  One-Hot
 ;                                                                           ;                           ; PS2_Demo:pc0|PS2_Controller:PS2|idle_counter[5],                                                                           ;
 ;                                                                           ;                           ; PS2_Demo:pc0|PS2_Controller:PS2|idle_counter[6],                                                                           ;
 ;                                                                           ;                           ; PS2_Demo:pc0|PS2_Controller:PS2|idle_counter[7]                                                                            ;
-; PS2_Demo:pc0|PS2_Controller:PS2|s_ps2_transceiver~2                       ; Lost Fanouts              ; PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|command_was_sent,                                ;
-;                                                                           ;                           ; PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|error_communication_timed_out,                   ;
+; PS2_Demo:pc0|PS2_Controller:PS2|s_ps2_transceiver~2                       ; Lost Fanouts              ; PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|error_communication_timed_out,                   ;
+;                                                                           ;                           ; PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|command_was_sent,                                ;
 ;                                                                           ;                           ; PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|s_ps2_transmitter.PS2_STATE_6_COMMAND_WAS_SENT,  ;
 ;                                                                           ;                           ; PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|s_ps2_transmitter.PS2_STATE_7_TRANSMISSION_ERROR ;
 ; PS2_Demo:pc0|PS2_Controller:PS2|s_ps2_transceiver.PS2_STATE_2_COMMAND_OUT ; Stuck at GND              ; PS2_Demo:pc0|PS2_Controller:PS2|s_ps2_transceiver.PS2_STATE_3_END_TRANSFER,                                                ;
@@ -699,12 +710,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 729   ;
-; Number of registers using Synchronous Clear  ; 492   ;
-; Number of registers using Synchronous Load   ; 2     ;
+; Total registers                              ; 756   ;
+; Number of registers using Synchronous Clear  ; 506   ;
+; Number of registers using Synchronous Load   ; 6     ;
 ; Number of registers using Asynchronous Clear ; 59    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 442   ;
+; Number of registers using Clock Enable       ; 466   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -723,8 +734,10 @@ Encoding Type:  One-Hot
 ; DE1_SoC_Audio_Example:d1|avconf:avc|I2C_Controller:u0|SD_COUNTER[0] ; 23      ;
 ; DE1_SoC_Audio_Example:d1|avconf:avc|I2C_Controller:u0|END           ; 6       ;
 ; DE1_SoC_Audio_Example:d1|avconf:avc|I2C_Controller:u0|SDO           ; 2       ;
+; DE1_SoC_Audio_Example:d1|limit[14]                                  ; 1       ;
+; DE1_SoC_Audio_Example:d1|limit[23]                                  ; 2       ;
 ; DE1_SoC_Audio_Example:d1|limit[8]                                   ; 2       ;
-; Total number of inverted registers = 10                             ;         ;
+; Total number of inverted registers = 12                             ;         ;
 +---------------------------------------------------------------------+---------+
 
 
@@ -733,48 +746,51 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                                                             ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |top|PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|received_data[5]                                                                                                ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |top|PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|received_data[0]                                                                                                ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |top|PS2_Demo:pc0|last_data_received[0]                                                                                                                                                ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|loadImage:la|q[1]                                                                                                                                      ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |top|PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|data_shift_reg[3]                                                                                               ;
-; 3:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |top|vga_adapter:v1|vga_controller:controller|yCounter[2]                                                                                                                              ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top|DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|data_in_shift_reg[20]                                            ;
-; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |top|secondlevel:p2|genloc:gl|i[1]                                                                                                                                                     ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|tempid[0]                                                                                                                                              ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|scoreid2[4]                                                                                                                                            ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|scoreid1[4]                                                                                                                                            ;
-; 4:1                ; 26 bits   ; 52 LEs        ; 0 LEs                ; 52 LEs                 ; Yes        ; |top|secondlevel:p2|datapath:d1|freq[1]                                                                                                                                                ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |top|DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter|bit_counter[3] ;
-; 4:1                ; 13 bits   ; 26 LEs        ; 0 LEs                ; 26 LEs                 ; Yes        ; |top|PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|command_initiate_counter[4]                                                                             ;
-; 4:1                ; 20 bits   ; 40 LEs        ; 0 LEs                ; 40 LEs                 ; Yes        ; |top|PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|waiting_counter[1]                                                                                      ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|loadImage:la|q[0]                                                                                                                                      ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |top|PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|data_shift_reg[7]                                                                                               ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |top|vga_adapter:v1|vga_controller:controller|yCounter[0]                                                                                                                              ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|scoreid1[0]                                                                                                                                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top|DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|data_in_shift_reg[26]                                            ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top|DE1_SoC_Audio_Example:d1|limit[12]                                                                                                                                                ;
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |top|secondlevel:p2|genloc:gl|i[2]                                                                                                                                                     ;
+; 4:1                ; 13 bits   ; 26 LEs        ; 0 LEs                ; 26 LEs                 ; Yes        ; |top|secondlevel:p2|datapath:d1|gameoveradd[3]                                                                                                                                         ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|tempid[2]                                                                                                                                              ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|scoreid2[1]                                                                                                                                            ;
+; 4:1                ; 26 bits   ; 52 LEs        ; 0 LEs                ; 52 LEs                 ; Yes        ; |top|secondlevel:p2|datapath:d1|freq[2]                                                                                                                                                ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |top|DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter|bit_counter[4] ;
+; 4:1                ; 13 bits   ; 26 LEs        ; 0 LEs                ; 26 LEs                 ; Yes        ; |top|PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|command_initiate_counter[9]                                                                             ;
+; 4:1                ; 20 bits   ; 40 LEs        ; 0 LEs                ; 40 LEs                 ; Yes        ; |top|PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|waiting_counter[4]                                                                                      ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |top|PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|cur_bit[0]                                                                                              ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |top|PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|data_count[2]                                                                                                   ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |top|secondlevel:p2|datapath:d1|circlecounter[2]                                                                                                                                       ;
 ; 4:1                ; 17 bits   ; 34 LEs        ; 0 LEs                ; 34 LEs                 ; Yes        ; |top|PS2_Demo:pc0|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|transfer_counter[16]                                                                                    ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|bgiid[1]                                                                                                                                               ;
-; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|bgj[5]                                                                                                                                                 ;
-; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|scorej[6]                                                                                                                                              ;
-; 4:1                ; 11 bits   ; 22 LEs        ; 0 LEs                ; 22 LEs                 ; Yes        ; |top|secondlevel:p2|datapath:d1|osucd[6]                                                                                                                                               ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|scoreid3[2]                                                                                                                                            ;
-; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|bgjid[0]                                                                                                                                               ;
-; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|i[2]                                                                                                                                                   ;
-; 5:1                ; 7 bits    ; 21 LEs        ; 14 LEs               ; 7 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|j[0]                                                                                                                                                   ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|id[0]                                                                                                                                                  ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |top|DE1_SoC_Audio_Example:d1|address[3]                                                                                                                                               ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|bgiid[3]                                                                                                                                               ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|bgj[3]                                                                                                                                                 ;
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|scorej[1]                                                                                                                                              ;
+; 4:1                ; 11 bits   ; 22 LEs        ; 0 LEs                ; 22 LEs                 ; Yes        ; |top|secondlevel:p2|datapath:d1|osucd[0]                                                                                                                                               ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|scoreid3[4]                                                                                                                                            ;
+; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|bgjid[3]                                                                                                                                               ;
+; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|i[1]                                                                                                                                                   ;
+; 5:1                ; 7 bits    ; 21 LEs        ; 14 LEs               ; 7 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|j[1]                                                                                                                                                   ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|id[1]                                                                                                                                                  ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |top|DE1_SoC_Audio_Example:d1|address[7]                                                                                                                                               ;
 ; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|scoreid[1]                                                                                                                                             ;
-; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|bgi[5]                                                                                                                                                 ;
-; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|scorei[4]                                                                                                                                              ;
-; 6:1                ; 18 bits   ; 72 LEs        ; 0 LEs                ; 72 LEs                 ; Yes        ; |top|secondlevel:p2|datapath:d1|blackcounter[8]                                                                                                                                        ;
-; 6:1                ; 31 bits   ; 124 LEs       ; 62 LEs               ; 62 LEs                 ; Yes        ; |top|DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|data_out_shift_reg[17]                                             ;
-; 6:1                ; 26 bits   ; 104 LEs       ; 0 LEs                ; 104 LEs                ; Yes        ; |top|secondlevel:p2|datapath:d1|scorefreq[10]                                                                                                                                          ;
-; 7:1                ; 15 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; Yes        ; |top|secondlevel:p2|datapath:d1|Colour[1]                                                                                                                                              ;
-; 9:1                ; 2 bits    ; 12 LEs        ; 10 LEs               ; 2 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|X[7]                                                                                                                                                   ;
-; 9:1                ; 6 bits    ; 36 LEs        ; 30 LEs               ; 6 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|X[4]                                                                                                                                                   ;
-; 9:1                ; 7 bits    ; 42 LEs        ; 35 LEs               ; 7 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|Y[5]                                                                                                                                                   ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |top|DE1_SoC_Audio_Example:d1|avconf:avc|I2C_Controller:u0|SD_COUNTER[1]                                                                                                               ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top|DE1_SoC_Audio_Example:d1|limit[7]                                                                                                                                                 ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|bgi[0]                                                                                                                                                 ;
+; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|scorei[0]                                                                                                                                              ;
+; 6:1                ; 18 bits   ; 72 LEs        ; 0 LEs                ; 72 LEs                 ; Yes        ; |top|secondlevel:p2|datapath:d1|blackcounter[4]                                                                                                                                        ;
+; 6:1                ; 31 bits   ; 124 LEs       ; 62 LEs               ; 62 LEs                 ; Yes        ; |top|DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|data_out_shift_reg[32]                                             ;
+; 6:1                ; 26 bits   ; 104 LEs       ; 0 LEs                ; 104 LEs                ; Yes        ; |top|secondlevel:p2|datapath:d1|scorefreq[12]                                                                                                                                          ;
+; 8:1                ; 15 bits   ; 75 LEs        ; 30 LEs               ; 45 LEs                 ; Yes        ; |top|secondlevel:p2|datapath:d1|Colour[0]                                                                                                                                              ;
+; 10:1               ; 6 bits    ; 36 LEs        ; 36 LEs               ; 0 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|X[5]                                                                                                                                                   ;
+; 10:1               ; 3 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|Y[5]                                                                                                                                                   ;
+; 10:1               ; 4 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; Yes        ; |top|secondlevel:p2|datapath:d1|Y[1]                                                                                                                                                   ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |top|DE1_SoC_Audio_Example:d1|avconf:avc|I2C_Controller:u0|SD_COUNTER[3]                                                                                                               ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |top|DE1_SoC_Audio_Example:d1|limit[8]                                                                                                                                                 ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |top|secondlevel:p2|datapath:d1|scoreweight                                                                                                                                            ;
 ; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |top|secondlevel:p2|datapath:d1|scoreweight                                                                                                                                            ;
-; 9:1                ; 15 bits   ; 90 LEs        ; 90 LEs               ; 0 LEs                  ; No         ; |top|vga_adapter:v1|altsyncram:VideoMemory|altsyncram_o7n1:auto_generated|mux_lib:mux3|l4_w1_n0_mux_dataout                                                                            ;
+; 9:1                ; 15 bits   ; 90 LEs        ; 90 LEs               ; 0 LEs                  ; No         ; |top|vga_adapter:v1|altsyncram:VideoMemory|altsyncram_o7n1:auto_generated|mux_lib:mux3|l4_w4_n0_mux_dataout                                                                            ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -911,6 +927,15 @@ Encoding Type:  One-Hot
 +---------------------------------+--------------------+------+------------------------------------------------------------------------------+
 ; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                            ;
 +---------------------------------+--------------------+------+------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for secondlevel:p2|datapath:d1|loadgameover:lgm|gameoversign:go|altsyncram:altsyncram_component|altsyncram_j0p1:auto_generated ;
++---------------------------------+--------------------+------+-------------------------------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                                                  ;
++---------------------------------+--------------------+------+-------------------------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                                   ;
++---------------------------------+--------------------+------+-------------------------------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -2659,6 +2684,67 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: secondlevel:p2|datapath:d1|loadgameover:lgm|gameoversign:go|altsyncram:altsyncram_component ;
++------------------------------------+-------------------------+---------------------------------------------------------------------------+
+; Parameter Name                     ; Value                   ; Type                                                                      ;
++------------------------------------+-------------------------+---------------------------------------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                       ; Untyped                                                                   ;
+; AUTO_CARRY_CHAINS                  ; ON                      ; AUTO_CARRY                                                                ;
+; IGNORE_CARRY_BUFFERS               ; OFF                     ; IGNORE_CARRY                                                              ;
+; AUTO_CASCADE_CHAINS                ; ON                      ; AUTO_CASCADE                                                              ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                     ; IGNORE_CASCADE                                                            ;
+; WIDTH_BYTEENA                      ; 1                       ; Untyped                                                                   ;
+; OPERATION_MODE                     ; SINGLE_PORT             ; Untyped                                                                   ;
+; WIDTH_A                            ; 15                      ; Signed Integer                                                            ;
+; WIDTHAD_A                          ; 12                      ; Signed Integer                                                            ;
+; NUMWORDS_A                         ; 4000                    ; Signed Integer                                                            ;
+; OUTDATA_REG_A                      ; CLOCK0                  ; Untyped                                                                   ;
+; ADDRESS_ACLR_A                     ; NONE                    ; Untyped                                                                   ;
+; OUTDATA_ACLR_A                     ; NONE                    ; Untyped                                                                   ;
+; WRCONTROL_ACLR_A                   ; NONE                    ; Untyped                                                                   ;
+; INDATA_ACLR_A                      ; NONE                    ; Untyped                                                                   ;
+; BYTEENA_ACLR_A                     ; NONE                    ; Untyped                                                                   ;
+; WIDTH_B                            ; 1                       ; Untyped                                                                   ;
+; WIDTHAD_B                          ; 1                       ; Untyped                                                                   ;
+; NUMWORDS_B                         ; 1                       ; Untyped                                                                   ;
+; INDATA_REG_B                       ; CLOCK1                  ; Untyped                                                                   ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                  ; Untyped                                                                   ;
+; RDCONTROL_REG_B                    ; CLOCK1                  ; Untyped                                                                   ;
+; ADDRESS_REG_B                      ; CLOCK1                  ; Untyped                                                                   ;
+; OUTDATA_REG_B                      ; UNREGISTERED            ; Untyped                                                                   ;
+; BYTEENA_REG_B                      ; CLOCK1                  ; Untyped                                                                   ;
+; INDATA_ACLR_B                      ; NONE                    ; Untyped                                                                   ;
+; WRCONTROL_ACLR_B                   ; NONE                    ; Untyped                                                                   ;
+; ADDRESS_ACLR_B                     ; NONE                    ; Untyped                                                                   ;
+; OUTDATA_ACLR_B                     ; NONE                    ; Untyped                                                                   ;
+; RDCONTROL_ACLR_B                   ; NONE                    ; Untyped                                                                   ;
+; BYTEENA_ACLR_B                     ; NONE                    ; Untyped                                                                   ;
+; WIDTH_BYTEENA_A                    ; 1                       ; Signed Integer                                                            ;
+; WIDTH_BYTEENA_B                    ; 1                       ; Untyped                                                                   ;
+; RAM_BLOCK_TYPE                     ; AUTO                    ; Untyped                                                                   ;
+; BYTE_SIZE                          ; 8                       ; Untyped                                                                   ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE               ; Untyped                                                                   ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ    ; Untyped                                                                   ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ    ; Untyped                                                                   ;
+; INIT_FILE                          ; ./graphics/gameover.mif ; Untyped                                                                   ;
+; INIT_FILE_LAYOUT                   ; PORT_A                  ; Untyped                                                                   ;
+; MAXIMUM_DEPTH                      ; 0                       ; Untyped                                                                   ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS                  ; Untyped                                                                   ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL                  ; Untyped                                                                   ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                  ; Untyped                                                                   ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                  ; Untyped                                                                   ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN         ; Untyped                                                                   ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN         ; Untyped                                                                   ;
+; ENABLE_ECC                         ; FALSE                   ; Untyped                                                                   ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                   ; Untyped                                                                   ;
+; WIDTH_ECCSTATUS                    ; 3                       ; Untyped                                                                   ;
+; DEVICE_FAMILY                      ; Cyclone V               ; Untyped                                                                   ;
+; CBXI_PARAMETER                     ; altsyncram_j0p1         ; Untyped                                                                   ;
++------------------------------------+-------------------------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: secondlevel:p2|datapath:d1|loadscore:ls|scoreCounterRam:scoreCount|altsyncram:altsyncram_component ;
 +------------------------------------+-------------------------+----------------------------------------------------------------------------------+
@@ -2725,7 +2811,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------------------+----------------------------------------------------------------------------------------------------+
 ; Name                                      ; Value                                                                                              ;
 +-------------------------------------------+----------------------------------------------------------------------------------------------------+
-; Number of entity instances                ; 12                                                                                                 ;
+; Number of entity instances                ; 13                                                                                                 ;
 ; Entity Instance                           ; vga_adapter:v1|altsyncram:VideoMemory                                                              ;
 ;     -- OPERATION_MODE                     ; DUAL_PORT                                                                                          ;
 ;     -- WIDTH_A                            ; 15                                                                                                 ;
@@ -2847,6 +2933,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                                                       ;
 ;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                                               ;
 ;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                                                          ;
+; Entity Instance                           ; secondlevel:p2|datapath:d1|loadgameover:lgm|gameoversign:go|altsyncram:altsyncram_component        ;
+;     -- OPERATION_MODE                     ; SINGLE_PORT                                                                                        ;
+;     -- WIDTH_A                            ; 15                                                                                                 ;
+;     -- NUMWORDS_A                         ; 4000                                                                                               ;
+;     -- OUTDATA_REG_A                      ; CLOCK0                                                                                             ;
+;     -- WIDTH_B                            ; 1                                                                                                  ;
+;     -- NUMWORDS_B                         ; 1                                                                                                  ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                                                             ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                                                       ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                                               ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                                                          ;
 ; Entity Instance                           ; secondlevel:p2|datapath:d1|loadscore:ls|scoreCounterRam:scoreCount|altsyncram:altsyncram_component ;
 ;     -- OPERATION_MODE                     ; SINGLE_PORT                                                                                        ;
 ;     -- WIDTH_A                            ; 15                                                                                                 ;
@@ -2936,9 +3033,28 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Port      ; Type   ; Severity ; Details                                                                                                                                                                          ;
 +-----------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; i         ; Input  ; Warning  ; Input port expression (5 bits) is wider than the input port (4 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; j         ; Input  ; Warning  ; Input port expression (7 bits) is smaller than the input port (8 bits) it drives.  Extra input bit(s) "j[7..7]" will be connected to GND.                                        ;
 ; outcolour ; Output ; Warning  ; Output or bidir port (15 bits) is wider than the port expression (1 bits) it drives; bit(s) "outcolour[14..1]" have no fanouts                                                   ;
 +-----------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "secondlevel:p2|datapath:d1|loadgameover:lgm|gameoversign:go"                                                                                 ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                                      ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; wren ; Input  ; Info     ; Stuck at GND                                                                                                                                 ;
+; q    ; Output ; Warning  ; Output or bidir port (3 bits) is wider than the port expression (1 bits) it drives; bit(s) "q[2..1]" have no fanouts                         ;
+; data ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "secondlevel:p2|datapath:d1|loadgameover:lgm"                                                                                                                                             ;
++-------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port        ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; gameoveradd ; Input ; Warning  ; Input port expression (13 bits) is wider than the input port (12 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++-------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -3192,35 +3308,36 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 729                         ;
+; arriav_ff             ; 756                         ;
 ;     CLR               ; 19                          ;
 ;     CLR SCLR          ; 26                          ;
-;     ENA               ; 70                          ;
+;     ENA               ; 81                          ;
 ;     ENA CLR           ; 4                           ;
 ;     ENA CLR SCLR      ; 10                          ;
-;     ENA SCLR          ; 358                         ;
-;     SCLR              ; 98                          ;
+;     ENA SCLR          ; 367                         ;
+;     ENA SCLR SLD      ; 4                           ;
+;     SCLR              ; 99                          ;
 ;     SLD               ; 2                           ;
-;     plain             ; 142                         ;
+;     plain             ; 144                         ;
 ; arriav_io_obuf        ; 6                           ;
-; arriav_lcell_comb     ; 1145                        ;
-;     arith             ; 443                         ;
+; arriav_lcell_comb     ; 1172                        ;
+;     arith             ; 464                         ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 346                         ;
+;         1 data inputs ; 367                         ;
 ;         2 data inputs ; 47                          ;
 ;         3 data inputs ; 44                          ;
 ;         4 data inputs ; 1                           ;
 ;         5 data inputs ; 4                           ;
-;     extend            ; 3                           ;
-;         7 data inputs ; 3                           ;
-;     normal            ; 677                         ;
+;     extend            ; 7                           ;
+;         7 data inputs ; 7                           ;
+;     normal            ; 679                         ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 5                           ;
-;         2 data inputs ; 78                          ;
-;         3 data inputs ; 84                          ;
-;         4 data inputs ; 125                         ;
-;         5 data inputs ; 162                         ;
-;         6 data inputs ; 221                         ;
+;         1 data inputs ; 6                           ;
+;         2 data inputs ; 83                          ;
+;         3 data inputs ; 82                          ;
+;         4 data inputs ; 110                         ;
+;         5 data inputs ; 179                         ;
+;         6 data inputs ; 217                         ;
 ;     shared            ; 22                          ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 4                           ;
@@ -3231,7 +3348,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; stratixv_ram_block    ; 358                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 6.30                        ;
-; Average LUT depth     ; 2.21                        ;
+; Average LUT depth     ; 2.20                        ;
 +-----------------------+-----------------------------+
 
 
@@ -3250,10 +3367,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Wed Nov 28 11:30:22 2018
+    Info: Processing started: Wed Nov 28 17:22:53 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ECE241FinalProject -c ECE241FinalProject
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file gameoversign.v
+    Info (12023): Found entity 1: gameoversign File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/gameoversign.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file scorecounterram.v
     Info (12023): Found entity 1: scoreCounterRam File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/scoreCounterRam.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file score.v
@@ -3291,7 +3410,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file part2/f
     Info (12023): Found entity 1: fill File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/part2/fill.v Line: 3
 Info (12021): Found 2 design units, including 2 entities, in source file ece241finalproject.v
     Info (12023): Found entity 1: top File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 2
-    Info (12023): Found entity 2: secondlevel File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 179
+    Info (12023): Found entity 2: secondlevel File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 180
 Info (12021): Found 1 design units, including 1 entities, in source file ramgraphics.v
     Info (12023): Found entity 1: ramGraphics File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ramGraphics.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file rammap.v
@@ -3314,11 +3433,11 @@ Info (12021): Found 1 design units, including 1 entities, in source file keyram.
     Info (12023): Found entity 1: keyRam File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/keyRam.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file control.v
     Info (12023): Found entity 1: control File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/control.v Line: 1
-Warning (10229): Verilog HDL Expression warning at datapath.v(445): truncated literal to match 11 bits File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 445
-Warning (10229): Verilog HDL Expression warning at datapath.v(499): truncated literal to match 8 bits File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 499
-Warning (10229): Verilog HDL Expression warning at datapath.v(500): truncated literal to match 8 bits File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 500
-Warning (10229): Verilog HDL Expression warning at datapath.v(504): truncated literal to match 7 bits File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 504
-Warning (10229): Verilog HDL Expression warning at datapath.v(505): truncated literal to match 7 bits File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 505
+Warning (10229): Verilog HDL Expression warning at datapath.v(527): truncated literal to match 11 bits File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 527
+Warning (10229): Verilog HDL Expression warning at datapath.v(599): truncated literal to match 8 bits File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 599
+Warning (10229): Verilog HDL Expression warning at datapath.v(600): truncated literal to match 8 bits File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 600
+Warning (10229): Verilog HDL Expression warning at datapath.v(604): truncated literal to match 7 bits File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 604
+Warning (10229): Verilog HDL Expression warning at datapath.v(605): truncated literal to match 7 bits File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 605
 Info (12021): Found 1 design units, including 1 entities, in source file datapath.v
     Info (12023): Found entity 1: datapath File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 2
 Info (12021): Found 5 design units, including 5 entities, in source file loadstuff.v
@@ -3347,9 +3466,10 @@ Info (12021): Found 1 design units, including 1 entities, in source file audio_d
     Info (12023): Found entity 1: I2C_Controller File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/avconf/I2C_Controller.v Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file testram.v
     Info (12023): Found entity 1: testram File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/testram.v Line: 39
+Warning (10236): Verilog HDL Implicit Net warning at gameoverV2.v(6): created implicit net for "colour" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/gameoverV2.v Line: 6
 Warning (10236): Verilog HDL Implicit Net warning at PS2_Demo.v(84): created implicit net for "HEX6" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/PS2_Demo/PS2_Demo.v Line: 84
 Warning (10236): Verilog HDL Implicit Net warning at PS2_Demo.v(85): created implicit net for "HEX7" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/PS2_Demo/PS2_Demo.v Line: 85
-Warning (10236): Verilog HDL Implicit Net warning at datapath.v(280): created implicit net for "scorecolour" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 280
+Warning (10236): Verilog HDL Implicit Net warning at datapath.v(360): created implicit net for "scorecolour" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 360
 Info (12127): Elaborating entity "top" for the top level hierarchy
 Warning (10036): Verilog HDL or VHDL warning at ECE241FinalProject.v(77): object "plot" assigned a value but never read File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 77
 Info (12128): Elaborating entity "PS2_Demo" for hierarchy "PS2_Demo:pc0" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 107
@@ -3412,10 +3532,9 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/altp
     Info (12023): Found entity 1: altpll_80u File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altpll_80u.tdf Line: 25
 Info (12128): Elaborating entity "altpll_80u" for hierarchy "vga_adapter:v1|vga_pll:mypll|altpll:altpll_component|altpll_80u:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altpll.tdf Line: 897
 Info (12128): Elaborating entity "vga_controller" for hierarchy "vga_adapter:v1|vga_controller:controller" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/part2/vga_adapter/vga_adapter.v Line: 262
-Info (12128): Elaborating entity "DE1_SoC_Audio_Example" for hierarchy "DE1_SoC_Audio_Example:d1" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 159
+Info (12128): Elaborating entity "DE1_SoC_Audio_Example" for hierarchy "DE1_SoC_Audio_Example:d1" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 160
 Warning (10230): Verilog HDL assignment warning at DE1_SoC_Audio_Example.v(74): truncated value with size 20 to match size of target (19) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/DE1_SoC_Audio_Example.v Line: 74
 Warning (10230): Verilog HDL assignment warning at DE1_SoC_Audio_Example.v(104): truncated value with size 32 to match size of target (19) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/DE1_SoC_Audio_Example.v Line: 104
-Warning (10230): Verilog HDL assignment warning at DE1_SoC_Audio_Example.v(112): truncated value with size 32 to match size of target (10) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/DE1_SoC_Audio_Example.v Line: 112
 Warning (10230): Verilog HDL assignment warning at DE1_SoC_Audio_Example.v(116): truncated value with size 32 to match size of target (10) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/DE1_SoC_Audio_Example.v Line: 116
 Warning (10230): Verilog HDL assignment warning at DE1_SoC_Audio_Example.v(121): truncated value with size 32 to match size of target (27) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/DE1_SoC_Audio_Example.v Line: 121
 Info (12128): Elaborating entity "testram" for hierarchy "DE1_SoC_Audio_Example:d1|testram:test" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/DE1_SoC_Audio_Example.v Line: 79
@@ -3551,13 +3670,13 @@ Info (12128): Elaborating entity "I2C_Controller" for hierarchy "DE1_SoC_Audio_E
 Warning (10230): Verilog HDL assignment warning at I2C_Controller.v(79): truncated value with size 32 to match size of target (1) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/avconf/I2C_Controller.v Line: 79
 Warning (10230): Verilog HDL assignment warning at I2C_Controller.v(78): truncated value with size 32 to match size of target (1) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/avconf/I2C_Controller.v Line: 78
 Warning (10230): Verilog HDL assignment warning at I2C_Controller.v(91): truncated value with size 32 to match size of target (6) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/avconf/I2C_Controller.v Line: 91
-Info (12128): Elaborating entity "secondlevel" for hierarchy "secondlevel:p2" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 175
-Warning (10036): Verilog HDL or VHDL warning at ECE241FinalProject.v(225): object "genclock" assigned a value but never read File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 225
-Info (12128): Elaborating entity "control" for hierarchy "secondlevel:p2|control:c1" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 224
-Warning (10270): Verilog HDL Case Statement warning at control.v(68): incomplete case statement has no default case item File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/control.v Line: 68
-Info (10264): Verilog HDL Case Statement information at control.v(68): all case item expressions in this case statement are onehot File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/control.v Line: 68
-Info (12128): Elaborating entity "RateDivider" for hierarchy "secondlevel:p2|RateDivider:r1" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 227
-Info (12128): Elaborating entity "genloc" for hierarchy "secondlevel:p2|genloc:gl" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 230
+Info (12128): Elaborating entity "secondlevel" for hierarchy "secondlevel:p2" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 176
+Warning (10036): Verilog HDL or VHDL warning at ECE241FinalProject.v(226): object "genclock" assigned a value but never read File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 226
+Info (12128): Elaborating entity "control" for hierarchy "secondlevel:p2|control:c1" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 225
+Warning (10270): Verilog HDL Case Statement warning at control.v(70): incomplete case statement has no default case item File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/control.v Line: 70
+Info (10264): Verilog HDL Case Statement information at control.v(70): all case item expressions in this case statement are onehot File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/control.v Line: 70
+Info (12128): Elaborating entity "RateDivider" for hierarchy "secondlevel:p2|RateDivider:r1" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 228
+Info (12128): Elaborating entity "genloc" for hierarchy "secondlevel:p2|genloc:gl" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 231
 Info (12128): Elaborating entity "loadLocation" for hierarchy "secondlevel:p2|genloc:gl|loadLocation:la" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/loadStuff.v Line: 87
 Info (12128): Elaborating entity "ramMapX" for hierarchy "secondlevel:p2|genloc:gl|loadLocation:la|ramMapX:rax" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/loadStuff.v Line: 136
 Info (12128): Elaborating entity "altsyncram" for hierarchy "secondlevel:p2|genloc:gl|loadLocation:la|ramMapX:rax|altsyncram:altsyncram_component" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ramMapX.v Line: 85
@@ -3625,14 +3744,14 @@ Info (12133): Instantiated megafunction "secondlevel:p2|genloc:gl|keyRam:kr|alts
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_r0p1.tdf
     Info (12023): Found entity 1: altsyncram_r0p1 File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_r0p1.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_r0p1" for hierarchy "secondlevel:p2|genloc:gl|keyRam:kr|altsyncram:altsyncram_component|altsyncram_r0p1:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Info (12128): Elaborating entity "datapath" for hierarchy "secondlevel:p2|datapath:d1" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 259
-Warning (10230): Verilog HDL assignment warning at datapath.v(311): truncated value with size 6 to match size of target (5) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 311
-Warning (10230): Verilog HDL assignment warning at datapath.v(312): truncated value with size 6 to match size of target (5) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 312
-Warning (10230): Verilog HDL assignment warning at datapath.v(334): truncated value with size 9 to match size of target (8) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 334
-Warning (10230): Verilog HDL assignment warning at datapath.v(378): truncated value with size 6 to match size of target (4) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 378
-Warning (10230): Verilog HDL assignment warning at datapath.v(385): truncated value with size 6 to match size of target (5) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 385
-Warning (10230): Verilog HDL assignment warning at datapath.v(386): truncated value with size 6 to match size of target (4) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 386
-Info (12128): Elaborating entity "loadImage" for hierarchy "secondlevel:p2|datapath:d1|loadImage:la" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 252
+Info (12128): Elaborating entity "datapath" for hierarchy "secondlevel:p2|datapath:d1" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 260
+Warning (10230): Verilog HDL assignment warning at datapath.v(391): truncated value with size 6 to match size of target (5) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 391
+Warning (10230): Verilog HDL assignment warning at datapath.v(392): truncated value with size 6 to match size of target (5) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 392
+Warning (10230): Verilog HDL assignment warning at datapath.v(416): truncated value with size 9 to match size of target (8) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 416
+Warning (10230): Verilog HDL assignment warning at datapath.v(460): truncated value with size 6 to match size of target (4) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 460
+Warning (10230): Verilog HDL assignment warning at datapath.v(467): truncated value with size 6 to match size of target (5) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 467
+Warning (10230): Verilog HDL assignment warning at datapath.v(468): truncated value with size 6 to match size of target (4) File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 468
+Info (12128): Elaborating entity "loadImage" for hierarchy "secondlevel:p2|datapath:d1|loadImage:la" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 331
 Info (12128): Elaborating entity "loadA" for hierarchy "secondlevel:p2|datapath:d1|loadImage:la|loadA:a" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/loadStuff.v Line: 23
 Info (12128): Elaborating entity "altsyncram" for hierarchy "secondlevel:p2|datapath:d1|loadImage:la|loadA:a|altsyncram:altsyncram_component" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/loadA.v Line: 85
 Info (12130): Elaborated megafunction instantiation "secondlevel:p2|datapath:d1|loadImage:la|loadA:a|altsyncram:altsyncram_component" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/loadA.v Line: 85
@@ -3721,7 +3840,7 @@ Info (12133): Instantiated megafunction "secondlevel:p2|datapath:d1|loadImage:la
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_vdq1.tdf
     Info (12023): Found entity 1: altsyncram_vdq1 File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_vdq1.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_vdq1" for hierarchy "secondlevel:p2|datapath:d1|loadImage:la|loadF:f|altsyncram:altsyncram_component|altsyncram_vdq1:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Info (12128): Elaborating entity "loadBG" for hierarchy "secondlevel:p2|datapath:d1|loadBG:bg" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 253
+Info (12128): Elaborating entity "loadBG" for hierarchy "secondlevel:p2|datapath:d1|loadBG:bg" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 332
 Info (12128): Elaborating entity "BGRam" for hierarchy "secondlevel:p2|datapath:d1|loadBG:bg|BGRam:bgram" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/loadStuff.v Line: 50
 Info (12128): Elaborating entity "altsyncram" for hierarchy "secondlevel:p2|datapath:d1|loadBG:bg|BGRam:bgram|altsyncram:altsyncram_component" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/BGRam.v Line: 85
 Info (12130): Elaborated megafunction instantiation "secondlevel:p2|datapath:d1|loadBG:bg|BGRam:bgram|altsyncram:altsyncram_component" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/BGRam.v Line: 85
@@ -3744,7 +3863,7 @@ Info (12133): Instantiated megafunction "secondlevel:p2|datapath:d1|loadBG:bg|BG
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_i4p1.tdf
     Info (12023): Found entity 1: altsyncram_i4p1 File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_i4p1.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_i4p1" for hierarchy "secondlevel:p2|datapath:d1|loadBG:bg|BGRam:bgram|altsyncram:altsyncram_component|altsyncram_i4p1:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Info (12128): Elaborating entity "loadosu" for hierarchy "secondlevel:p2|datapath:d1|loadosu:lo" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 254
+Info (12128): Elaborating entity "loadosu" for hierarchy "secondlevel:p2|datapath:d1|loadosu:lo" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 333
 Info (12128): Elaborating entity "osulogoRAM" for hierarchy "secondlevel:p2|datapath:d1|loadosu:lo|osulogoRAM:oss" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/osulogo.v Line: 10
 Info (12128): Elaborating entity "altsyncram" for hierarchy "secondlevel:p2|datapath:d1|loadosu:lo|osulogoRAM:oss|altsyncram:altsyncram_component" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/osulogoRAM.v Line: 85
 Info (12130): Elaborated megafunction instantiation "secondlevel:p2|datapath:d1|loadosu:lo|osulogoRAM:oss|altsyncram:altsyncram_component" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/osulogoRAM.v Line: 85
@@ -3767,7 +3886,30 @@ Info (12133): Instantiated megafunction "secondlevel:p2|datapath:d1|loadosu:lo|o
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_pdp1.tdf
     Info (12023): Found entity 1: altsyncram_pdp1 File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_pdp1.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_pdp1" for hierarchy "secondlevel:p2|datapath:d1|loadosu:lo|osulogoRAM:oss|altsyncram:altsyncram_component|altsyncram_pdp1:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Info (12128): Elaborating entity "loadscore" for hierarchy "secondlevel:p2|datapath:d1|loadscore:ls" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 280
+Info (12128): Elaborating entity "loadgameover" for hierarchy "secondlevel:p2|datapath:d1|loadgameover:lgm" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 334
+Info (12128): Elaborating entity "gameoversign" for hierarchy "secondlevel:p2|datapath:d1|loadgameover:lgm|gameoversign:go" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/gameoverV2.v Line: 6
+Info (12128): Elaborating entity "altsyncram" for hierarchy "secondlevel:p2|datapath:d1|loadgameover:lgm|gameoversign:go|altsyncram:altsyncram_component" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/gameoversign.v Line: 85
+Info (12130): Elaborated megafunction instantiation "secondlevel:p2|datapath:d1|loadgameover:lgm|gameoversign:go|altsyncram:altsyncram_component" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/gameoversign.v Line: 85
+Info (12133): Instantiated megafunction "secondlevel:p2|datapath:d1|loadgameover:lgm|gameoversign:go|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/gameoversign.v Line: 85
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "init_file" = "./graphics/gameover.mif"
+    Info (12134): Parameter "intended_device_family" = "Cyclone V"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "4000"
+    Info (12134): Parameter "operation_mode" = "SINGLE_PORT"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "CLOCK0"
+    Info (12134): Parameter "power_up_uninitialized" = "FALSE"
+    Info (12134): Parameter "read_during_write_mode_port_a" = "NEW_DATA_NO_NBE_READ"
+    Info (12134): Parameter "widthad_a" = "12"
+    Info (12134): Parameter "width_a" = "15"
+    Info (12134): Parameter "width_byteena_a" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_j0p1.tdf
+    Info (12023): Found entity 1: altsyncram_j0p1 File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_j0p1.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_j0p1" for hierarchy "secondlevel:p2|datapath:d1|loadgameover:lgm|gameoversign:go|altsyncram:altsyncram_component|altsyncram_j0p1:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Info (12128): Elaborating entity "loadscore" for hierarchy "secondlevel:p2|datapath:d1|loadscore:ls" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/datapath.v Line: 360
 Info (12128): Elaborating entity "scoreCounterRam" for hierarchy "secondlevel:p2|datapath:d1|loadscore:ls|scoreCounterRam:scoreCount" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/score.v Line: 15
 Info (12128): Elaborating entity "altsyncram" for hierarchy "secondlevel:p2|datapath:d1|loadscore:ls|scoreCounterRam:scoreCount|altsyncram:altsyncram_component" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/scoreCounterRam.v Line: 85
 Info (12130): Elaborated megafunction instantiation "secondlevel:p2|datapath:d1|loadscore:ls|scoreCounterRam:scoreCount|altsyncram:altsyncram_component" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/scoreCounterRam.v Line: 85
@@ -3790,11 +3932,27 @@ Info (12133): Instantiated megafunction "secondlevel:p2|datapath:d1|loadscore:ls
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_uvo1.tdf
     Info (12023): Found entity 1: altsyncram_uvo1 File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_uvo1.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_uvo1" for hierarchy "secondlevel:p2|datapath:d1|loadscore:ls|scoreCounterRam:scoreCount|altsyncram:altsyncram_component|altsyncram_uvo1:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Warning (113016): Width of data items in "combined.mif" is smaller than the memory width. Padding data items with 0 on MSB to fit in memory.  File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/graphics/combined.mif Line: 5
+Warning (113028): 605296 out of 610400 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 319 warnings found, and 10 warnings are reported. File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/graphics/combined.mif Line: 1
+    Warning (113027): Addresses ranging from 16 to 255 are not initialized File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/graphics/combined.mif Line: 1
+    Warning (113027): Addresses ranging from 272 to 511 are not initialized File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/graphics/combined.mif Line: 1
+    Warning (113027): Addresses ranging from 528 to 767 are not initialized File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/graphics/combined.mif Line: 1
+    Warning (113027): Addresses ranging from 784 to 1023 are not initialized File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/graphics/combined.mif Line: 1
+    Warning (113027): Addresses ranging from 1040 to 1279 are not initialized File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/graphics/combined.mif Line: 1
+    Warning (113027): Addresses ranging from 1296 to 1535 are not initialized File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/graphics/combined.mif Line: 1
+    Warning (113027): Addresses ranging from 1552 to 1791 are not initialized File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/graphics/combined.mif Line: 1
+    Warning (113027): Addresses ranging from 1808 to 2047 are not initialized File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/graphics/combined.mif Line: 1
+    Warning (113027): Addresses ranging from 2064 to 2303 are not initialized File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/graphics/combined.mif Line: 1
+    Warning (113027): Addresses ranging from 2320 to 2559 are not initialized File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/graphics/combined.mif Line: 1
+Critical Warning (127004): Memory depth (4000) in the design file differs from memory depth (610400) in the Memory Initialization File "C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/graphics/combined.mif" -- truncated remaining initial content value to fit RAM File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/scoreCounterRam.v Line: 85
+Warning (12020): Port "address_a" on the entity instantiation of "altsyncram_component" is connected to a signal of width 15. The formal width of the signal in the module is 12.  The extra bits will be ignored. File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/scoreCounterRam.v Line: 85
+Warning (12010): Port "data_a" on the entity instantiation of "altsyncram_component" is connected to a signal of width 3. The formal width of the signal in the module is 15.  The extra bits will be driven by GND. File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/gameoversign.v Line: 85
+Warning (12030): Port "q_a" on the entity instantiation of "altsyncram_component" is connected to a signal of width 3. The formal width of the signal in the module is 15.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/gameoversign.v Line: 85
 Warning (12020): Port "address_a" on the entity instantiation of "altsyncram_component" is connected to a signal of width 7. The formal width of the signal in the module is 4.  The extra bits will be ignored. File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/keyRam.v Line: 85
 Warning (12020): Port "address_a" on the entity instantiation of "altsyncram_component" is connected to a signal of width 7. The formal width of the signal in the module is 6.  The extra bits will be ignored. File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ramMapY.v Line: 85
 Warning (12020): Port "address_a" on the entity instantiation of "altsyncram_component" is connected to a signal of width 7. The formal width of the signal in the module is 6.  The extra bits will be ignored. File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ramMapX.v Line: 85
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "secondlevel:p2|randX[8]" is missing source, defaulting to GND File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 196
+    Warning (12110): Net "secondlevel:p2|randX[8]" is missing source, defaulting to GND File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 197
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following RAM node(s):
         Warning (14320): Synthesized away node "secondlevel:p2|datapath:d1|loadscore:ls|scoreCounterRam:scoreCount|altsyncram:altsyncram_component|altsyncram_uvo1:auto_generated|q_a[1]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_uvo1.tdf Line: 61
@@ -3811,15 +3969,26 @@ Warning (14284): Synthesized away the following node(s):
         Warning (14320): Synthesized away node "secondlevel:p2|datapath:d1|loadscore:ls|scoreCounterRam:scoreCount|altsyncram:altsyncram_component|altsyncram_uvo1:auto_generated|q_a[12]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_uvo1.tdf Line: 336
         Warning (14320): Synthesized away node "secondlevel:p2|datapath:d1|loadscore:ls|scoreCounterRam:scoreCount|altsyncram:altsyncram_component|altsyncram_uvo1:auto_generated|q_a[13]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_uvo1.tdf Line: 361
         Warning (14320): Synthesized away node "secondlevel:p2|datapath:d1|loadscore:ls|scoreCounterRam:scoreCount|altsyncram:altsyncram_component|altsyncram_uvo1:auto_generated|q_a[14]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_uvo1.tdf Line: 386
+        Warning (14320): Synthesized away node "secondlevel:p2|datapath:d1|loadgameover:lgm|gameoversign:go|altsyncram:altsyncram_component|altsyncram_j0p1:auto_generated|q_a[0]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_j0p1.tdf Line: 36
+        Warning (14320): Synthesized away node "secondlevel:p2|datapath:d1|loadgameover:lgm|gameoversign:go|altsyncram:altsyncram_component|altsyncram_j0p1:auto_generated|q_a[1]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_j0p1.tdf Line: 61
+        Warning (14320): Synthesized away node "secondlevel:p2|datapath:d1|loadgameover:lgm|gameoversign:go|altsyncram:altsyncram_component|altsyncram_j0p1:auto_generated|q_a[2]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_j0p1.tdf Line: 86
+        Warning (14320): Synthesized away node "secondlevel:p2|datapath:d1|loadgameover:lgm|gameoversign:go|altsyncram:altsyncram_component|altsyncram_j0p1:auto_generated|q_a[3]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_j0p1.tdf Line: 111
+        Warning (14320): Synthesized away node "secondlevel:p2|datapath:d1|loadgameover:lgm|gameoversign:go|altsyncram:altsyncram_component|altsyncram_j0p1:auto_generated|q_a[4]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_j0p1.tdf Line: 136
+        Warning (14320): Synthesized away node "secondlevel:p2|datapath:d1|loadgameover:lgm|gameoversign:go|altsyncram:altsyncram_component|altsyncram_j0p1:auto_generated|q_a[5]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_j0p1.tdf Line: 161
+        Warning (14320): Synthesized away node "secondlevel:p2|datapath:d1|loadgameover:lgm|gameoversign:go|altsyncram:altsyncram_component|altsyncram_j0p1:auto_generated|q_a[6]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_j0p1.tdf Line: 186
+        Warning (14320): Synthesized away node "secondlevel:p2|datapath:d1|loadgameover:lgm|gameoversign:go|altsyncram:altsyncram_component|altsyncram_j0p1:auto_generated|q_a[7]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_j0p1.tdf Line: 211
+        Warning (14320): Synthesized away node "secondlevel:p2|datapath:d1|loadgameover:lgm|gameoversign:go|altsyncram:altsyncram_component|altsyncram_j0p1:auto_generated|q_a[8]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_j0p1.tdf Line: 236
+        Warning (14320): Synthesized away node "secondlevel:p2|datapath:d1|loadgameover:lgm|gameoversign:go|altsyncram:altsyncram_component|altsyncram_j0p1:auto_generated|q_a[9]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_j0p1.tdf Line: 261
+        Warning (14320): Synthesized away node "secondlevel:p2|datapath:d1|loadgameover:lgm|gameoversign:go|altsyncram:altsyncram_component|altsyncram_j0p1:auto_generated|q_a[10]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_j0p1.tdf Line: 286
+        Warning (14320): Synthesized away node "secondlevel:p2|datapath:d1|loadgameover:lgm|gameoversign:go|altsyncram:altsyncram_component|altsyncram_j0p1:auto_generated|q_a[11]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_j0p1.tdf Line: 311
+        Warning (14320): Synthesized away node "secondlevel:p2|datapath:d1|loadgameover:lgm|gameoversign:go|altsyncram:altsyncram_component|altsyncram_j0p1:auto_generated|q_a[12]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_j0p1.tdf Line: 336
+        Warning (14320): Synthesized away node "secondlevel:p2|datapath:d1|loadgameover:lgm|gameoversign:go|altsyncram:altsyncram_component|altsyncram_j0p1:auto_generated|q_a[13]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_j0p1.tdf Line: 361
+        Warning (14320): Synthesized away node "secondlevel:p2|datapath:d1|loadgameover:lgm|gameoversign:go|altsyncram:altsyncram_component|altsyncram_j0p1:auto_generated|q_a[14]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_j0p1.tdf Line: 386
         Warning (14320): Synthesized away node "DE1_SoC_Audio_Example:d1|testram:test|altsyncram:altsyncram_component|altsyncram_f0p1:auto_generated|q_a[19]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/altsyncram_f0p1.tdf Line: 492
 Info (276014): Found 1 instances of uninferred RAM logic
     Info (276004): RAM logic "DE1_SoC_Audio_Example:d1|avconf:avc|Ram0" is uninferred due to inappropriate RAM size File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/Audio_Demo/avconf/avconf.v Line: 131
-Warning (12241): 19 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12241): 21 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDR[3]" is stuck at GND File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 63
-    Warning (13410): Pin "LEDR[4]" is stuck at GND File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 63
-    Warning (13410): Pin "LEDR[5]" is stuck at GND File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 63
-    Warning (13410): Pin "LEDR[6]" is stuck at GND File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 63
     Warning (13410): Pin "LEDR[7]" is stuck at GND File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 63
     Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 63
     Warning (13410): Pin "LEDR[9]" is stuck at VCC File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 63
@@ -3859,7 +4028,7 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "VGA_B[9]" is stuck at GND File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 42
     Warning (13410): Pin "VGA_SYNC" is stuck at VCC File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 46
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 25 registers lost all their fanouts during netlist optimizations.
+Info (17049): 27 registers lost all their fanouts during netlist optimizations.
 Warning (20013): Ignored 385 assignments for entity "DE1_SoC" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC_CS_N -entity DE1_SoC was ignored
     Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC_DIN -entity DE1_SoC was ignored
@@ -4253,7 +4422,7 @@ Warning: RST port on the PLL is not properly connected on instance vga_adapter:v
     Info: Must be connected
 Warning: RST port on the PLL is not properly connected on instance DE1_SoC_Audio_Example:d1|Audio_Controller:Audio_Controller|Audio_Clock:Audio_Clock|altpll:altpll_component|Audio_Clock_altpll:auto_generated|generic_pll1. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/db/audio_clock_altpll.v Line: 62
     Info: Must be connected
-Warning (21074): Design contains 8 input pin(s) that do not drive logic
+Warning (21074): Design contains 9 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[4]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 36
     Warning (15610): No output dependent on input pin "SW[5]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 36
     Warning (15610): No output dependent on input pin "SW[6]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 36
@@ -4261,19 +4430,20 @@ Warning (21074): Design contains 8 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 36
     Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 36
     Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 37
+    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 37
     Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/Timothy/Documents/GitHub/ECE241FinalProject/ECE241FinalProject.v Line: 37
-Info (21057): Implemented 1758 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1786 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 16 input pins
     Info (21059): Implemented 90 output pins
     Info (21060): Implemented 6 bidirectional pins
-    Info (21061): Implemented 1286 logic cells
+    Info (21061): Implemented 1314 logic cells
     Info (21064): Implemented 358 RAM segments
     Info (21065): Implemented 2 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 497 warnings
-    Info: Peak virtual memory: 4914 megabytes
-    Info: Processing ended: Wed Nov 28 11:30:47 2018
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 525 warnings
+    Info: Peak virtual memory: 4927 megabytes
+    Info: Processing ended: Wed Nov 28 17:23:18 2018
     Info: Elapsed time: 00:00:25
-    Info: Total CPU time (on all processors): 00:00:38
+    Info: Total CPU time (on all processors): 00:00:37
 
 
 +------------------------------------------+

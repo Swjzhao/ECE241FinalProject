@@ -109,13 +109,13 @@ always @(posedge CLOCK_50) begin
 		if (frequency_counter == limit) begin 
 			frequency_counter <= 27'b0;
 			if (address == mif_lines) begin
-				address <= address + 0; //i set it to stop playing once it reaches the end of the song. 
-				limit <= 27'd9200000;
+				address <= 0; //i set it to stop playing once it reaches the end of the song. 
+				limit <= 27'd8300000;
 			end
 			if (address < mif_lines)
 				address <= address + 1;
 			if (address == tempo_change_one) //speeding the tempo up.
-			   limit <= 27'd7800000;
+			   limit <= 27'd7500000;
 			end
 		else 
 			frequency_counter <= frequency_counter + 1;

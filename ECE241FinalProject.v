@@ -136,6 +136,7 @@ output				FPGA_I2C_SCLK;
 		defparam v1.BITS_PER_COLOUR_CHANNEL = 5;
 		defparam v1.BACKGROUND_IMAGE = "Graphics/osuhd.mif";
 	
+	wire songend; 
 	DE1_SoC_Audio_Example  d1 (
 	// Inputs
 	.CLOCK_50(CLOCK_50),
@@ -186,7 +187,7 @@ module secondlevel(
 	output [9:0] LED
 );
 	wire[1:0] alu_select;
-	wire  ld_plot, ld_coord, ld_BG, ld_osu, ld_line, ld_score, ld_gameover;
+	wire ld_black, ld_plot, ld_coord, ld_BG, ld_osu, ld_line, ld_score, ld_gameover;
 	wire[9:0] counter;
 	wire[9:0] address;
 	wire[3:0] data;
@@ -204,8 +205,7 @@ module secondlevel(
 	
 	control c1 (
 		.clk(clk),
-		.go(go),
-		.black(black),  
+		.go(go), 
 		.reset(reset),
 		.cleared(cleared),
 		.done(done),
@@ -213,6 +213,7 @@ module secondlevel(
 		.drewOsu(drewOsu),
 		.drewScore(drewScore),
 		.gameover(gameover),
+		.ld_black(ld_black),
 		.ld_plot(ld_plot),
 		.ld_coord(ld_coord),
 		.ld_BG(ld_BG),
@@ -236,7 +237,7 @@ module secondlevel(
 		.locX(randX),
 		.locY(randY),
 		.id2(id2),
-		.black(black),
+		.ld_black(ld_black),
 		.ld_coord(ld_coord),
 		.ld_plot(ld_plot),
 		.ld_BG(ld_BG),
