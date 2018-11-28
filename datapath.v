@@ -1,4 +1,4 @@
-
+ 
 module datapath(
 	input clk,
 	input go,
@@ -7,13 +7,17 @@ module datapath(
 	input [8:0] locX,
 	input [7:0] locY,
 	input [1:0] id2,
-	input black, ld_coord, ld_plot, ld_BG, 
-	
+	input black, ld_coord, ld_plot, ld_BG, ld_osu, ld_line, ld_score, ld_gameover,
+	input [7:0] datareceived,
+	output reg writeEn,
 	output reg [8:0] X, 
 	output reg [7:0] Y,
 	output reg cleared,
 	output reg done,
 	output reg draw,
+	output reg drewOsu,
+	output reg drewScore,
+	output reg gameover,
 	output reg [14:0] Colour,
 	output reg [9:0] counter
 );
@@ -30,57 +34,96 @@ module datapath(
 	 reg [3:0] bgiid;
 	 reg [2:0] id;
 	 
-	// reg [8:0] Data_Out;
-	// reg [13:0] Score_Img_Counter;
+	 reg [11:0] score;
+	 reg [2:0]  scoreid;
+	 reg [2:0]  scoreid2;
+	 reg [4:0]  scorei;
+	 reg [6:0]  scorej;
+	 
+	 reg [10:0] osucd;
+	 wire [14:0] osucolour;
+	
+	
 	 wire [2:0] colour;
 	 wire [14:0] bgcolour;
-	 wire [25:0] freq;
-	 wire clock;
-	 RateDivider r1(clk, reset, 26'b0100111110101111000001111, freq);
-	 assign clock = (freq  == 26'b00000000000000000000000000)? 1'b1 : 1'b0;
-	 always@(posedge clock)
+	 reg [25:0] freq;
+	// wire clock;
+	// RateDivider r1(clk, reset, 26'b0100111110101111000001111, freq);
+	// assign clock = (freq  == 26'b00000000000000000000000000)? 1'b1 : 1'b0;
+	 
+//	 always@(posedge clock)
+//	 begin
+//		if() begin
+//			keyboard_data1 <= keyboard_data2;
+//			keyboard_data2 <= datareceived;
+//		end
+//	 end
+	 always@(posedge clk)
 	 begin 
 			if(!reset)
 				begin
 					id <= 3'd0;
-					done <= 1'b0;
+//					done <= 1'b0;
+					freq <= 26'b0;
 				end
 			else if (ld_coord)
 				begin 
 					id <= 3'd0;
-					done <= 1'b0;
-				end
-			else if(id == 3'd3 )
+					freq <= freq;
+//					done <= 1'b0;
+				end 
+			else if(id == 3'd4)
 				begin
+					freq <= freq;
+//					done <= 1'b1;
+					id <= 3'd1;
 			
-					id <= 3'd0;
-					done <= 1'b1;
+				end
+			else if(freq == 26'b0100111110101111000001111)
+				begin
+					id <= id + 1'b1;
+					freq <= 26'b0;
+//					done <= 1'b0;
 				end
 			else
 				begin
-					id <= id + 1'b1;
-					done <= 1'b0;
+				id<= id;
+				freq <= freq + 1'b1;
 				end
+				
+			if(id2 == 2'd0 && datareceived == 8'h1C) 
+					begin 
+						
+						done <= 1'b1;
+					end
+				else if(id2 == 2'd1 && datareceived == 8'h1b)
+					begin
+					 
+						done <= 1'b1;
+					end
+				else if(id2 == 2'd2 && datareceived == 8'h23)
+					begin
+						
+						done <= 1'b1;
+					end
+				else if(id2 == 2'd3 && datareceived == 8'h2b)
+					begin
+						done <= 1'b1;
+					end
+				else
+					begin 
+						done <= 1'b0;
+					end
+					
 	 end
-	 // RateDivider r4(clock, reset, 26'b10111110101111000001111111, w5);	
+	 
+	 
+	 // RateDivider r4(clock, reset, 26'b101111101011110000 01111111, w5);	
 	 loadImage la (clk, reset, id,id2, i , j ,colour);
 	 loadBG bg (clk, reset, bgi, bgj, bgcolour);
-	 
-//	 always @(posedge clk) begin
-//		if (!reset) begin
-//		Data_Out <= 0;
-//		Score_Img_Counter <= 0;	
-//		
-//		end
-//		if (ld_plot) begin
-//			X<= 0;
-//			Y<= 0;
-//			if (Score_Img_Counter < 14'b11001000001010) Score_Img_Counter <= Score_Img_Counter + 1;
-//			else if (Score_Img_Counter == 14'b11001000001010) Score_Img_Counter <= 0;
-//		end
-//	end 
-//	loadImage_Score scoreIMG(clk, reset, Score_Img_Counter , Data_Out);
- 
+	 loadosu lo (clk, reset, osucd, osucolour);	
+	 loadscore ls (clk, reset, scoreid2, scorei, scorej, scorecolour);
+		
 	 always@(posedge clk)
     begin: states
 		  if(!reset)
@@ -100,6 +143,7 @@ module datapath(
 	 end 
 	always@(posedge clk)
 		begin: square
+		writeEn = 1'b1;
 			if(!reset)
 				begin
 					counter <= 5'b0;
@@ -114,7 +158,15 @@ module datapath(
 							blackcounter <= 17'b0;
 							cleared <= 1'b0;
 							draw <= 1'b0;
+							drewOsu <= 1'b0;
+							drewScore  <= 1'b0;
 							Colour <= 15'b0;
+							osucd[10:0] <= 11'd0;
+							scorei <= 5'd0;
+							scorej <= 7'd0;
+							scoreid <= 3'b0;
+							gameover <= 1'b0;
+							
 				end
 			else if(black)
 				begin
@@ -179,13 +231,80 @@ module datapath(
 							draw <= 1'b1;
 						end
 				end
+			else if(ld_score)
+			
+	begin
+				X <= 9'd272 + scorei + scoreid * (5'd16);
+				Y <= 8'b0 + scorej;
+				
+		
+			if(scorecolour == 3'b0)
+				begin
+				Colour <= 15'b0;
+				writeEn = 1'b0;
+				end
+			else
+				Colour <= 15'b111111111111111;
+				
+			if(scorej < (7'd32))
+				begin
+				drewScore <= 1'b0;
+					if(scorei < (5'd16))
+						begin
+							scorei <= scorei + 1'b1;
+							scorej <= scorej + 1'b0;
+							
+						end
+					else
+						begin
+							scorei <= 5'd0;
+							scorej <= scorej + 1'b1;
+						end
+				end
+			else
+				begin
+					scoreid <= scoreid +  1'b1;
+					scorej <= 7'd0;
+					scorei <= 5'd0;
+				end
+				
+				if(scoreid == 3'd3)
+					drewScore <= 1'b1;
+					
+			end
+				
+			
+			else if(ld_osu)
+			begin
+				
+				X <= osucd[4:0] + 9'd144;
+				Y <= osucd[9:5] + 8'd104 ;
+				Colour <= osucolour;
+			
+				
+				if(osucd < (11'd10000000000))
+					begin
+					osucd <= osucd + 1'b1;
+					drewOsu <= 1'b0;
+					end
+				else
+					begin
+						osucd[10:0] <= 11'd0;
+						drewOsu <= 1'b1;
+					end
+				
+			
+			end
 			else if(ld_plot)
 			begin
 				draw <= 1'b0;
 				if(colour == 3'b111)
 					Colour<=15'b111111111111111;
 				else
+					begin
 					Colour<=15'b0;
+					
+					end
 				
 				X <= xx + i;
 				blackcounter <= 17'b0;

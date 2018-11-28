@@ -17,11 +17,13 @@ module loadImage(
 	
 	wire [5:0] tempj;
 	assign tempj[5:0] = j[5:0] + (id * 5'd16);
+	wire [9:0] ii;
+	assign ii = {tempj,i} + 1'b1;
 
-	loadA a(.address({tempj,i}), .clock(clock),.wren(1'b0), .q(qa));
-	loadS s(.address({tempj,i}), .clock(clock),.wren(1'b0), .q(qs));
-	loadD d(.address({tempj,i}), .clock(clock),.wren(1'b0), .q(qd));
-	loadF f(.address({tempj,i}), .clock(clock),.wren(1'b0), .q(qf));
+	loadA a(.address(ii), .clock(clock),.wren(1'b0), .q(qa));
+	loadS s(.address(ii), .clock(clock),.wren(1'b0), .q(qs));
+	loadD d(.address(ii), .clock(clock),.wren(1'b0), .q(qd));
+	loadF f(.address(ii), .clock(clock),.wren(1'b0), .q(qf));
 	always @(posedge clock)
 	begin
 		if(id2 == 2'd1)
@@ -75,14 +77,15 @@ module genloc(
 	output reg [1:0] id2
 
 );
-	reg [4:0] i;
+	reg [6:0] i;
 	wire[7:0] outx;
 	wire[7:0] outy;
 	wire[1:0] outid;
 	reg bool;
+	reg [1:0] counter;
 	
-	loadLocation la (clock,reset,i[4:0], outx, outy);
-	keyRam kr (.address({2'b00,i[3:0]}), .clock(clock),.wren(1'b0), .q(outid)); 
+	loadLocation la (clock,reset,i[6:0], outx, outy);
+	keyRam kr (.address({i[6:0]}), .clock(clock),.wren(1'b0), .q(outid)); 
 	always @(posedge clock)
 	begin: iter
 	   locx <= outx;
@@ -93,7 +96,7 @@ module genloc(
 			i <= 5'b0;
 			bool <= 1'b1;
 			end
-		else if(i >= 5'b01111)
+		else if(i >= 7'b0111111)
 			begin
 				i <= 5'b0;
 				bool <= 1'b0;
@@ -124,14 +127,14 @@ module genloc(
 endmodule
 module loadLocation(
 	input clock, reset, 
-	input [3:0] i,
+	input [6:0] i,
 	output [7:0] locx,
 	output [7:0] locy
 );
 	wire [7:0] xx;
 	wire [7:0] yy;
-	ramMapX rax(.address({2'b0,i}), .clock(clock),.wren(1'b0), .q(xx));
-	ramMapY ray(.address({2'b0,i}), .clock(clock),.wren(1'b0), .q(yy));
+	ramMapX rax(.address({i}), .clock(clock),.wren(1'b0), .q(xx));
+	ramMapY ray(.address({i}), .clock(clock),.wren(1'b0), .q(yy));
 	assign locx = xx;
 	assign locy = yy;
 	

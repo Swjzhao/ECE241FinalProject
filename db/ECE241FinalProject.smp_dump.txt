@@ -1,12 +1,14 @@
 
-State Machine - |top|part2:p2|control:c1|current_state
-Name current_state.S_Done current_state.S_StartAnimation current_state.S_GenerateLocation current_state.S_DrawBG current_state.S_ClearScreen current_state.S_Reset 
-current_state.S_Reset 0 0 0 0 0 0 
-current_state.S_ClearScreen 0 0 0 0 1 1 
-current_state.S_DrawBG 0 0 0 1 0 1 
-current_state.S_GenerateLocation 0 0 1 0 0 1 
-current_state.S_StartAnimation 0 1 0 0 0 1 
-current_state.S_Done 1 0 0 0 0 1 
+State Machine - |top|secondlevel:p2|control:c1|current_state
+Name current_state.S_StartAnimation current_state.S_GenerateLocation current_state.S_DrawLine current_state.S_DrawOSU current_state.S_DrawScore current_state.S_DrawBG current_state.S_Reset current_state.S_Done 
+current_state.S_Reset 0 0 0 0 0 0 0 0 
+current_state.S_DrawBG 0 0 0 0 0 1 1 0 
+current_state.S_DrawScore 0 0 0 0 1 0 1 0 
+current_state.S_DrawOSU 0 0 0 1 0 0 1 0 
+current_state.S_DrawLine 0 0 1 0 0 0 1 0 
+current_state.S_GenerateLocation 0 1 0 0 0 0 1 0 
+current_state.S_StartAnimation 1 0 0 0 0 0 1 0 
+current_state.S_Done 0 0 0 0 0 0 1 1 
 
 State Machine - |top|DE1_SoC_Audio_Example:d1|avconf:avc|mSetup_ST
 Name mSetup_ST.0000 mSetup_ST.0010 mSetup_ST.0001 

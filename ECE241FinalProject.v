@@ -1,6 +1,7 @@
 `timescale 1ns / 1ns
 module top(
 			SW, 
+			LEDR,
 			KEY, HEX0 , HEX1, HEX2, HEX3, HEX4, HEX5,
 			CLOCK_50,
 			PS2_CLK,
@@ -59,7 +60,7 @@ output				AUD_DACDAT;
 
 output				FPGA_I2C_SCLK;
 	output [6:0] HEX0 , HEX1, HEX2, HEX3, HEX4, HEX5;
-
+	output [9:0] LEDR;
 	
 	wire [14:0] colour;
 	wire [8:0] x;
@@ -104,14 +105,21 @@ output				FPGA_I2C_SCLK;
 		.HEX5(HEX5)
 		
 	);
-
+	wire writeEn;
+//	always@(*)
+//	begin
+//		if(colour == 15'b0)
+//			writeEn = 1'b0;
+//		else 
+//			writeEn = 1'b1;
+//	end
 	vga_adapter v1(
 		.resetn(reset),
 		.clock(CLOCK_50),
 		.colour(colour),
 		.x(x),
 		.y(y),
-		.plot(1'b1),
+		.plot(writeEn),
 		.VGA_R(VGA_R),
 		.VGA_G(VGA_G),
 		.VGA_B(VGA_B),
@@ -151,30 +159,34 @@ output				FPGA_I2C_SCLK;
 	);
 
 	
-	part2 p2(
+	secondlevel p2(
 		.clk(CLOCK_50),
 		.go(go),
 		.black(black),
 		.reset(reset),
-		.loadcolour(SW[9:7]),
+		.lastreceived(PS2_byte),
+		.writeEn(writeEn),
 		.X(x), 
 		.Y(y), 
-		.colour(colour)
+		.colour(colour),
+		.LED(LEDR)
+		
 		
 	);
 	
 endmodule
 
-module part2(
+module secondlevel(
 	input clk, go, black, reset,
-	input[2:0] loadcolour,
-
+	input[7:0] lastreceived,
+	output writeEn,
 	output [8:0] X,
 	output [7:0] Y,
-	output [14:0] colour
+	output [14:0] colour,
+	output [9:0] LED
 );
 	wire[1:0] alu_select;
-	wire  ld_plot, ld_coord, ld_BG;
+	wire  ld_plot, ld_coord, ld_BG, ld_osu, ld_line, ld_score, ld_gameover;
 	wire[9:0] counter;
 	wire[9:0] address;
 	wire[3:0] data;
@@ -188,7 +200,7 @@ module part2(
 	wire[25:0] freq;
 
 	
-	wire cleared, done, draw;
+	wire cleared, done, draw, drewOsu, drewScore, gameover;
 	
 	control c1 (
 		.clk(clk),
@@ -198,16 +210,24 @@ module part2(
 		.cleared(cleared),
 		.done(done),
 		.draw(draw),
+		.drewOsu(drewOsu),
+		.drewScore(drewScore),
+		.gameover(gameover),
 		.ld_plot(ld_plot),
 		.ld_coord(ld_coord),
-		.ld_BG(ld_BG)
+		.ld_BG(ld_BG),
+		.ld_osu(ld_osu),
+		.ld_line(ld_line),
+		.ld_score(ld_score),
+		.ld_gameover(ld_gameover),
+		.LED(LED)
 		);
 	wire genclock;
 	wire [25:0] genfreq;
 	RateDivider r1(clk, reset, 26'b00000000000000000000000001, genfreq);
 	assign genclock = (genfreq  == 26'b00000000000000000000000000)? 1'b1 : 1'b0;
 	
-	genloc gl(genclock, reset, ld_coord,randX,randY,id2);
+	genloc gl(clk, reset, ld_coord,randX,randY,id2);
 	
 	datapath d1(
 		.clk(clk),
@@ -219,11 +239,20 @@ module part2(
 		.black(black),
 		.ld_plot(ld_plot),
 		.ld_BG(ld_BG),
+		.ld_osu(ld_osu),
+		.ld_line(ld_line),
+		.ld_score(ld_score),
+		.ld_gameover(ld_gameover),
+		.datareceived(lastreceived),
+		.writeEn(writeEn),
 		.X(X),
 		.Y(Y),
 		.cleared(cleared),
 		.done(done),
 		.draw(draw),
+		.drewOsu(drewOsu),
+		.drewScore(drewScore),
+		.gameover(gameover),
 		.Colour(colour),
 		.counter(counter)
 		);
